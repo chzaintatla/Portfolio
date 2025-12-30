@@ -22,9 +22,9 @@ const Skills = () => {
       title: 'Programming Languages',
       icon: <FaCode className="text-3xl" />,
       skills: [
-        { name: 'Java', icon: <FaJava />, level: 95 },
-        { name: 'Kotlin', icon: <SiKotlin />, level: 98 },
-        { name: 'XML', icon: <FaCode />, level: 90 },
+        { name: 'Java', icon: <FaJava />, level: 100 },
+        { name: 'Kotlin', icon: <SiKotlin />, level: 100 },
+        { name: 'XML', icon: <FaCode />, level: 100 },
       ],
     },
     {

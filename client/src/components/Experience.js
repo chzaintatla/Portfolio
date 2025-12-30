@@ -99,7 +99,7 @@ const Experience = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
               className={`relative mb-12 ${
-                index % 2 === 0 ? 'md:pr-1/2 md:pr-8' : 'md:pl-1/2 md:pl-8 md:text-right'
+                index % 2 === 0 ? 'md:pr-1/2 md:pr-8' : 'md:pl-1/2 md:pl-8'
               }`}
             >
               {/* Timeline Dot */}
@@ -109,7 +109,7 @@ const Experience = () => {
                 }`}
               />
 
-              <div className={`card ml-12 md:ml-0 ${index % 2 === 0 ? 'md:mr-0' : 'md:ml-auto'}`}>
+              <div className={`card ml-12 md:ml-0 ${index % 2 === 0 ? 'md:mr-0' : 'md:ml-auto md:text-left'}`}>
                 <div className="flex items-start gap-4 mb-4">
                   <div className="p-3 bg-primary-100 rounded-lg text-primary-600">
                     <FaBriefcase className="text-2xl" />

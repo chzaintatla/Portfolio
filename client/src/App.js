@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App overflow-x-hidden w-full">
         <Navbar />
         <Hero />
         <About />

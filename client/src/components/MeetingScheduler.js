@@ -143,13 +143,13 @@ const MeetingScheduler = () => {
                   <FaClock className="text-primary-600" />
                   Select Time (30-minute slots)
                 </label>
-                <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+                <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 w-full overflow-x-auto">
                   {timeSlots.map((time) => (
                     <button
                       key={time}
                       type="button"
                       onClick={() => setSelectedTime(time)}
-                      className={`px-4 py-2 rounded-lg border-2 transition-all ${
+                      className={`px-4 py-2 rounded-lg border-2 transition-all whitespace-nowrap ${
                         selectedTime === time
                           ? 'bg-primary-600 text-white border-primary-600'
                           : 'bg-white text-gray-700 border-gray-300 hover:border-primary-400'

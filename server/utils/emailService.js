@@ -17,7 +17,7 @@ const sendContactEmail = async (contactData) => {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER, // Your email
+    to: 'ctoshadowlink@gmail.com', // Your email
     subject: `New Contact Form Submission from ${contactData.name}`,
     html: `
       <!DOCTYPE html>
@@ -144,7 +144,7 @@ const sendMeetingNotificationToOwner = async (meetingData) => {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER, // Your email
+    to: 'ctoshadowlink@gmail.com', // Your email
     subject: `New Meeting Booking: ${meetingData.name} - ${meetingData.date} at ${meetingData.time}`,
     html: `
       <!DOCTYPE html>

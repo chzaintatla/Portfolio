@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-20">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-20 w-full overflow-x-hidden">
       <div className="section-container text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
