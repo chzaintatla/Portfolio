@@ -17,18 +17,22 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// MongoDB Connection
-mongoose
-  .connect(process.env.MONGODB_URI || '', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log('✅ MongoDB connected successfully');
-  })
-  .catch((error) => {
-    console.error('❌ MongoDB connection error:', error);
-  });
+// MongoDB Connection (optional - app will work without it)
+if (process.env.MONGODB_URI) {
+  mongoose
+    .connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .then(() => {
+      console.log('✅ MongoDB connected successfully');
+    })
+    .catch((error) => {
+      console.error('⚠️ MongoDB connection error (app will continue without DB):', error.message);
+    });
+} else {
+  console.log('⚠️ MongoDB URI not set - app will work but won\'t save to database');
+}
 
 // Routes
 app.use('/api/contact', contactRoutes);

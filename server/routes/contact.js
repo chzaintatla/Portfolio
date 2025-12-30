@@ -26,23 +26,35 @@ router.post('/', contactValidation, async (req, res) => {
 
     const { name, email, message } = req.body;
 
-    // Save to database
-    const contact = new Contact({
-      name,
-      email,
-      message,
-    });
+    // Try to save to database (don't fail if DB is not available)
+    let contactId = null;
+    try {
+      const contact = new Contact({
+        name,
+        email,
+        message,
+      });
+      await contact.save();
+      contactId = contact._id;
+      console.log('✅ Contact saved to database:', contactId);
+    } catch (dbError) {
+      console.error('⚠️ Database save failed (continuing anyway):', dbError.message);
+    }
 
-    await contact.save();
-
-    // Send email
+    // Send email (this is the important part)
     const emailSent = await sendContactEmail({ name, email, message });
+
+    if (!emailSent) {
+      console.error('⚠️ Email sending failed');
+    }
 
     res.status(201).json({
       success: true,
-      message: 'Contact form submitted successfully',
+      message: emailSent 
+        ? 'Contact form submitted successfully! I\'ll get back to you soon.' 
+        : 'Contact form submitted, but email notification failed. Please try again or contact directly.',
       data: {
-        id: contact._id,
+        id: contactId,
         emailSent,
       },
     });

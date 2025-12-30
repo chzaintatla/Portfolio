@@ -72,17 +72,42 @@ const MeetingScheduler = () => {
       if (response.data.success) {
         setSubmitStatus({
           type: 'success',
-          message: 'Meeting booked successfully! Check your email for confirmation.',
+          message: response.data.message || 'Meeting booked successfully! Check your email for confirmation.',
         });
         // Reset form
         setSelectedDate(null);
         setSelectedTime('');
         setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: response.data.message || 'Failed to book meeting. Please try again.',
+        });
       }
     } catch (error) {
+      console.error('Meeting booking error:', error);
+      let errorMessage = 'Failed to book meeting. Please try again.';
+      
+      if (error.response) {
+        // Server responded with error
+        if (error.response.data?.errors) {
+          // Validation errors
+          const validationErrors = error.response.data.errors.map(err => err.msg).join(', ');
+          errorMessage = `Validation error: ${validationErrors}`;
+        } else {
+          errorMessage = error.response.data?.message || errorMessage;
+        }
+      } else if (error.request) {
+        // Request made but no response
+        errorMessage = 'Unable to connect to server. Please check your internet connection or try again later.';
+      } else {
+        // Error setting up request
+        errorMessage = 'An error occurred. Please try again.';
+      }
+      
       setSubmitStatus({
         type: 'error',
-        message: error.response?.data?.message || 'Failed to book meeting. Please try again.',
+        message: errorMessage,
       });
     } finally {
       setIsSubmitting(false);

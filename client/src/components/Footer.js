@@ -121,8 +121,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 flex items-center justify-center gap-2">
-            Copyright © {currentYear} Muhammad Zohaib Talha. All rights reserved. Made with{' '}
-            <FaHeart className="text-red-500" /> by Muhammad Zohaib Talha
+            Copyright © {currentYear} All rights reserved.
           </p>
           <p className="text-gray-500 mt-2 text-sm">Senior Android Developer</p>
         </div>

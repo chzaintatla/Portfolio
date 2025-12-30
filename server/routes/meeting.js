@@ -48,17 +48,23 @@ router.post('/book', meetingValidation, async (req, res) => {
     // Generate meeting link (you can customize this)
     const meetingLink = `https://meet.google.com/${generateMeetingId()}`;
 
-    // Save to database
-    const meeting = new Meeting({
-      name,
-      email,
-      date,
-      time,
-      message: message || '',
-      meetingLink,
-    });
-
-    await meeting.save();
+    // Try to save to database (don't fail if DB is not available)
+    let meetingId = null;
+    try {
+      const meeting = new Meeting({
+        name,
+        email,
+        date,
+        time,
+        message: message || '',
+        meetingLink,
+      });
+      await meeting.save();
+      meetingId = meeting._id;
+      console.log('✅ Meeting saved to database:', meetingId);
+    } catch (dbError) {
+      console.error('⚠️ Database save failed (continuing anyway):', dbError.message);
+    }
 
     // Send confirmation email to client
     const clientEmailSent = await sendMeetingConfirmationToClient({
@@ -70,7 +76,7 @@ router.post('/book', meetingValidation, async (req, res) => {
       meetingLink,
     });
 
-    // Send notification email to owner
+    // Send notification email to owner (IMPORTANT - this must work)
     const ownerEmailSent = await sendMeetingNotificationToOwner({
       name,
       email,
@@ -80,11 +86,17 @@ router.post('/book', meetingValidation, async (req, res) => {
       meetingLink,
     });
 
+    if (!ownerEmailSent) {
+      console.error('⚠️ CRITICAL: Owner email notification failed!');
+    }
+
     res.status(201).json({
       success: true,
-      message: 'Meeting booked successfully',
+      message: ownerEmailSent 
+        ? 'Meeting booked successfully! Check your email for confirmation.' 
+        : 'Meeting booked, but email notification failed. Please contact directly.',
       data: {
-        id: meeting._id,
+        id: meetingId,
         date,
         time,
         clientEmailSent,

@@ -31,14 +31,33 @@ const Contact = () => {
       if (response.data.success) {
         setSubmitStatus({
           type: 'success',
-          message: 'Message sent successfully! I\'ll get back to you soon.',
+          message: response.data.message || 'Message sent successfully! I\'ll get back to you soon.',
         });
         setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: response.data.message || 'Failed to send message. Please try again.',
+        });
       }
     } catch (error) {
+      console.error('Contact form error:', error);
+      let errorMessage = 'Failed to send message. Please try again.';
+      
+      if (error.response) {
+        // Server responded with error
+        errorMessage = error.response.data?.message || errorMessage;
+      } else if (error.request) {
+        // Request made but no response
+        errorMessage = 'Unable to connect to server. Please check your internet connection or try again later.';
+      } else {
+        // Error setting up request
+        errorMessage = 'An error occurred. Please try again.';
+      }
+      
       setSubmitStatus({
         type: 'error',
-        message: error.response?.data?.message || 'Failed to send message. Please try again.',
+        message: errorMessage,
       });
     } finally {
       setIsSubmitting(false);

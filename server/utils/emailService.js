@@ -2,21 +2,36 @@ const nodemailer = require('nodemailer');
 
 // Create transporter
 const createTransporter = () => {
-  return nodemailer.createTransport({
-    service: process.env.EMAIL_SERVICE || 'gmail',
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    console.error('❌ Email credentials not configured. Please set EMAIL_USER and EMAIL_PASS in .env file');
+    return null;
+  }
+
+  try {
+    return nodemailer.createTransport({
+      service: process.env.EMAIL_SERVICE || 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+  } catch (error) {
+    console.error('❌ Error creating email transporter:', error);
+    return null;
+  }
 };
 
 // Send contact form email
 const sendContactEmail = async (contactData) => {
   const transporter = createTransporter();
+  
+  if (!transporter) {
+    console.error('❌ Cannot send email: Transporter not available');
+    return false;
+  }
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: process.env.EMAIL_USER || 'noreply@portfolio.com',
     to: 'ctoshadowlink@gmail.com', // Your email
     subject: `New Contact Form Submission from ${contactData.name}`,
     html: `
@@ -60,10 +75,12 @@ const sendContactEmail = async (contactData) => {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log('✅ Contact email sent successfully:', info.messageId);
     return true;
   } catch (error) {
-    console.error('Error sending contact email:', error);
+    console.error('❌ Error sending contact email:', error.message);
+    console.error('Full error:', error);
     return false;
   }
 };
@@ -71,9 +88,14 @@ const sendContactEmail = async (contactData) => {
 // Send meeting confirmation email to client
 const sendMeetingConfirmationToClient = async (meetingData) => {
   const transporter = createTransporter();
+  
+  if (!transporter) {
+    console.error('❌ Cannot send email: Transporter not available');
+    return false;
+  }
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: process.env.EMAIL_USER || 'noreply@portfolio.com',
     to: meetingData.email,
     subject: 'Meeting Confirmation - 30-Minute Consultation',
     html: `
@@ -130,10 +152,12 @@ const sendMeetingConfirmationToClient = async (meetingData) => {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log('✅ Meeting confirmation email sent to client:', info.messageId);
     return true;
   } catch (error) {
-    console.error('Error sending meeting confirmation to client:', error);
+    console.error('❌ Error sending meeting confirmation to client:', error.message);
+    console.error('Full error:', error);
     return false;
   }
 };
@@ -141,9 +165,14 @@ const sendMeetingConfirmationToClient = async (meetingData) => {
 // Send meeting notification to owner
 const sendMeetingNotificationToOwner = async (meetingData) => {
   const transporter = createTransporter();
+  
+  if (!transporter) {
+    console.error('❌ Cannot send email: Transporter not available');
+    return false;
+  }
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: process.env.EMAIL_USER || 'noreply@portfolio.com',
     to: 'ctoshadowlink@gmail.com', // Your email
     subject: `New Meeting Booking: ${meetingData.name} - ${meetingData.date} at ${meetingData.time}`,
     html: `
@@ -192,10 +221,12 @@ const sendMeetingNotificationToOwner = async (meetingData) => {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log('✅ Meeting notification email sent to owner:', info.messageId);
     return true;
   } catch (error) {
-    console.error('Error sending meeting notification to owner:', error);
+    console.error('❌ Error sending meeting notification to owner:', error.message);
+    console.error('Full error:', error);
     return false;
   }
 };
