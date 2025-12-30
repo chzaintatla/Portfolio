@@ -22,9 +22,9 @@ const Skills = () => {
       title: 'Programming Languages',
       icon: <FaCode className="text-3xl" />,
       skills: [
-        { name: 'Java', icon: <FaJava />, level: 100 },
-        { name: 'Kotlin', icon: <SiKotlin />, level: 100 },
-        { name: 'XML', icon: <FaCode />, level: 100 },
+        { name: 'Java', icon: <FaJava />, level: 95 },
+        { name: 'Kotlin', icon: <SiKotlin />, level: 98 },
+        { name: 'XML', icon: <FaCode />, level: 98 },
       ],
     },
     {
@@ -57,8 +57,8 @@ const Skills = () => {
         { name: 'Git & GitHub', icon: <FaGitAlt />, level: 95 },
         { name: 'Android Studio', icon: <SiAndroidstudio />, level: 98 },
         { name: 'Play Console', icon: <SiGoogleplay />, level: 90 },
-        { name: 'Firebase Analytics', icon: <FaFire />, level: 88 },
-        { name: 'Crashlytics', icon: <FaShieldAlt />, level: 90 },
+        { name: 'Firebase Analytics', icon: <FaFire />, level: 95 },
+        { name: 'Crashlytics', icon: <FaShieldAlt />, level: 100 },
       ],
     },
     {
@@ -67,9 +67,9 @@ const Skills = () => {
       skills: [
         { name: 'Accessibility Services', icon: <FaShieldAlt />, level: 85 },
         { name: 'Sensors Integration', icon: <FaMobile />, level: 88 },
-        { name: 'Background Services', icon: <FaTools />, level: 90 },
-        { name: 'Push Notifications', icon: <FaMobile />, level: 92 },
-        { name: 'In-App Purchases', icon: <FaMobile />, level: 85 },
+        { name: 'Background Services', icon: <FaTools />, level: 95 },
+        { name: 'Push Notifications', icon: <FaMobile />, level: 100 },
+        { name: 'In-App Purchases', icon: <FaMobile />, level: 98 },
       ],
     },
     {
