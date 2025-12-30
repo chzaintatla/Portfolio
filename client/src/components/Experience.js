@@ -26,7 +26,7 @@ const Experience = () => {
       duration: '3 Years',
       location: 'Remote',
       achievements: [
-        'Led development of 15+ Android applications with 100K+ combined downloads',
+        'Led development of 15+ Android applications with 100M+ combined downloads',
         'Architected scalable MVVM-based solutions reducing code complexity by 40%',
         'Optimized app performance resulting in 50% faster load times',
         'Mentored junior developers and established coding standards',

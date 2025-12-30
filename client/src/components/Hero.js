@@ -107,7 +107,7 @@ const Hero = () => {
               <div className="text-sm md:text-base">Apps Developed</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary-600">100K+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary-600">100M+</div>
               <div className="text-sm md:text-base">Downloads</div>
             </div>
           </motion.div>
