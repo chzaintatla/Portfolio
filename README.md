@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A modern, fully responsive portfolio website for **Muhammad Zohaib Talha** - Senior Android Developer with 6+ years of experience.
+A modern, fully responsive portfolio website for **Digital Optimistic** - Full-Stack Development & Digital Solutions Company with 6+ years of experience.
 
 ## 🚀 Features
 
@@ -260,10 +260,12 @@ This project is open source and available under the MIT License.
 
 ## 👤 Author
 
-**Muhammad Zohaib Talha**
+**Digital Optimistic**
 - Email: mr.zaibe@gmail.com
-- Phone: +92 306 4560640
-- LinkedIn: [linkedin.com/in/mrzaibe](https://pk.linkedin.com/in/mrzaibe)
+- Phone: +1 (307) 310-4711
+- LinkedIn: [Digital Optimistic LLC](https://www.linkedin.com/company/digital-optimistic/)
+- Facebook: [Digital Optimistic LLC](https://www.facebook.com/people/Digital-Optimistic-LLC/61584332251308/)
+- Instagram: [@digitaloptimisticllc](https://www.instagram.com/digitaloptimisticllc?utm_source=qr&igsh=MWxtMzloZWEwZThlYw==)
 
 ## 🙏 Acknowledgments
 
@@ -273,5 +275,5 @@ This project is open source and available under the MIT License.
 
 ---
 
-**Built with ❤️ by Muhammad Zohaib Talha**
+**Built with ❤️ by Digital Optimistic**
 

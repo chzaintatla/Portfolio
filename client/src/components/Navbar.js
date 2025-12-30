@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logoImage from '../pic.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +33,13 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-xl md:text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
+              className="flex items-center h-20 md:h-24 lg:h-28"
             >
-              MZT
+              <img 
+                src={logoImage} 
+                alt="Digital Optimistic Logo" 
+                className="h-28 md:h-32 lg:h-40 w-auto object-contain"
+              />
             </button>
           </div>
 
@@ -53,16 +58,16 @@ const Navbar = () => {
               Skills
             </button>
             <button
-              onClick={() => scrollToSection('experience')}
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            >
-              Experience
-            </button>
-            <button
               onClick={() => scrollToSection('projects')}
               className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
             >
               Projects
+            </button>
+            <button
+              onClick={() => scrollToSection('services')}
+              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+            >
+              Services
             </button>
             <button
               onClick={() => scrollToSection('meeting')}
@@ -107,16 +112,16 @@ const Navbar = () => {
               Skills
             </button>
             <button
-              onClick={() => scrollToSection('experience')}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-colors"
-            >
-              Experience
-            </button>
-            <button
               onClick={() => scrollToSection('projects')}
               className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-colors"
             >
               Projects
+            </button>
+            <button
+              onClick={() => scrollToSection('services')}
+              className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-colors"
+            >
+              Services
             </button>
             <button
               onClick={() => scrollToSection('meeting')}

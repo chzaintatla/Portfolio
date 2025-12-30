@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram, FaFacebook, FaPaperPlane } from 'react-icons/fa';
-import axios from 'axios';
-import { API_ENDPOINTS } from '../config/api';
+import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +8,6 @@ const Contact = () => {
     email: '',
     message: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleInputChange = (e) => {
@@ -22,49 +19,38 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      const response = await axios.post(API_ENDPOINTS.CONTACT, formData);
-
-      if (response.data.success) {
-        setSubmitStatus({
-          type: 'success',
-          message: response.data.message || 'Message sent successfully! I\'ll get back to you soon.',
-        });
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setSubmitStatus({
-          type: 'error',
-          message: response.data.message || 'Failed to send message. Please try again.',
-        });
-      }
-    } catch (error) {
-      console.error('Contact form error:', error);
-      let errorMessage = 'Failed to send message. Please try again.';
-      
-      if (error.response) {
-        // Server responded with error
-        errorMessage = error.response.data?.message || errorMessage;
-      } else if (error.request) {
-        // Request made but no response
-        errorMessage = 'Unable to connect to server. Please check your internet connection or try again later.';
-      } else {
-        // Error setting up request
-        errorMessage = 'An error occurred. Please try again.';
-      }
-      
-      setSubmitStatus({
-        type: 'error',
-        message: errorMessage,
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    
+    // Create WhatsApp message
+    const phoneNumber = '13073104711'; // Your WhatsApp number (without +)
+    const message = `Hello! I'm ${formData.name} (${formData.email}).\n\nMessage: ${formData.message}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
+    // Show success message
+    setSubmitStatus({
+      type: 'success',
+      message: 'Opening WhatsApp to send your message...',
+    });
+    
+    // Reset form
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const contactInfo = [
+    {
+      icon: <FaWhatsapp className="text-2xl" />,
+      label: 'WhatsApp',
+      value: '+1 (307) 310-4711',
+      link: 'https://wa.me/13073104711',
+    },
+    {
+      icon: <FaPhone className="text-2xl" />,
+      label: 'Phone',
+      value: '+1 (307) 310-4711',
+      link: 'tel:+13073104711',
+    },
     {
       icon: <FaEnvelope className="text-2xl" />,
       label: 'Email',
@@ -72,16 +58,10 @@ const Contact = () => {
       link: 'mailto:ctoshadowlink@gmail.com',
     },
     {
-      icon: <FaPhone className="text-2xl" />,
-      label: 'Phone',
-      value: '+92 306 4560640',
-      link: 'tel:+923064560640',
-    },
-    {
       icon: <FaLinkedin className="text-2xl" />,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/mrzaibe',
-      link: 'https://pk.linkedin.com/in/mrzaibe',
+      value: 'Digital Optimistic LLC',
+      link: 'https://www.linkedin.com/company/digital-optimistic/',
     },
   ];
 
@@ -242,11 +222,10 @@ const Contact = () => {
 
             <button
               type="submit"
-              disabled={isSubmitting}
-              className="btn-primary w-full flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="btn-primary w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600"
             >
-              <FaPaperPlane />
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              <FaWhatsapp />
+              Send via WhatsApp
             </button>
           </form>
         </motion.div>

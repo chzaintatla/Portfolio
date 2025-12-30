@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGooglePlay, FaQrcode, FaTv, FaFilePdf, FaStar, FaDownload, FaVolumeUp, FaEnvelope, FaBook, FaMusic, FaFolder } from 'react-icons/fa';
+import { FaGooglePlay, FaQrcode, FaTv, FaFilePdf, FaStar, FaDownload, FaVolumeUp, FaEnvelope, FaBook, FaMusic, FaFolder, FaGlobe, FaLaptopCode, FaStore, FaHospital, FaHome, FaUserMd, FaShoppingBag, FaBriefcase, FaMobile, FaCode, FaImage } from 'react-icons/fa';
 
 const Projects = () => {
+  const [activeFilter, setActiveFilter] = useState('all'); // 'all', 'android', 'web'
+
   const projects = [
     {
       name: 'QR & Barcode Scanner',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'A versatile app that allows users to scan QR codes and barcodes effortlessly. Features auto-recognition, batch scanning, and a QR code generator for creating custom codes.',
       icon: <FaQrcode className="text-5xl" />,
       category: 'Productivity',
@@ -19,7 +21,7 @@ const Projects = () => {
     },
     {
       name: 'PDF Scanner - Document Scanner',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'Transform your Android device into a powerful portable scanner. High-quality scanning, image-to-PDF conversion, OCR for text extraction, and secure document management.',
       icon: <FaFilePdf className="text-5xl" />,
       category: 'Productivity',
@@ -32,7 +34,7 @@ const Projects = () => {
     },
     {
       name: 'Volume Booster - Sound Booster',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'Enhance your device\'s audio output with sound equalizer, bass booster, and volume amplifier. Supports various media types with high-quality sound enhancement.',
       icon: <FaVolumeUp className="text-5xl" />,
       category: 'Music & Audio',
@@ -45,7 +47,7 @@ const Projects = () => {
     },
     {
       name: 'Universal TV Remote Control',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'Control your smart TV using your Android device. Supports multiple TV brands with both Wi-Fi and IR functionalities for seamless connectivity.',
       icon: <FaTv className="text-5xl" />,
       category: 'Tools',
@@ -58,7 +60,7 @@ const Projects = () => {
     },
     {
       name: 'Recover Deleted Messages',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'Retrieve deleted messages and media from various messaging apps without triggering read notifications. Includes status saver feature for added convenience.',
       icon: <FaEnvelope className="text-5xl" />,
       category: 'Tools',
@@ -71,7 +73,7 @@ const Projects = () => {
     },
     {
       name: 'Quran Majeed - القرآن الكريم',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'An authentic Islamic app providing the full Arabic text of the Quran, audio recitations, translations, prayer times, and an Islamic calendar to enhance your worship experience.',
       icon: <FaBook className="text-5xl" />,
       category: 'Education',
@@ -84,7 +86,7 @@ const Projects = () => {
     },
     {
       name: 'Music Player - MP3 Player',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'A feature-rich music player supporting various audio formats, offering an equalizer, playlist management, and a user-friendly interface for an enhanced listening experience.',
       icon: <FaMusic className="text-5xl" />,
       category: 'Music & Audio',
@@ -97,7 +99,7 @@ const Projects = () => {
     },
     {
       name: 'File Manager - File Explorer',
-      developer: 'Muhammad Zohaib Talha',
+      developer: 'Digital Optimistic',
       description: 'Manage your files efficiently with file categorization, storage analysis, compression, extraction, and support for various file formats with an intuitive interface.',
       icon: <FaFolder className="text-5xl" />,
       category: 'Productivity',
@@ -107,6 +109,274 @@ const Projects = () => {
       price: 'Free',
       tech: ['Kotlin', 'File System', 'Storage Analysis', 'File Operations'],
       playStore: 'https://play.google.com/store/apps/details?id=com.filemanager.managefile.fileexplorer.fileextractor',
+    },
+    // SolTekkers Web Development Projects
+    {
+      name: 'Therapist Visa',
+      developer: 'Digital Optimistic',
+      description: 'Professional visa application platform for therapists with streamlined documentation, appointment scheduling, and application tracking features.',
+      icon: <FaUserMd className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.8,
+      reviews: 150,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'Node.js', 'MongoDB', 'Payment Gateway'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Glow and Wear',
+      developer: 'Digital Optimistic',
+      description: 'E-commerce platform for beauty and fashion products with advanced filtering, wishlist, and secure checkout system.',
+      icon: <FaShoppingBag className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.7,
+      reviews: 230,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'E-Commerce', 'Stripe', 'Inventory Management'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Tob Webs',
+      developer: 'Digital Optimistic',
+      description: 'Modern business website with responsive design, SEO optimization, and integrated contact forms for lead generation.',
+      icon: <FaGlobe className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.6,
+      reviews: 180,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['Next.js', 'Tailwind CSS', 'SEO', 'Contact Forms'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Maddy Store',
+      developer: 'Digital Optimistic',
+      description: 'Full-featured online store with product catalog, shopping cart, payment integration, and order management system.',
+      icon: <FaStore className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.9,
+      reviews: 320,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'E-Commerce', 'Payment Gateway', 'Order Tracking'],
+      playStore: 'https://maddystore.pk/',
+      isWebProject: true,
+    },
+    {
+      name: 'Digital Abouts',
+      developer: 'Digital Optimistic',
+      description: 'Digital marketing agency website showcasing services, portfolio, and client testimonials with modern UI/UX design.',
+      icon: <FaBriefcase className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.7,
+      reviews: 195,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'UI/UX Design', 'Portfolio', 'CMS'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Baba Hakeem',
+      developer: 'Digital Optimistic',
+      description: 'Healthcare information platform providing medical resources, appointment booking, and health consultation services.',
+      icon: <FaUserMd className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.8,
+      reviews: 145,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'Healthcare', 'Appointment System', 'Database'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'EPSCC Rehab',
+      developer: 'Digital Optimistic',
+      description: 'Rehabilitation center website with patient portal, appointment scheduling, and treatment information management.',
+      icon: <FaHospital className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.9,
+      reviews: 210,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'Healthcare', 'Patient Portal', 'Scheduling'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'MT Unite',
+      developer: 'Digital Optimistic',
+      description: 'Business collaboration platform connecting teams with project management, communication tools, and file sharing.',
+      icon: <FaBriefcase className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.6,
+      reviews: 175,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'Collaboration', 'Project Management', 'Real-time'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Golden Maple Homes',
+      developer: 'Digital Optimistic',
+      description: 'Real estate platform featuring property listings, virtual tours, mortgage calculator, and agent contact system.',
+      icon: <FaHome className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.8,
+      reviews: 280,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'Real Estate', 'Property Listings', 'Virtual Tours'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Ayesha Health And Foundation',
+      developer: 'Digital Optimistic',
+      description: 'Non-profit organization website with donation system, event management, volunteer registration, and impact stories.',
+      icon: <FaHospital className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.9,
+      reviews: 165,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'Non-Profit', 'Donation System', 'Event Management'],
+      playStore: 'https://soltekkers.com/',
+      isWebProject: true,
+    },
+    // New Web Projects
+    {
+      name: 'iLovePDF',
+      developer: 'Digital Optimistic',
+      description: 'Online PDF tools platform offering PDF conversion, merging, splitting, compression, and editing capabilities.',
+      icon: <FaFilePdf className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.8,
+      reviews: 1250,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['React.js', 'PDF Processing', 'File Conversion', 'Cloud Storage'],
+      playStore: 'https://ilovepdf.biz/',
+      isWebProject: true,
+    },
+    {
+      name: 'PDF24',
+      developer: 'Digital Optimistic',
+      description: 'Comprehensive PDF solution with AI-powered features for document processing, conversion, and optimization.',
+      icon: <FaFilePdf className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.9,
+      reviews: 980,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['AI Integration', 'PDF Tools', 'Document Processing', 'React.js'],
+      playStore: 'https://pdf24.ai/',
+      isWebProject: true,
+    },
+    {
+      name: 'PDF Convertly',
+      developer: 'Digital Optimistic',
+      description: 'Fast and reliable PDF conversion service supporting multiple formats with batch processing capabilities.',
+      icon: <FaFilePdf className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.7,
+      reviews: 750,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['Next.js', 'PDF Conversion', 'Batch Processing', 'API Integration'],
+      playStore: 'https://pdfconvertly.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'SmallPDF Converter',
+      developer: 'Digital Optimistic',
+      description: 'AI-powered PDF converter with smart compression, OCR, and advanced document manipulation features.',
+      icon: <FaFilePdf className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.8,
+      reviews: 1100,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['AI/ML', 'PDF Tools', 'OCR Technology', 'React.js'],
+      playStore: 'https://Smallpdfconverter.ai/',
+      isWebProject: true,
+    },
+    {
+      name: 'Image Compressor',
+      developer: 'Digital Optimistic',
+      description: 'Online image compression tool that reduces file size while maintaining quality, supporting multiple formats.',
+      icon: <FaImage className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.6,
+      reviews: 850,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['Image Processing', 'Compression Algorithms', 'React.js', 'Cloud Storage'],
+      playStore: 'https://imagecompressor.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Mirha Couture',
+      developer: 'Digital Optimistic',
+      description: 'Fashion e-commerce platform showcasing designer collections with virtual try-on and personalized styling features.',
+      icon: <FaShoppingBag className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.9,
+      reviews: 420,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['E-Commerce', 'Fashion Platform', 'Virtual Try-On', 'React.js'],
+      playStore: 'https://mirhacouture.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Astral Heaven Realty',
+      developer: 'Digital Optimistic',
+      description: 'Real estate platform with property listings, virtual tours, mortgage calculator, and agent matching system.',
+      icon: <FaHome className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.8,
+      reviews: 320,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['Real Estate', 'Property Listings', 'Virtual Tours', 'Next.js'],
+      playStore: 'https://astralheavenrealty.com/',
+      isWebProject: true,
+    },
+    {
+      name: 'Green Crockery',
+      developer: 'Digital Optimistic',
+      description: 'E-commerce platform for eco-friendly kitchenware and crockery with sustainable product catalog and ordering system.',
+      icon: <FaShoppingBag className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.7,
+      reviews: 280,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['E-Commerce', 'Product Catalog', 'Payment Gateway', 'React.js'],
+      playStore: 'https://greencrockery.com.pk/',
+      isWebProject: true,
+    },
+    {
+      name: 'iLovePDF 6',
+      developer: 'Digital Optimistic',
+      description: 'Advanced PDF toolkit with enhanced features for document management, editing, and collaboration.',
+      icon: <FaFilePdf className="text-5xl" />,
+      category: 'Web Development',
+      rating: 4.8,
+      reviews: 650,
+      downloads: 'Web App',
+      price: 'Live',
+      tech: ['PDF Tools', 'Document Management', 'Collaboration', 'React.js'],
+      playStore: 'https://ilovepdf6.com/',
+      isWebProject: true,
     },
   ];
 
@@ -129,6 +399,14 @@ const Projects = () => {
     return stars;
   };
 
+  // Filter projects based on active filter
+  const filteredProjects = projects.filter(project => {
+    if (activeFilter === 'all') return true;
+    if (activeFilter === 'android') return !project.isWebProject;
+    if (activeFilter === 'web') return project.isWebProject;
+    return true;
+  });
+
   return (
     <section id="projects" className="section-container bg-gray-50">
       <motion.div
@@ -138,15 +416,51 @@ const Projects = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="section-title">Featured Android Projects</h2>
+        <h2 className="section-title">Featured Projects</h2>
         <p className="section-subtitle max-w-3xl mx-auto">
-          A collection of high-quality Android applications showcasing diverse skills and
+          A collection of high-quality Android applications and web development projects showcasing diverse skills and
           technologies, each with unique features and excellent user experience.
         </p>
+        
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <button
+            onClick={() => setActiveFilter('all')}
+            className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
+              activeFilter === 'all'
+                ? 'bg-primary-600 text-white shadow-lg'
+                : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md'
+            }`}
+          >
+            All Projects ({projects.length})
+          </button>
+          <button
+            onClick={() => setActiveFilter('android')}
+            className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 ${
+              activeFilter === 'android'
+                ? 'bg-green-600 text-white shadow-lg'
+                : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md'
+            }`}
+          >
+            <FaMobile />
+            Android Apps ({projects.filter(p => !p.isWebProject).length})
+          </button>
+          <button
+            onClick={() => setActiveFilter('web')}
+            className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 ${
+              activeFilter === 'web'
+                ? 'bg-blue-600 text-white shadow-lg'
+                : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md'
+            }`}
+          >
+            <FaCode />
+            Web Projects ({projects.filter(p => p.isWebProject).length})
+          </button>
+        </div>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -219,7 +533,7 @@ const Projects = () => {
                 {project.reviews.toLocaleString()} reviews
               </div>
 
-              {/* Install Button - Play Store Style */}
+              {/* Install/Visit Button */}
               <a
                 href={project.playStore}
                 target="_blank"
@@ -227,6 +541,8 @@ const Projects = () => {
                 className={`w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${
                   project.playStore === '#'
                     ? 'bg-gray-300 text-gray-600 cursor-not-allowed'
+                    : project.isWebProject
+                    ? 'bg-blue-500 hover:bg-blue-600 text-white shadow-lg hover:shadow-xl'
                     : 'bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl'
                 }`}
                 onClick={(e) => {
@@ -235,8 +551,17 @@ const Projects = () => {
                   }
                 }}
               >
-                <FaGooglePlay className="text-lg" />
-                <span>{project.price === 'Free' ? 'Install' : project.price}</span>
+                {project.isWebProject ? (
+                  <>
+                    <FaGlobe className="text-lg" />
+                    <span>Visit Website</span>
+                  </>
+                ) : (
+                  <>
+                    <FaGooglePlay className="text-lg" />
+                    <span>{project.price === 'Free' ? 'Install' : project.price}</span>
+                  </>
+                )}
               </a>
             </div>
           </motion.div>

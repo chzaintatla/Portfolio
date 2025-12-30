@@ -13,73 +13,84 @@ import {
   FaPalette,
   FaTools,
   FaShieldAlt,
+  FaSearch,
+  FaChartLine,
+  FaCloud,
+  FaShoppingCart,
+  FaBullhorn,
 } from 'react-icons/fa';
-import { SiKotlin, SiAndroidstudio, SiGoogleplay } from 'react-icons/si';
+import { SiKotlin, SiAndroidstudio, SiGoogleplay, SiReact, SiNodedotjs, SiJavascript, SiHtml5, SiCss3, SiMongodb, SiAmazonaws, SiGooglecloud } from 'react-icons/si';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Programming Languages',
+      title: 'Web Development',
       icon: <FaCode className="text-3xl" />,
       skills: [
-        { name: 'Java', icon: <FaJava />, level: 95 },
-        { name: 'Kotlin', icon: <SiKotlin />, level: 98 },
-        { name: 'XML', icon: <FaCode />, level: 98 },
+        { name: 'React.js & Next.js', icon: <SiReact />, level: 95 },
+        { name: 'Node.js & Express', icon: <SiNodedotjs />, level: 92 },
+        { name: 'JavaScript & TypeScript', icon: <SiJavascript />, level: 95 },
+        { name: 'HTML5 & CSS3', icon: <SiHtml5 />, level: 98 },
+        { name: 'REST APIs', icon: <FaServer />, level: 94 },
+        { name: 'MongoDB & Databases', icon: <SiMongodb />, level: 90 },
       ],
     },
     {
-      title: 'Android Framework',
-      icon: <FaAndroid className="text-3xl" />,
-      skills: [
-        { name: 'MVVM Architecture', icon: <FaCode />, level: 98 },
-        { name: 'LiveData & ViewModel', icon: <FaMobile />, level: 95 },
-        { name: 'Room Database', icon: <FaDatabase />, level: 92 },
-        { name: 'WorkManager', icon: <FaTools />, level: 90 },
-        { name: 'Jetpack Compose', icon: <FaAndroid />, level: 85 },
-        { name: 'Navigation Component', icon: <FaMobile />, level: 93 },
-      ],
-    },
-    {
-      title: 'Backend & APIs',
-      icon: <FaServer className="text-3xl" />,
-      skills: [
-        { name: 'Firebase', icon: <FaFire />, level: 95 },
-        { name: 'REST APIs', icon: <FaServer />, level: 92 },
-        { name: 'Retrofit', icon: <FaCode />, level: 94 },
-        { name: 'OkHttp', icon: <FaCode />, level: 90 },
-        { name: 'JSON Parsing', icon: <FaCode />, level: 95 },
-      ],
-    },
-    {
-      title: 'Tools & Services',
-      icon: <FaTools className="text-3xl" />,
-      skills: [
-        { name: 'Git & GitHub', icon: <FaGitAlt />, level: 95 },
-        { name: 'Android Studio', icon: <SiAndroidstudio />, level: 98 },
-        { name: 'Play Console', icon: <SiGoogleplay />, level: 90 },
-        { name: 'Firebase Analytics', icon: <FaFire />, level: 95 },
-        { name: 'Crashlytics', icon: <FaShieldAlt />, level: 100 },
-      ],
-    },
-    {
-      title: 'Advanced Features',
+      title: 'Mobile Development',
       icon: <FaMobile className="text-3xl" />,
       skills: [
-        { name: 'Accessibility Services', icon: <FaShieldAlt />, level: 85 },
-        { name: 'Sensors Integration', icon: <FaMobile />, level: 88 },
-        { name: 'Background Services', icon: <FaTools />, level: 95 },
-        { name: 'Push Notifications', icon: <FaMobile />, level: 100 },
-        { name: 'In-App Purchases', icon: <FaMobile />, level: 98 },
+        { name: 'Android (Kotlin/Java)', icon: <FaAndroid />, level: 98 },
+        { name: 'MVVM Architecture', icon: <FaCode />, level: 98 },
+        { name: 'React Native', icon: <SiReact />, level: 90 },
+        { name: 'Room Database', icon: <FaDatabase />, level: 92 },
+        { name: 'Firebase Integration', icon: <FaFire />, level: 95 },
+        { name: 'Play Store Deployment', icon: <SiGoogleplay />, level: 95 },
       ],
     },
     {
-      title: 'UI/UX Design',
+      title: 'SEO & Digital Marketing',
+      icon: <FaSearch className="text-3xl" />,
+      skills: [
+        { name: 'SEO Optimization', icon: <FaSearch />, level: 95 },
+        { name: 'Keyword Research', icon: <FaSearch />, level: 92 },
+        { name: 'Content Marketing', icon: <FaBullhorn />, level: 90 },
+        { name: 'Social Media Marketing', icon: <FaChartLine />, level: 88 },
+        { name: 'PPC & Analytics', icon: <FaChartLine />, level: 90 },
+        { name: 'Link Building', icon: <FaSearch />, level: 85 },
+      ],
+    },
+    {
+      title: 'Cloud & DevOps',
+      icon: <FaCloud className="text-3xl" />,
+      skills: [
+        { name: 'AWS Services', icon: <SiAmazonaws />, level: 90 },
+        { name: 'Google Cloud', icon: <SiGooglecloud />, level: 85 },
+        { name: 'CI/CD Pipelines', icon: <FaTools />, level: 88 },
+        { name: 'Docker & Containers', icon: <FaCloud />, level: 85 },
+        { name: 'Serverless Functions', icon: <FaServer />, level: 90 },
+        { name: 'Git & Version Control', icon: <FaGitAlt />, level: 95 },
+      ],
+    },
+    {
+      title: 'E-Commerce & Business',
+      icon: <FaShoppingCart className="text-3xl" />,
+      skills: [
+        { name: 'E-Commerce Platforms', icon: <FaShoppingCart />, level: 92 },
+        { name: 'Payment Gateways', icon: <FaShoppingCart />, level: 90 },
+        { name: 'Inventory Management', icon: <FaDatabase />, level: 88 },
+        { name: 'Order Tracking Systems', icon: <FaChartLine />, level: 90 },
+        { name: 'Business Analytics', icon: <FaChartLine />, level: 88 },
+      ],
+    },
+    {
+      title: 'UI/UX & Design',
       icon: <FaPalette className="text-3xl" />,
       skills: [
+        { name: 'UI/UX Design', icon: <FaPalette />, level: 95 },
+        { name: 'Figma & Design Tools', icon: <FaFigma />, level: 90 },
+        { name: 'Responsive Design', icon: <FaCode />, level: 98 },
         { name: 'Material Design', icon: <FaPalette />, level: 95 },
-        { name: 'Figma', icon: <FaFigma />, level: 80 },
-        { name: 'Custom Views', icon: <FaCode />, level: 90 },
-        { name: 'Animations', icon: <FaPalette />, level: 88 },
+        { name: 'Prototyping', icon: <FaPalette />, level: 88 },
       ],
     },
   ];
@@ -95,8 +106,8 @@ const Skills = () => {
       >
         <h2 className="section-title">Technical Expertise</h2>
         <p className="section-subtitle max-w-3xl mx-auto">
-          A comprehensive skill set covering all aspects of Android development, from core
-          programming to advanced features and deployment.
+          A comprehensive skill set covering web development, mobile apps, SEO, digital marketing,
+          cloud solutions, and more - delivering end-to-end digital solutions.
         </p>
       </motion.div>
 

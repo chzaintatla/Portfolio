@@ -97,10 +97,10 @@ const sendMeetingConfirmationToClient = async (meetingData) => {
                 <p>If you need to reschedule or cancel, please reply to this email at least 24 hours before the meeting.</p>
                 
                 <p>Looking forward to our conversation!</p>
-                <p>Best regards,<br><strong>Muhammad Zohaib Talha</strong><br>Senior Android Developer</p>
+                <p>Best regards,<br><strong>Digital Optimistic</strong><br>Full-Stack Development & Digital Solutions</p>
               </div>
               <div class="footer">
-                <p>This is an automated confirmation email from Muhammad Zohaib Talha's portfolio website.</p>
+                <p>This is an automated confirmation email from Digital Optimistic's portfolio website.</p>
               </div>
             </div>
           </body>

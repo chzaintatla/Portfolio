@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaCalendarAlt, FaClock, FaUser, FaEnvelope, FaComment, FaCheckCircle } from 'react-icons/fa';
+import { FaCalendarAlt, FaClock, FaUser, FaEnvelope, FaComment, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import axios from 'axios';
-import { API_ENDPOINTS } from '../config/api';
 
 const MeetingScheduler = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -14,7 +12,6 @@ const MeetingScheduler = () => {
     email: '',
     message: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
   // Generate time slots (30-minute intervals from 9 AM to 6 PM)
@@ -55,63 +52,40 @@ const MeetingScheduler = () => {
       return;
     }
 
-    setIsSubmitting(true);
-    setSubmitStatus(null);
+    // Format date
+    const formattedDate = selectedDate.toLocaleDateString('en-US', { 
+      weekday: 'long', 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
 
-    try {
-      const meetingData = {
-        date: selectedDate.toISOString().split('T')[0],
-        time: selectedTime,
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-      };
-
-      const response = await axios.post(API_ENDPOINTS.MEETING, meetingData);
-
-      if (response.data.success) {
-        setSubmitStatus({
-          type: 'success',
-          message: response.data.message || 'Meeting booked successfully! Check your email for confirmation.',
-        });
-        // Reset form
-        setSelectedDate(null);
-        setSelectedTime('');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setSubmitStatus({
-          type: 'error',
-          message: response.data.message || 'Failed to book meeting. Please try again.',
-        });
-      }
-    } catch (error) {
-      console.error('Meeting booking error:', error);
-      let errorMessage = 'Failed to book meeting. Please try again.';
-      
-      if (error.response) {
-        // Server responded with error
-        if (error.response.data?.errors) {
-          // Validation errors
-          const validationErrors = error.response.data.errors.map(err => err.msg).join(', ');
-          errorMessage = `Validation error: ${validationErrors}`;
-        } else {
-          errorMessage = error.response.data?.message || errorMessage;
-        }
-      } else if (error.request) {
-        // Request made but no response
-        errorMessage = 'Unable to connect to server. Please check your internet connection or try again later.';
-      } else {
-        // Error setting up request
-        errorMessage = 'An error occurred. Please try again.';
-      }
-      
-      setSubmitStatus({
-        type: 'error',
-        message: errorMessage,
-      });
-    } finally {
-      setIsSubmitting(false);
+    // Create WhatsApp message
+    const phoneNumber = '13073104711'; // Your WhatsApp number (without +)
+    let message = `Hello! I would like to book a meeting.\n\n`;
+    message += `Name: ${formData.name}\n`;
+    message += `Email: ${formData.email}\n`;
+    message += `Date: ${formattedDate}\n`;
+    message += `Time: ${selectedTime}\n`;
+    if (formData.message) {
+      message += `Message: ${formData.message}\n`;
     }
+    
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
+    // Show success message
+    setSubmitStatus({
+      type: 'success',
+      message: 'Opening WhatsApp to confirm your meeting booking...',
+    });
+    
+    // Reset form
+    setSelectedDate(null);
+    setSelectedTime('');
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
@@ -258,10 +232,11 @@ const MeetingScheduler = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              disabled={isSubmitting || !selectedDate || !selectedTime}
-              className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={!selectedDate || !selectedTime}
+              className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed bg-green-500 hover:bg-green-600 flex items-center justify-center gap-2"
             >
-              {isSubmitting ? 'Booking...' : 'Book Meeting'}
+              <FaWhatsapp />
+              Book Meeting via WhatsApp
             </button>
           </form>
         </motion.div>
@@ -276,8 +251,8 @@ const MeetingScheduler = () => {
           <h3 className="text-lg font-semibold text-gray-900 mb-2">What to Expect</h3>
           <p className="text-gray-600">
             During our 30-minute consultation, we'll discuss your project requirements, explore
-            technical solutions, and determine how I can help bring your Android app idea to life.
-            The meeting link will be sent to your email upon confirmation.
+            technical solutions, and determine how I can help bring your idea to life.
+            You'll receive confirmation via WhatsApp with meeting details.
           </p>
         </motion.div>
       </div>

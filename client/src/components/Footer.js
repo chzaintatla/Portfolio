@@ -7,17 +7,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaLinkedin />,
-      url: 'https://pk.linkedin.com/in/mrzaibe',
+      url: 'https://www.linkedin.com/company/digital-optimistic/',
       name: 'LinkedIn',
     },
     {
       icon: <FaInstagram />,
-      url: '#',
+      url: 'https://www.instagram.com/digitaloptimisticllc?utm_source=qr&igsh=MWxtMzloZWEwZThlYw==',
       name: 'Instagram',
     },
     {
       icon: <FaFacebook />,
-      url: '#',
+      url: 'https://www.facebook.com/people/Digital-Optimistic-LLC/61584332251308/',
       name: 'Facebook',
     },
   ];
@@ -27,10 +27,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Muhammad Zohaib Talha</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Digital Optimistic</h3>
             <p className="text-gray-400 mb-4">
-              Senior Android Developer with 6+ years of experience building high-performance mobile
-              applications.
+              Full-Stack Development & Digital Solutions Company with 6+ years of experience building high-performance
+              digital solutions.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -69,14 +69,6 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#experience"
-                  className="text-gray-400 hover:text-primary-400 transition-colors"
-                >
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a
                   href="#projects"
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
@@ -99,15 +91,15 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="tel:+923064560640"
+                  href="tel:+13073104711"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  +92 306 4560640
+                  +1 (307) 310-4711
                 </a>
               </li>
               <li>
                 <a
-                  href="https://pk.linkedin.com/in/mrzaibe"
+                  href="https://www.linkedin.com/company/digital-optimistic/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary-400 transition-colors"
@@ -123,7 +115,7 @@ const Footer = () => {
           <p className="text-gray-400 flex items-center justify-center gap-2">
             Copyright © {currentYear} All rights reserved.
           </p>
-          <p className="text-gray-500 mt-2 text-sm">Senior Android Developer</p>
+          <p className="text-gray-500 mt-2 text-sm">Digital Optimistic LLC</p>
         </div>
       </div>
     </footer>

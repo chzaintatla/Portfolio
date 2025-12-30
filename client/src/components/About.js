@@ -5,34 +5,34 @@ import { FaMobileAlt, FaCode, FaRocket, FaUsers, FaChartLine, FaShieldAlt } from
 const About = () => {
   const features = [
     {
-      icon: <FaMobileAlt className="text-4xl" />,
-      title: 'End-to-End Development',
-      description: 'Complete Android app lifecycle from concept to Play Store deployment',
+      icon: <FaCode className="text-4xl" />,
+      title: 'Full-Stack Development',
+      description: 'Complete web and mobile solutions from frontend to backend, ensuring seamless integration and scalability',
     },
     {
-      icon: <FaCode className="text-4xl" />,
-      title: 'Clean Architecture',
-      description: 'MVVM, Repository Pattern, and SOLID principles for maintainable code',
+      icon: <FaMobileAlt className="text-4xl" />,
+      title: 'Mobile & Web Apps',
+      description: 'Native and cross-platform mobile applications plus responsive web applications for all devices',
+    },
+    {
+      icon: <FaChartLine className="text-4xl" />,
+      title: 'SEO & Digital Marketing',
+      description: 'Comprehensive SEO strategies and data-driven marketing campaigns to boost online visibility and growth',
     },
     {
       icon: <FaRocket className="text-4xl" />,
-      title: 'Performance Optimization',
-      description: 'Optimized apps with fast load times and smooth user experience',
+      title: 'Performance & Optimization',
+      description: 'Optimized solutions with fast load times, smooth user experience, and cloud scalability',
     },
     {
       icon: <FaUsers className="text-4xl" />,
       title: 'User-Centric Design',
-      description: 'Intuitive UI/UX following Material Design guidelines',
-    },
-    {
-      icon: <FaChartLine className="text-4xl" />,
-      title: 'Play Store Success',
-      description: 'Proven track record of apps with high ratings and downloads',
+      description: 'Intuitive UI/UX design following modern design principles with accessibility in mind',
     },
     {
       icon: <FaShieldAlt className="text-4xl" />,
-      title: 'Quality Assurance',
-      description: 'Rigorous testing and bug-free releases',
+      title: 'Security & Maintenance',
+      description: 'Robust security measures, regular updates, and 24/7 support for your digital solutions',
     },
   ];
 
@@ -46,11 +46,12 @@ const About = () => {
         className="text-center mb-16"
       >
         <h2 className="section-title">
-          Building Scalable & High-Quality Android Applications
+          Building Scalable & High-Quality Digital Solutions
         </h2>
         <p className="section-subtitle max-w-3xl mx-auto">
-          With over 6 years of professional Android development experience, I specialize in creating
-          robust, performant, and user-friendly mobile applications that deliver exceptional value.
+          With over 6 years of professional experience, I specialize in creating robust, performant,
+          and user-friendly digital solutions including web development, mobile apps, SEO, digital marketing,
+          and cloud solutions that deliver exceptional value.
         </p>
       </motion.div>
 
@@ -92,7 +93,7 @@ const About = () => {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-2">6+ Years Professional Experience</h4>
                 <p className="text-gray-600">
-                  Extensive hands-on experience in Android development across various industries
+                  Extensive hands-on experience in web development, mobile apps, SEO, and digital marketing across various industries
                 </p>
               </div>
             </div>
@@ -101,9 +102,9 @@ const About = () => {
                 ✓
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Expertise in Full App Lifecycle</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Full-Stack Expertise</h4>
                 <p className="text-gray-600">
-                  From initial concept and design to development, testing, and Play Store deployment
+                  From frontend design to backend development, database management, and cloud deployment
                 </p>
               </div>
             </div>
@@ -112,9 +113,9 @@ const About = () => {
                 ✓
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Focus on Performance & Quality</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">SEO & Marketing Excellence</h4>
                 <p className="text-gray-600">
-                  Clean architecture, optimized code, and rigorous testing for bug-free releases
+                  Proven strategies to improve search rankings, drive organic traffic, and grow your online presence
                 </p>
               </div>
             </div>
@@ -123,9 +124,9 @@ const About = () => {
                 ✓
               </div>
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">User Experience Excellence</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Cloud & Scalability</h4>
                 <p className="text-gray-600">
-                  Intuitive interfaces following Material Design with accessibility in mind
+                  Scalable cloud solutions with AWS, Azure, and modern DevOps practices for optimal performance
                 </p>
               </div>
             </div>

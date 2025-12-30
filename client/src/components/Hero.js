@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaAndroid, FaCode, FaRocket } from 'react-icons/fa';
-import profileImage from '../pic.jpeg';
+import { FaCode, FaRocket } from 'react-icons/fa';
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -12,35 +11,20 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-20 w-full overflow-x-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-32 md:pt-40 w-full overflow-x-hidden">
       <div className="section-container text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
-            className="inline-block mb-6"
-          >
-            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center shadow-2xl overflow-hidden">
-              <img 
-                src={profileImage} 
-                alt="Muhammad Zohaib Talha" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 mb-4"
           >
-            Muhammad Zohaib Talha
+            Digital Optimistic
           </motion.h1>
 
           <motion.h2
@@ -49,7 +33,7 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-600 mb-4"
           >
-            Senior Android Developer
+            Full-Stack Developer & Digital Solutions Expert
           </motion.h2>
 
           <motion.p
@@ -58,7 +42,7 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-700 mb-2 font-semibold"
           >
-            6+ Years of Building High-Performance Android Apps
+            6+ Years of Building High-Performance Digital Solutions
           </motion.p>
 
           <motion.p
@@ -67,7 +51,7 @@ const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto"
           >
-            Expert in Kotlin, Java, MVVM, Firebase & Play Store Optimization
+            Expert in Web Development, Mobile Apps, SEO, Digital Marketing & Cloud Solutions
           </motion.p>
 
           <motion.div
