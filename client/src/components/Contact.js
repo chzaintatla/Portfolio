@@ -54,8 +54,8 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="text-2xl" />,
       label: 'Email',
-      value: 'ctoshadowlink@gmail.com',
-      link: 'mailto:ctoshadowlink@gmail.com',
+      value: 'contact@digitaloptimistic.com',
+      link: 'mailto:contact@digitaloptimistic.com',
     },
     {
       icon: <FaLinkedin className="text-2xl" />,

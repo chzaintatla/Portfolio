@@ -39,7 +39,7 @@ const sendContactEmail = async (contactData) => {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'ctoshadowlink@gmail.com',
+      to: 'contact@digitaloptimistic.com',
       subject: `New Contact Form Submission from ${contactData.name}`,
       html: `
         <!DOCTYPE html>

@@ -134,7 +134,7 @@ const sendMeetingNotificationToOwner = async (meetingData) => {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'ctoshadowlink@gmail.com',
+      to: 'contact@digitaloptimistic.com',
       subject: `New Meeting Booking: ${meetingData.name} - ${meetingData.date} at ${meetingData.time}`,
       html: `
         <!DOCTYPE html>

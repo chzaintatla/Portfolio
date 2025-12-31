@@ -261,7 +261,7 @@ This project is open source and available under the MIT License.
 ## 👤 Author
 
 **Digital Optimistic**
-- Email: mr.zaibe@gmail.com
+- Email: contact@digitaloptimistic.com
 - Phone: +1 (307) 310-4711
 - LinkedIn: [Digital Optimistic LLC](https://www.linkedin.com/company/digital-optimistic/)
 - Facebook: [Digital Optimistic LLC](https://www.facebook.com/people/Digital-Optimistic-LLC/61584332251308/)
