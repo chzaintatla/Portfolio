@@ -1,96 +1,109 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Services from './components/Services';
-import MeetingScheduler from './components/MeetingScheduler';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import LandingPage from './components/LandingPage';
+import Login from './components/Login';
+import ProjectDetail from './components/ProjectDetail';
+import ProtectedRoute from './components/ProtectedRoute';
+import DashboardLayout from './components/dashboard/DashboardLayout';
+import AdminStats from './components/dashboard/AdminStats';
+import AdminLeads from './components/dashboard/AdminLeads';
+import AdminChat from './components/dashboard/AdminChat';
+import AdminMeetings from './components/dashboard/AdminMeetings';
+import AdminBlogs from './components/dashboard/AdminBlogs';
+import AdminUsers from './components/dashboard/AdminUsers';
+import AdminSettings from './components/dashboard/AdminSettings';
+import ClientPortal from './components/ClientPortal';
+
+/**
+ * ADMIN OS - INTERNAL DASHBOARD HANDLER
+ */
+const AdminDashboard = () => {
+  const { role, user, loading } = useAuth();
+  
+  if (loading) return null;
+
+  return (
+    <DashboardLayout>
+      <Routes>
+        {/* Dynamic Home based on role */}
+        <Route index element={role === 'employee' ? <AdminChat /> : <AdminStats />} />
+        
+        {/* Universal Routes */}
+        <Route path="blogs" element={<AdminBlogs />} />
+        <Route path="chat" element={<AdminChat />} />
+        
+        {/* Management Routes (Admin/SuperAdmin only) */}
+        {(role === 'super_admin' || role === 'admin') && (
+          <>
+            <Route path="meetings" element={<AdminMeetings />} />
+            <Route path="leads" element={<AdminLeads />} />
+            <Route path="analytics" element={<AdminStats />} />
+          </>
+        )}
+
+        {/* Super Admin Restricted */}
+        {role === 'super_admin' && (
+          <>
+            <Route path="users" element={<AdminUsers />} />
+            <Route path="settings" element={<AdminSettings />} />
+          </>
+        )}
+        
+        {/* Auto Redirect to Home */}
+        <Route path="*" element={<Navigate to="/admin" replace />} />
+      </Routes>
+    </DashboardLayout>
+  );
+};
 
 function App() {
   useEffect(() => {
-    // Set initial title
-    document.title = 'Digital Optimistic';
-
-    // Function to update title based on visible section
-    const updateTitle = () => {
-      const sections = [
-        { id: 'hero', title: 'Digital Optimistic' },
-        { id: 'about', title: 'About Us | Digital Optimistic' },
-        { id: 'skills', title: 'Skills & Expertise | Digital Optimistic' },
-        { id: 'projects', title: 'Projects | Digital Optimistic' },
-        { id: 'services', title: 'Services | Digital Optimistic' },
-        { id: 'meeting', title: 'Book a Meeting | Digital Optimistic' },
-        { id: 'contact', title: 'Contact Us | Digital Optimistic' },
-      ];
-
-      // Find which section is most visible
-      let maxVisible = 0;
-      let activeSection = sections[0];
-
-      sections.forEach((section) => {
-        const element = document.getElementById(section.id);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
-          const visibleRatio = visibleHeight / rect.height;
-
-          if (visibleRatio > maxVisible && visibleRatio > 0.3) {
-            maxVisible = visibleRatio;
-            activeSection = section;
-          }
-        }
-      });
-
-      // Update title
-      document.title = activeSection.title;
-    };
-
-    // Update title on scroll
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          updateTitle();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    // Initial update
-    updateTitle();
-
-    // Listen to scroll events
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('resize', updateTitle);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', updateTitle);
-    };
+    document.title = 'SparkWave Digitals | Build. Scale. Succeed.';
+    
+    // EMERGENCY LOCK PURGE: Clear the old broken v3 locks to ensure clean v4 initialization
+    if (localStorage.getItem('sparkwave-auth-v3')) {
+        console.log("System Guard: Purging legacy authentication locks...");
+        localStorage.removeItem('sparkwave-auth-v3');
+        window.location.reload();
+    }
   }, []);
 
   return (
-    <Router>
-      <div className="App overflow-x-hidden w-full">
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Services />
-        <MeetingScheduler />
-        <Contact />
-        <Footer />
-      </div>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <div className="App overflow-x-hidden w-full bg-[#0a192f]">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/project/:id" element={<ProjectDetail />} />
+            
+            {/* Admin OS Gate */}
+            <Route 
+              path="/admin/*" 
+              element={
+                <ProtectedRoute allowedRoles={['super_admin', 'admin', 'employee']}>
+                  <AdminDashboard />
+                </ProtectedRoute>
+              } 
+            />
+
+            {/* Client Portal Gate */}
+            <Route 
+              path="/portal/*" 
+              element={
+                <ProtectedRoute allowedRoles={['client']}>
+                  <ClientPortal />
+                </ProtectedRoute>
+              } 
+            />
+
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
 
 export default App;
-

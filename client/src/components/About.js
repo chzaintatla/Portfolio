@@ -1,43 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaMobileAlt, FaCode, FaRocket, FaUsers, FaChartLine, FaShieldAlt } from 'react-icons/fa';
+import { FaMobileAlt, FaCode, FaChartLine, FaShieldAlt, FaDatabase, FaBullhorn } from 'react-icons/fa';
 
 const About = () => {
   const features = [
     {
-      icon: <FaCode className="text-4xl" />,
+      icon: <FaCode />,
       title: 'Full-Stack Development',
-      description: 'Complete web and mobile solutions from frontend to backend, ensuring seamless integration and scalability',
+      description: 'React.js, Node.js, and modern frameworks for high-performance web systems.',
     },
     {
-      icon: <FaMobileAlt className="text-4xl" />,
-      title: 'Mobile & Web Apps',
-      description: 'Native and cross-platform mobile applications plus responsive web applications for all devices',
+      icon: <FaMobileAlt />,
+      title: 'Mobile App Expert',
+      description: 'Building cross-platform mobile experiences with Flutter and Android SDK.',
     },
     {
-      icon: <FaChartLine className="text-4xl" />,
-      title: 'SEO & Digital Marketing',
-      description: 'Comprehensive SEO strategies and data-driven marketing campaigns to boost online visibility and growth',
+      icon: <FaBullhorn />,
+      title: 'Digital Marketing',
+      description: 'Growth-focused strategies using Meta Ads, TikTok Ads, and lead generation.',
     },
     {
-      icon: <FaRocket className="text-4xl" />,
-      title: 'Performance & Optimization',
-      description: 'Optimized solutions with fast load times, smooth user experience, and cloud scalability',
+      icon: <FaDatabase />,
+      title: 'System Architecture',
+      description: 'Scalable backend systems using MongoDB, Supabase, and SQL optimization.',
     },
     {
-      icon: <FaUsers className="text-4xl" />,
-      title: 'User-Centric Design',
-      description: 'Intuitive UI/UX design following modern design principles with accessibility in mind',
+      icon: <FaChartLine />,
+      title: 'Growth Marketing',
+      description: 'Data-driven insights and SEO to scale your digital presence globally.',
     },
     {
-      icon: <FaShieldAlt className="text-4xl" />,
-      title: 'Security & Maintenance',
-      description: 'Robust security measures, regular updates, and 24/7 support for your digital solutions',
+      icon: <FaShieldAlt />,
+      title: 'Security & Automation',
+      description: 'Robust security handling and business process automation for efficiency.',
     },
   ];
 
   return (
-    <section id="about" className="section-container bg-white">
+    <section id="about" className="section-container bg-[#0a192f] py-16">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -45,14 +45,16 @@ const About = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="section-title">
-          Building Scalable & High-Quality Digital Solutions
+        <span className="text-blue-400 font-bold tracking-widest uppercase text-sm">Our Mission</span>
+        <h2 className="text-5xl font-bold text-white mt-4 mb-6">
+          SparkWave <span className="text-blue-500">Digital Solutions</span>
         </h2>
-        <p className="section-subtitle max-w-3xl mx-auto">
-          With over 6 years of professional experience, I specialize in creating robust, performant,
-          and user-friendly digital solutions including web development, mobile apps, SEO, digital marketing,
-          and cloud solutions that deliver exceptional value.
+        <p className="max-w-4xl mx-auto text-gray-300 text-xl leading-relaxed italic border-l-4 border-blue-600 pl-8 py-4 bg-blue-600/5 rounded-r-2xl">
+          "At <strong>SparkWave Digital Solutions</strong>, we empower businesses to build, scale, and succeed through 
+          cutting-edge technology and data-driven marketing, delivering high-quality apps, web platforms, 
+          and growth-focused solutions that maximize ROI and create lasting impact."
         </p>
+
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,73 +65,38 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.6 }}
-            className="card text-center"
+            className="bg-[#112240] p-8 rounded-2xl border border-blue-500/10 hover:border-blue-500/30 transition-all group"
           >
-            <div className="text-primary-600 mb-4 flex justify-center">
+            <div className="text-blue-500 text-3xl mb-4 group-hover:scale-110 transition-transform">
               {feature.icon}
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-            <p className="text-gray-600">{feature.description}</p>
+            <h3 className="text-xl font-bold text-white mb-3 tracking-wide">{feature.title}</h3>
+            <p className="text-gray-500 text-sm leading-relaxed">{feature.description}</p>
           </motion.div>
         ))}
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.6, duration: 0.8 }}
-        className="mt-16 bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 md:p-12"
+        className="mt-20 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-3xl p-12 border border-blue-500/10 text-center"
       >
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-            What Sets Me Apart
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">6+ Years Professional Experience</h4>
-                <p className="text-gray-600">
-                  Extensive hands-on experience in web development, mobile apps, SEO, and digital marketing across various industries
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Full-Stack Expertise</h4>
-                <p className="text-gray-600">
-                  From frontend design to backend development, database management, and cloud deployment
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">SEO & Marketing Excellence</h4>
-                <p className="text-gray-600">
-                  Proven strategies to improve search rankings, drive organic traffic, and grow your online presence
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold">
-                ✓
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Cloud & Scalability</h4>
-                <p className="text-gray-600">
-                  Scalable cloud solutions with AWS, Azure, and modern DevOps practices for optimal performance
-                </p>
-              </div>
-            </div>
+        <h3 className="text-3xl font-bold text-white mb-8 italic">
+          "I build products that sell and systems that scale."
+        </h3>
+        <div className="flex flex-wrap justify-center gap-10">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl">✓</div>
+            <span className="text-gray-300 font-bold">Client Magnet Strategy</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl">✓</div>
+            <span className="text-gray-300 font-bold">ROI Focused Development</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl">✓</div>
+            <span className="text-gray-300 font-bold">Automation First Approach</span>
           </div>
         </div>
       </motion.div>
@@ -138,4 +105,5 @@ const About = () => {
 };
 
 export default About;
+
 

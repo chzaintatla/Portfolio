@@ -1,11 +1,11 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const { body, validationResult } = require('express-validator');
 
 const contactRoutes = require('./routes/contact');
 const meetingRoutes = require('./routes/meeting');
+const supabase = require('./utils/supabase');
 
 dotenv.config();
 
@@ -17,31 +17,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// MongoDB Connection (optional - app will work without it)
-if (process.env.MONGODB_URI) {
-  mongoose
-    .connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then(() => {
-      console.log('✅ MongoDB connected successfully');
-    })
-    .catch((error) => {
-      console.error('⚠️ MongoDB connection error (app will continue without DB):', error.message);
-    });
-} else {
-  console.log('⚠️ MongoDB URI not set - app will work but won\'t save to database');
-}
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'OK', message: 'SparkWave Server is running' });
+});
 
 // Routes
 app.use('/api/contact', contactRoutes);
 app.use('/api/meeting', meetingRoutes);
-
-// Health check endpoint
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Server is running' });
-});
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -58,4 +41,3 @@ app.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
   console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
 });
-

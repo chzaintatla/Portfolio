@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-const Contact = require('../models/Contact');
+const supabase = require('../utils/supabase');
 const { sendContactEmail } = require('../utils/emailService');
 
 // Validation rules
@@ -14,7 +14,6 @@ const contactValidation = [
 // POST /api/contact
 router.post('/', contactValidation, async (req, res) => {
   try {
-    // Check validation errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({
@@ -24,37 +23,37 @@ router.post('/', contactValidation, async (req, res) => {
       });
     }
 
-    const { name, email, message } = req.body;
+    const { name, email, message, company, phone, interest } = req.body;
 
-    // Try to save to database (don't fail if DB is not available)
-    let contactId = null;
-    try {
-      const contact = new Contact({
-        name,
-        email,
-        message,
-      });
-      await contact.save();
-      contactId = contact._id;
-      console.log('✅ Contact saved to database:', contactId);
-    } catch (dbError) {
-      console.error('⚠️ Database save failed (continuing anyway):', dbError.message);
+    // Save to Supabase (Leads Table)
+    const { data, error: sbError } = await supabase
+      .from('leads')
+      .insert([
+        { 
+          full_name: name, 
+          email, 
+          message, 
+          company: company || null, 
+          phone: phone || null, 
+          interest: interest || 'General Inquiry',
+          source: 'Contact Form',
+          status: 'new'
+        }
+      ])
+      .select();
+
+    if (sbError) {
+      console.error('⚠️ Supabase save failed:', sbError.message);
     }
 
-    // Send email (this is the important part)
+    // Send email notification
     const emailSent = await sendContactEmail({ name, email, message });
-
-    if (!emailSent) {
-      console.error('⚠️ Email sending failed');
-    }
 
     res.status(201).json({
       success: true,
-      message: emailSent 
-        ? 'Contact form submitted successfully! I\'ll get back to you soon.' 
-        : 'Contact form submitted, but email notification failed. Please try again or contact directly.',
+      message: 'Thank you! Your message has been received.',
       data: {
-        id: contactId,
+        id: data ? data[0].id : null,
         emailSent,
       },
     });
@@ -63,10 +62,8 @@ router.post('/', contactValidation, async (req, res) => {
     res.status(500).json({
       success: false,
       message: 'Failed to submit contact form',
-      error: process.env.NODE_ENV === 'development' ? error.message : undefined,
     });
   }
 });
 
 module.exports = router;
-

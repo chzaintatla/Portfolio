@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaCalendarAlt, FaClock, FaUser, FaEnvelope, FaComment, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
+import { FaCalendarAlt, FaClock, FaUser, FaEnvelope, FaComment, FaCheckCircle, FaUsers, FaPhone } from 'react-icons/fa';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { supabase } from '../config/supabase';
 
 const MeetingScheduler = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -10,11 +11,11 @@ const MeetingScheduler = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  // Generate time slots (30-minute intervals from 9 AM to 6 PM)
   const generateTimeSlots = () => {
     const slots = [];
     for (let hour = 9; hour < 18; hour++) {
@@ -28,14 +29,13 @@ const MeetingScheduler = () => {
 
   const timeSlots = generateTimeSlots();
 
-  // Filter out past dates
   const isWeekday = (date) => {
     const day = date.getDay();
-    return day !== 0 && day !== 6; // Exclude weekends
+    return day !== 0 && day !== 6;
   };
 
   const minDate = new Date();
-  minDate.setDate(minDate.getDate() + 1); // Tomorrow onwards
+  minDate.setDate(minDate.getDate() + 1);
 
   const handleInputChange = (e) => {
     setFormData({
@@ -46,214 +46,229 @@ const MeetingScheduler = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitStatus({ type: 'loading', message: 'Securing your slot...' });
     
     if (!selectedDate || !selectedTime) {
       setSubmitStatus({ type: 'error', message: 'Please select a date and time' });
       return;
     }
 
-    // Format date
-    const formattedDate = selectedDate.toLocaleDateString('en-US', { 
-      weekday: 'long', 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
-    });
+    const startDateTime = new Date(selectedDate);
+    const [hours, minutes] = selectedTime.split(':');
+    startDateTime.setHours(parseInt(hours), parseInt(minutes));
+    
+    const endDateTime = new Date(startDateTime);
+    endDateTime.setMinutes(endDateTime.getMinutes() + 30);
 
-    // Create WhatsApp message
-    const phoneNumber = '13073104711'; // Your WhatsApp number (without +)
-    let message = `Hello! I would like to book a meeting.\n\n`;
-    message += `Name: ${formData.name}\n`;
-    message += `Email: ${formData.email}\n`;
-    message += `Date: ${formattedDate}\n`;
-    message += `Time: ${selectedTime}\n`;
-    if (formData.message) {
-      message += `Message: ${formData.message}\n`;
+    try {
+      const { error } = await supabase.from('meetings').insert([
+        {
+          title: `Growth Strategy: ${formData.name}`,
+          description: formData.message,
+          start_time: startDateTime.toISOString(),
+          end_time: endDateTime.toISOString(),
+          client_id: null, // Public user
+          status: 'pending'
+        }
+      ]);
+
+      if (error) throw error;
+
+      // Also save as a lead
+      await supabase.from('leads').insert([
+        {
+          full_name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: `BOOKED MEETING for ${startDateTime.toLocaleString()}\n\nNote: ${formData.message}`,
+          source: 'Meeting Scheduler',
+          status: 'new'
+        }
+      ]);
+
+      setSubmitStatus({
+        type: 'success',
+        message: 'Strategy Briefing Requested! Once authorized, you can login to your terminal to chat directly with our specialists.',
+      });
+      
+      // Optionally show a login button after success
+      setFormData({ ...formData, showLoginLink: true });
+      
+      setSelectedDate(null);
+      setSelectedTime('');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      console.error('Error booking meeting:', error.message);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Could not schedule. Please try again or contact us directly.',
+      });
     }
-    
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank');
-    
-    // Show success message
-    setSubmitStatus({
-      type: 'success',
-      message: 'Opening WhatsApp to confirm your meeting booking...',
-    });
-    
-    // Reset form
-    setSelectedDate(null);
-    setSelectedTime('');
-    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
-    <section id="meeting" className="section-container bg-white">
+    <section id="meeting" className="section-container bg-[#0a192f] py-16 border-t border-blue-500/5">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-16"
+        className="text-center mb-20"
       >
-        <h2 className="section-title">Book a Free 30-Minute Consultation</h2>
-        <p className="section-subtitle max-w-3xl mx-auto">
-          Let's discuss your Android app project, explore opportunities, or answer any questions
-          you have. I'm here to help!
-        </p>
+        <span className="text-blue-400 font-bold tracking-widest uppercase text-sm">Scheduler</span>
+        <h2 className="text-5xl font-bold text-white mt-4">Book a Strategy Call</h2>
+        <div className="h-1.5 w-24 bg-blue-600 mx-auto mt-6 rounded-full" />
       </motion.div>
 
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="card"
+           initial={{ opacity: 0, x: -30 }}
+           whileInView={{ opacity: 1, x: 0 }}
+           viewport={{ once: true }}
+           className="space-y-8"
         >
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Date Picker */}
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-                <FaCalendarAlt className="text-primary-600" />
-                Select Date
-              </label>
-              <DatePicker
-                selected={selectedDate}
-                onChange={(date) => setSelectedDate(date)}
-                filterDate={isWeekday}
-                minDate={minDate}
-                dateFormat="MMMM d, yyyy"
-                placeholderText="Select a date"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                wrapperClassName="w-full"
-              />
+          <div className="bg-[#112240] p-10 rounded-[48px] border border-blue-500/10 shadow-2xl space-y-8 col-span-1 lg:col-span-2 scrollable-terminal custom-scrollbar">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <FaUsers className="text-blue-500" />
+              What to Expect
+            </h3>
+            <ul className="space-y-6">
+              {[
+                'Identify your business bottleneck.',
+                'Discover ROI-focused tech solutions.',
+                'Get a clear roadmap for scaling.',
+                'Personalized attention from our senior team.'
+              ].map((text, i) => (
+                <li key={i} className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-500 mt-1 shrink-0">
+                    <FaCheckCircle size={14} />
+                  </div>
+                  <p className="text-gray-400 leading-relaxed font-medium">{text}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div className="p-8">
+            <h4 className="text-white font-bold mb-4 italic text-xl">"Success begins with a conversation."</h4>
+            <p className="text-gray-500">Pick a time that works for you, and let’s start your digital transformation journey today.</p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="bg-[#112240] p-10 rounded-[40px] border border-blue-500/10 shadow-2xl"
+        >
+          <form onSubmit={handleSubmit} className="space-y-6 scrollable-terminal custom-scrollbar pr-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                  <FaCalendarAlt className="text-blue-500" /> Select Date
+                </label>
+                <DatePicker
+                  selected={selectedDate}
+                  onChange={(date) => setSelectedDate(date)}
+                  filterDate={isWeekday}
+                  minDate={minDate}
+                  dateFormat="MMMM d, yyyy"
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholderText="Click to pick a date"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                  <FaClock className="text-blue-500" /> Select Time
+                </label>
+                <select
+                  value={selectedTime}
+                  onChange={(e) => setSelectedTime(e.target.value)}
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all h-[58px]"
+                  style={{ appearance: 'none' }}
+                >
+                  <option value="">Choose a slot</option>
+                  {timeSlots.map(time => <option key={time} value={time}>{time}</option>)}
+                </select>
+              </div>
             </div>
 
-            {/* Time Slots */}
-            {selectedDate && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                transition={{ duration: 0.3 }}
-              >
-                <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-                  <FaClock className="text-primary-600" />
-                  Select Time (30-minute slots)
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                   <FaUser className="text-blue-500" /> Your Name
                 </label>
-                <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 w-full overflow-x-auto">
-                  {timeSlots.map((time) => (
-                    <button
-                      key={time}
-                      type="button"
-                      onClick={() => setSelectedTime(time)}
-                      className={`px-4 py-2 rounded-lg border-2 transition-all whitespace-nowrap ${
-                        selectedTime === time
-                          ? 'bg-primary-600 text-white border-primary-600'
-                          : 'bg-white text-gray-700 border-gray-300 hover:border-primary-400'
-                      }`}
-                    >
-                      {time}
-                    </button>
-                  ))}
-                </div>
-              </motion.div>
-            )}
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                   <FaEnvelope className="text-blue-500" /> Email Address
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholder="name@email.com"
+                />
+              </div>
+            </div>
 
-            {/* Name */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-                <FaUser className="text-primary-600" />
-                Your Name
+              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                  <FaPhone className="text-blue-500" /> Phone Number
               </label>
               <input
                 type="text"
-                name="name"
-                value={formData.name}
+                name="phone"
+                value={formData.phone}
                 onChange={handleInputChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="Enter your name"
+                className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                placeholder="+92 3XX XXXXXXX"
               />
             </div>
 
-            {/* Email */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-                <FaEnvelope className="text-primary-600" />
-                Your Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="Enter your email"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-                <FaComment className="text-primary-600" />
-                Message (Optional)
+              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                  <FaComment className="text-blue-500" /> Project Brief
               </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                rows="4"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="Tell me about your project or questions..."
+                className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all h-24"
+                placeholder="Briefly describe your project or questions..."
               />
             </div>
 
-            {/* Submit Status */}
             {submitStatus && (
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className={`p-4 rounded-lg ${
-                  submitStatus.type === 'success'
-                    ? 'bg-green-50 text-green-800 border border-green-200'
-                    : 'bg-red-50 text-red-800 border border-red-200'
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  {submitStatus.type === 'success' && <FaCheckCircle />}
-                  <span>{submitStatus.message}</span>
-                </div>
-              </motion.div>
+              <div className={`p-4 rounded-2xl text-sm font-bold ${
+                submitStatus.type === 'success' ? 'bg-green-600/10 text-green-500' : 'bg-blue-600/10 text-blue-500'
+              }`}>
+                {submitStatus.message}
+              </div>
             )}
 
-            {/* Submit Button */}
             <button
               type="submit"
               disabled={!selectedDate || !selectedTime}
-              className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed bg-green-500 hover:bg-green-600 flex items-center justify-center gap-2"
+              className="w-full py-5 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-black text-lg disabled:opacity-50 disabled:cursor-not-allowed shadow-xl shadow-blue-500/20 transition-all transform hover:scale-[1.02]"
             >
-              <FaWhatsapp />
-              Book Meeting via WhatsApp
+              Confirm Growth Call
             </button>
           </form>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="mt-8 bg-primary-50 rounded-xl p-6 text-center"
-        >
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">What to Expect</h3>
-          <p className="text-gray-600">
-            During our 30-minute consultation, we'll discuss your project requirements, explore
-            technical solutions, and determine how I can help bring your idea to life.
-            You'll receive confirmation via WhatsApp with meeting details.
-          </p>
         </motion.div>
       </div>
     </section>
@@ -261,4 +276,3 @@ const MeetingScheduler = () => {
 };
 
 export default MeetingScheduler;
-

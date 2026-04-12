@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaLinkedin, FaInstagram, FaPaperPlane } from 'react-icons/fa';
+import { supabase } from '../config/supabase';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
+    company: '',
     message: '',
   });
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -19,75 +22,61 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitStatus({ type: 'loading', message: 'Sending your inquiry...' });
     
-    // Create WhatsApp message
-    const phoneNumber = '13073104711'; // Your WhatsApp number (without +)
-    const message = `Hello! I'm ${formData.name} (${formData.email}).\n\nMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank');
-    
-    // Show success message
-    setSubmitStatus({
-      type: 'success',
-      message: 'Opening WhatsApp to send your message...',
-    });
-    
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      const { error } = await supabase.from('leads').insert([
+        {
+          full_name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          message: formData.message,
+          source: 'SparkWave Website Contact Form',
+          status: 'new'
+        }
+      ]);
+
+      if (error) throw error;
+
+      setSubmitStatus({
+        type: 'success',
+        message: 'Your message has been sent successfully! Our team will contact you shortly.',
+      });
+      
+      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+    } catch (error) {
+      console.error('Error saving lead:', error.message);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Failed to send message. Please check your connection and try again.',
+      });
+    }
   };
 
   const contactInfo = [
     {
-      icon: <FaWhatsapp className="text-2xl" />,
-      label: 'WhatsApp',
-      value: '+1 (307) 310-4711',
-      link: 'https://wa.me/13073104711',
+      icon: <FaPhone />,
+      label: 'Operational Hotline',
+      value: '+92 313 4750136',
+      link: 'https://wa.me/923134750136', // Priority WhatsApp Link
     },
     {
-      icon: <FaPhone className="text-2xl" />,
-      label: 'Phone',
-      value: '+1 (307) 310-4711',
-      link: 'tel:+13073104711',
+      icon: <FaEnvelope />,
+      label: 'Digital Correspondence',
+      value: 'connect@sparkwave.dev',
+      link: 'mailto:connect@sparkwave.dev',
     },
-    {
-      icon: <FaEnvelope className="text-2xl" />,
-      label: 'Email',
-      value: 'contact@digitaloptimistic.com',
-      link: 'mailto:contact@digitaloptimistic.com',
-    },
-    {
-      icon: <FaLinkedin className="text-2xl" />,
-      label: 'LinkedIn',
-      value: 'Digital Optimistic LLC',
-      link: 'https://www.linkedin.com/company/digital-optimistic/',
-    },
-  ];
-
-  const socialLinks = [
     {
       icon: <FaLinkedin />,
-      name: 'LinkedIn',
-      url: 'https://pk.linkedin.com/in/mrzaibe',
-      color: 'bg-blue-600 hover:bg-blue-700',
-    },
-    {
-      icon: <FaInstagram />,
-      name: 'Instagram',
-      url: '#',
-      color: 'bg-pink-600 hover:bg-pink-700',
-    },
-    {
-      icon: <FaFacebook />,
-      name: 'Facebook',
-      url: '#',
-      color: 'bg-blue-800 hover:bg-blue-900',
+      label: 'Institutional Node',
+      value: 'SparkWave Digitals',
+      link: 'https://www.linkedin.com/company/sparkwave-digital-solutions/',
     },
   ];
 
   return (
-    <section id="contact" className="section-container bg-gray-50">
+    <section id="contact" className="section-container bg-[#0a192f] py-16">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -95,137 +84,143 @@ const Contact = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="section-title">Let's Build Something Great Together</h2>
-        <p className="section-subtitle max-w-3xl mx-auto">
-          Have a project in mind? Want to collaborate? Or just want to say hello? I'd love to hear
-          from you!
-        </p>
+        <span className="text-blue-400 font-bold tracking-widest uppercase text-sm">Get In Touch</span>
+        <h2 className="text-5xl font-bold text-white mt-4">Start Your Growth Journey</h2>
+        <div className="h-1.5 w-24 bg-blue-600 mx-auto mt-6 rounded-full" />
       </motion.div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Contact Information */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+        {/* Contact Info */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Get in Touch</h3>
-          <div className="space-y-6 mb-8">
-            {contactInfo.map((info, index) => (
-              <motion.a
-                key={index}
+          <h3 className="text-3xl font-bold text-white mb-8">Contact Information</h3>
+          <p className="text-gray-400 mb-12 leading-relaxed text-lg">
+            Ready to scale your business with cutting-edge apps and high-ROI digital marketing? 
+            Reach out to our expert team today.
+          </p>
+
+          <div className="space-y-8">
+            {contactInfo.map((info, i) => (
+              <a 
+                key={i}
                 href={info.link}
-                target={info.link.startsWith('http') ? '_blank' : '_self'}
-                rel={info.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-6 group"
               >
-                <div className="p-3 bg-primary-100 text-primary-600 rounded-lg group-hover:bg-primary-600 group-hover:text-white transition-colors">
+                <div className="w-14 h-14 rounded-2xl bg-[#112240] flex items-center justify-center text-blue-500 text-2xl group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-xl border border-blue-500/5">
                   {info.icon}
                 </div>
                 <div>
-                  <div className="text-sm text-gray-500">{info.label}</div>
-                  <div className="text-lg font-semibold text-gray-900">{info.value}</div>
+                  <p className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-1">{info.label}</p>
+                  <p className="text-white text-xl font-bold group-hover:text-blue-400 transition-colors">{info.value}</p>
                 </div>
-              </motion.a>
+              </a>
             ))}
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Connect on Social Media</h4>
+          <div className="mt-16 pt-16 border-t border-blue-500/10">
+            <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-xs">Social Presence</h4>
             <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className={`${social.color} text-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110`}
-                  aria-label={social.name}
-                >
-                  {social.icon}
-                </motion.a>
-              ))}
+              <a href="https://www.linkedin.com/company/sparkwave-digital-solutions/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-xl bg-[#112240] flex items-center justify-center text-blue-500 hover:bg-blue-600 hover:text-white transition-all shadow-lg">
+                <FaLinkedin size={20} />
+              </a>
+              <a href="https://instagram.com/sparkwave.digitals" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-xl bg-[#112240] flex items-center justify-center text-pink-500 hover:bg-pink-600 hover:text-white transition-all shadow-lg">
+                <FaInstagram size={20} />
+              </a>
             </div>
           </div>
         </motion.div>
 
-        {/* Contact Form */}
+        {/* Lead Form */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Send a Message</h3>
-          <form onSubmit={handleSubmit} className="card space-y-6">
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="Enter your name"
-              />
+          <form onSubmit={handleSubmit} className="bg-[#112240] p-10 rounded-[40px] border border-blue-500/10 shadow-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholder="john@company.com"
+                />
+              </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Your Email</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="Enter your email"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholder="+92 3XX XXXXXXX"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Company Name</label>
+                <input
+                  type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  placeholder="Company LLC"
+                />
+              </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+            <div className="mb-8">
+              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">How can we help?</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
                 required
-                rows="6"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                placeholder="Tell me about your project or how I can help..."
+                rows="4"
+                className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                placeholder="Tell us about your project or growth goals..."
               />
             </div>
 
             {submitStatus && (
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className={`p-4 rounded-lg ${
-                  submitStatus.type === 'success'
-                    ? 'bg-green-50 text-green-800 border border-green-200'
-                    : 'bg-red-50 text-red-800 border border-red-200'
-                }`}
-              >
+              <div className={`mb-6 p-4 rounded-2xl text-sm font-bold ${
+                submitStatus.type === 'success' ? 'bg-green-600/10 text-green-500' : 'bg-blue-600/10 text-blue-500'
+              }`}>
                 {submitStatus.message}
-              </motion.div>
+              </div>
             )}
 
             <button
               type="submit"
-              className="btn-primary w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600"
+              className="w-full py-5 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl font-black text-lg shadow-xl shadow-blue-500/20 hover:scale-[1.02] transition-all flex items-center justify-center gap-3"
             >
-              <FaWhatsapp />
-              Send via WhatsApp
+              <FaPaperPlane />
+              Send Brief
             </button>
           </form>
         </motion.div>
@@ -235,4 +230,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

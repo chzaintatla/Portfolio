@@ -1,25 +1,18 @@
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-const Meeting = require('../models/Meeting');
-const {
-  sendMeetingConfirmationToClient,
-  sendMeetingNotificationToOwner,
-} = require('../utils/emailService');
+const supabase = require('../utils/supabase');
 
 // Validation rules
 const meetingValidation = [
-  body('name').trim().notEmpty().withMessage('Name is required'),
-  body('email').isEmail().withMessage('Please provide a valid email'),
-  body('date').notEmpty().withMessage('Date is required'),
-  body('time').notEmpty().withMessage('Time is required'),
-  body('message').optional().trim(),
+  body('title').trim().notEmpty().withMessage('Title is required'),
+  body('startTime').isISO8601().withMessage('Valid start time is required'),
+  body('endTime').isISO8601().withMessage('Valid end time is required'),
 ];
 
-// POST /api/meeting/book
-router.post('/book', meetingValidation, async (req, res) => {
+// POST /api/meeting
+router.post('/', meetingValidation, async (req, res) => {
   try {
-    // Check validation errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({
@@ -29,99 +22,40 @@ router.post('/book', meetingValidation, async (req, res) => {
       });
     }
 
-    const { name, email, date, time, message } = req.body;
+    const { title, description, startTime, endTime, clientId } = req.body;
 
-    // Check if there's already a meeting at this time
-    const existingMeeting = await Meeting.findOne({
-      date,
-      time,
-      status: { $in: ['pending', 'confirmed'] },
-    });
+    // Save to Supabase (Meetings Table)
+    const { data, error: sbError } = await supabase
+      .from('meetings')
+      .insert([
+        { 
+          title, 
+          description, 
+          start_time: startTime, 
+          end_time: endTime, 
+          client_id: clientId || null,
+          status: 'pending'
+        }
+      ])
+      .select();
 
-    if (existingMeeting) {
-      return res.status(400).json({
-        success: false,
-        message: 'This time slot is already booked. Please select another time.',
-      });
-    }
-
-    // Generate meeting link (you can customize this)
-    const meetingLink = `https://meet.google.com/${generateMeetingId()}`;
-
-    // Try to save to database (don't fail if DB is not available)
-    let meetingId = null;
-    try {
-      const meeting = new Meeting({
-        name,
-        email,
-        date,
-        time,
-        message: message || '',
-        meetingLink,
-      });
-      await meeting.save();
-      meetingId = meeting._id;
-      console.log('✅ Meeting saved to database:', meetingId);
-    } catch (dbError) {
-      console.error('⚠️ Database save failed (continuing anyway):', dbError.message);
-    }
-
-    // Send confirmation email to client
-    const clientEmailSent = await sendMeetingConfirmationToClient({
-      name,
-      email,
-      date,
-      time,
-      message: message || '',
-      meetingLink,
-    });
-
-    // Send notification email to owner (IMPORTANT - this must work)
-    const ownerEmailSent = await sendMeetingNotificationToOwner({
-      name,
-      email,
-      date,
-      time,
-      message: message || '',
-      meetingLink,
-    });
-
-    if (!ownerEmailSent) {
-      console.error('⚠️ CRITICAL: Owner email notification failed!');
+    if (sbError) {
+      console.error('⚠️ Supabase meeting save failed:', sbError.message);
+      return res.status(500).json({ success: false, message: 'Database error' });
     }
 
     res.status(201).json({
       success: true,
-      message: ownerEmailSent 
-        ? 'Meeting booked successfully! Check your email for confirmation.' 
-        : 'Meeting booked, but email notification failed. Please contact directly.',
-      data: {
-        id: meetingId,
-        date,
-        time,
-        clientEmailSent,
-        ownerEmailSent,
-      },
+      message: 'Meeting requested successfully!',
+      data: data[0],
     });
   } catch (error) {
-    console.error('Meeting booking error:', error);
+    console.error('Meeting error:', error);
     res.status(500).json({
       success: false,
-      message: 'Failed to book meeting',
-      error: process.env.NODE_ENV === 'development' ? error.message : undefined,
+      message: 'Failed to schedule meeting',
     });
   }
 });
 
-// Helper function to generate meeting ID
-function generateMeetingId() {
-  const chars = 'abcdefghijklmnopqrstuvwxyz';
-  let result = '';
-  for (let i = 0; i < 12; i++) {
-    result += chars.charAt(Math.floor(Math.random() * chars.length));
-  }
-  return result;
-}
-
 module.exports = router;
-
