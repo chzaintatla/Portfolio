@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { projects } from '../data/projects';
+import { projects } from '../data/projects_data';
 
 const ProjectCard = ({ project, index }) => {
   const navigate = useNavigate();

@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fa';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { projects } from '../data/projects';
+import { projects } from '../data/projects_data';
 
 const ProjectDetail = () => {
   const { id } = useParams();
