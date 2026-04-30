@@ -45,19 +45,21 @@ const About = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <span className="text-blue-400 font-bold tracking-widest uppercase text-sm">Our Mission</span>
-        <h2 className="text-5xl font-bold text-white mt-4 mb-6">
-          SparkWave <span className="text-blue-500">Digital Solutions</span>
+        <h2 className="text-7xl md:text-9xl font-black text-white mt-10 tracking-tighter leading-none italic uppercase">
+          Mastering <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-400 to-blue-500">
+            Digital Systems
+          </span>
         </h2>
-        <p className="max-w-4xl mx-auto text-gray-300 text-xl leading-relaxed italic border-l-4 border-blue-600 pl-8 py-4 bg-blue-600/5 rounded-r-2xl">
-          "At <strong>SparkWave Digital Solutions</strong>, we empower businesses to build, scale, and succeed through 
-          cutting-edge technology and data-driven marketing, delivering high-quality apps, web platforms, 
-          and growth-focused solutions that maximize ROI and create lasting impact."
+        <div className="h-1 w-20 bg-blue-600 mx-auto mt-10 rounded-full" />
+        
+        <p className="max-w-4xl mx-auto text-gray-400 text-xs md:text-sm font-black uppercase tracking-[0.3em] leading-loose mt-16 italic opacity-70">
+          "At <strong className="text-blue-400">SparkWave Digital Systems</strong>, we empower businesses to build, scale, and succeed through 
+          cutting-edge technology and data-driven marketing."
         </p>
-
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {features.map((feature, index) => (
           <motion.div
             key={index}
@@ -65,13 +67,14 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.6 }}
-            className="bg-[#112240] p-8 rounded-2xl border border-blue-500/10 hover:border-blue-500/30 transition-all group"
+            className="bg-[#112240] p-10 rounded-[32px] border border-blue-500/10 hover:border-blue-500/40 hover:bg-[#1e2d4a] transition-all group relative overflow-hidden"
           >
-            <div className="text-blue-500 text-3xl mb-4 group-hover:scale-110 transition-transform">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-blue-600/5 rounded-full -mr-10 -mt-10 blur-2xl group-hover:bg-blue-600/10 transition-all" />
+            <div className="text-blue-500 text-4xl mb-6 group-hover:scale-110 group-hover:text-blue-400 transition-all">
               {feature.icon}
             </div>
-            <h3 className="text-xl font-bold text-white mb-3 tracking-wide">{feature.title}</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">{feature.description}</p>
+            <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-blue-400 transition-colors">{feature.title}</h3>
+            <p className="text-gray-400 text-sm leading-relaxed font-medium">{feature.description}</p>
           </motion.div>
         ))}
       </div>

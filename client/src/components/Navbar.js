@@ -7,7 +7,7 @@ import logoImage from '../logo.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { isAdmin, isEmployee, signOut } = useAuth();
+  const { isAdmin, isEmployee, isClient, signOut } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
                 }}
                 className="h-12 w-auto object-contain" 
               />
-              <span className="text-xl font-black text-white tracking-widest uppercase hidden lg:block italic">SparkWave <span className="text-blue-500">Digitals</span></span>
+              <span className="text-xl font-black text-white tracking-widest uppercase hidden lg:block italic">SparkWave <span className="text-blue-500">Digital Systems</span></span>
             </button>
           </div>
 
@@ -71,8 +71,7 @@ const Navbar = () => {
               BLOG
             </Link>
 
-            {/* Auth Dependent Buttons */}
-            {(isAdmin || isEmployee) ? (
+            {isAdmin || isEmployee ? (
               <div className="flex items-center gap-4 border-l border-blue-500/20 pl-6">
                 <Link
                   to="/admin"
@@ -87,13 +86,36 @@ const Navbar = () => {
                   Logout
                 </button>
               </div>
+            ) : isClient ? (
+              <div className="flex items-center gap-4 border-l border-blue-500/20 pl-6">
+                <Link
+                  to="/portal"
+                  className="px-5 py-2 bg-blue-600 text-white rounded-xl font-black transition-all hover:scale-105 shadow-lg shadow-blue-500/20 text-[10px] uppercase tracking-widest"
+                >
+                  My Workspace
+                </Link>
+                <button
+                  onClick={signOut}
+                  className="text-gray-500 hover:text-red-400 transition-colors text-[10px] font-black uppercase tracking-widest"
+                >
+                  Logout
+                </button>
+              </div>
             ) : (
-              <button
-                onClick={() => scrollToSection('meeting')}
-                className="px-5 py-2 bg-blue-600 text-white rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg shadow-blue-500/20 text-sm"
-              >
-                Book Call
-              </button>
+              <div className="flex items-center gap-4">
+                <Link
+                  to="/login"
+                  className="text-gray-400 hover:text-white font-medium transition-colors text-sm uppercase tracking-widest"
+                >
+                  Login
+                </Link>
+                <button
+                  onClick={() => scrollToSection('meeting')}
+                  className="px-5 py-2 bg-blue-600 text-white rounded-xl font-bold transition-all transform hover:scale-105 shadow-lg shadow-blue-500/20 text-sm"
+                >
+                  Book Call
+                </button>
+              </div>
             )}
           </div>
 
@@ -130,7 +152,7 @@ const Navbar = () => {
               Blog
             </Link>
             <div className="pt-6 border-t border-blue-500/10">
-              {(isAdmin || isEmployee) ? (
+              {isAdmin || isEmployee ? (
                 <>
                   <Link 
                     to="/admin" 
@@ -141,13 +163,33 @@ const Navbar = () => {
                   </Link>
                   <button onClick={signOut} className="text-2xl font-bold text-red-500">Sign Out</button>
                 </>
+              ) : isClient ? (
+                <>
+                  <Link 
+                    to="/portal" 
+                    onClick={() => setIsOpen(false)}
+                    className="block text-2xl font-bold text-blue-500 mb-4"
+                  >
+                    My Workspace
+                  </Link>
+                  <button onClick={signOut} className="text-2xl font-bold text-red-500">Sign Out</button>
+                </>
               ) : (
-                <button
-                  onClick={() => scrollToSection('meeting')}
-                  className="text-2xl font-bold text-blue-500"
-                >
-                  Book Strategy Call
-                </button>
+                <div className="space-y-6">
+                  <Link
+                    to="/login"
+                    onClick={() => setIsOpen(false)}
+                    className="block text-2xl font-bold text-gray-300"
+                  >
+                    Client Login
+                  </Link>
+                  <button
+                    onClick={() => scrollToSection('meeting')}
+                    className="text-2xl font-bold text-blue-500"
+                  >
+                    Book Strategy Call
+                  </button>
+                </div>
               )}
             </div>
           </div>

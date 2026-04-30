@@ -96,10 +96,10 @@ const ProjectDetail = () => {
             <div className="space-y-8">
               <div className="bg-[#112240] p-10 rounded-[40px] border border-blue-500/10 shadow-2xl">
                 <h3 className="text-2xl font-black text-white mb-6">Execution Overview</h3>
-                <p className="text-gray-400 leading-relaxed font-bold text-lg mb-8 italic">
+                <p className="text-white leading-relaxed font-bold text-lg mb-8 italic">
                   "{project.description}"
                 </p>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-200 leading-relaxed font-medium">
                   {project.longDescription || "This project represents a sophisticated approach to technical problem-solving, focusing on high-scalability and robust user experiences. Built with performance as a priority."}
                 </p>
               </div>
@@ -108,11 +108,11 @@ const ProjectDetail = () => {
                 <h3 className="text-2xl font-black text-white mb-8">Solution Features</h3>
                 <div className="space-y-6">
                   {project.features.map((feature, i) => (
-                    <div key={i} className="flex items-start gap-4">
-                      <div className="w-6 h-6 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-500 mt-1 shrink-0">
+                    <div key={i} className="flex items-start gap-4 group">
+                      <div className="w-6 h-6 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-500 mt-1 shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all">
                         <FaCheckCircle size={14} />
                       </div>
-                      <p className="text-gray-400 font-bold text-sm tracking-wide">{feature}</p>
+                      <p className="text-gray-300 font-bold text-sm tracking-wide group-hover:text-white transition-colors">{feature}</p>
                     </div>
                   ))}
                 </div>

@@ -78,11 +78,14 @@ const Projects = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-32"
         >
-          <span className="text-blue-400 font-bold tracking-[0.3em] uppercase text-sm">Industrial Projects</span>
-          <h2 className="text-6xl font-black text-white mt-4 tracking-tighter">Case Studies</h2>
-          <div className="h-2 w-32 bg-gradient-to-r from-blue-600 to-indigo-700 mx-auto mt-8 rounded-full shadow-lg shadow-blue-500/20" />
+          <h2 className="text-7xl md:text-9xl font-black text-white mt-4 tracking-tighter leading-none italic uppercase">
+            Protocols
+          </h2>
+          <p className="text-blue-500 text-[10px] font-black uppercase tracking-[0.4em] mt-8 opacity-80">
+            SparkWave Digital Systems • Case Study Archive
+          </p>
         </motion.div>
 
         {/* Filters */}

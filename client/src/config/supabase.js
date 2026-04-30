@@ -12,7 +12,6 @@ if (!supabaseUrl || !supabaseAnonKey) {
  * To prevent "stolen lock" errors in development, we ensure the Supabase client
  * is truly a singleton and bypass the Web Locks API entirely.
  */
-let supabaseClient;
 
 if (!window.supabaseInstance) {
     const customStorage = {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../config/supabase';
-import { FiSearch, FiFilter, FiMoreVertical, FiMail, FiPhone, FiTag, FiClock } from 'react-icons/fi';
+import { FiSearch, FiFilter, FiMoreVertical, FiMail, FiTag, FiClock } from 'react-icons/fi';
 
 const AdminLeads = () => {
   const [leads, setLeads] = useState([]);
@@ -120,12 +120,23 @@ const AdminLeads = () => {
                           <FiMail />
                           <span>{lead.email}</span>
                         </div>
-                        {lead.phone && (
-                          <div className="flex items-center gap-3 text-gray-500 text-xs">
-                            <FiPhone />
-                            <span>{lead.phone}</span>
-                          </div>
-                        )}
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {lead.service_type && (
+                            <span className="px-3 py-1 bg-blue-500/10 text-blue-400 text-[8px] font-black uppercase tracking-widest rounded-lg border border-blue-500/10">
+                              {lead.service_type}
+                            </span>
+                          )}
+                          {lead.project_budget && (
+                            <span className="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-[8px] font-black uppercase tracking-widest rounded-lg border border-emerald-500/10">
+                              {lead.project_budget}
+                            </span>
+                          )}
+                           {lead.project_timeline && (
+                            <span className="px-3 py-1 bg-amber-500/10 text-amber-400 text-[8px] font-black uppercase tracking-widest rounded-lg border border-amber-500/10">
+                              {lead.project_timeline}
+                            </span>
+                          )}
+                        </div>
                       </div>
                     </td>
                     <td className="px-8 py-6">

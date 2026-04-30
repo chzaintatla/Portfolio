@@ -4,8 +4,10 @@ import { FaCalendarAlt, FaClock, FaUser, FaEnvelope, FaComment, FaCheckCircle, F
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { supabase } from '../config/supabase';
+import { useAuth } from '../context/AuthContext';
 
 const MeetingScheduler = () => {
+  const { user } = useAuth();
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState('');
   const [formData, setFormData] = useState({
@@ -67,7 +69,7 @@ const MeetingScheduler = () => {
           description: formData.message,
           start_time: startDateTime.toISOString(),
           end_time: endDateTime.toISOString(),
-          client_id: null, // Public user
+          client_id: user?.id || null, // Link to account if logged in
           status: 'pending'
         }
       ]);

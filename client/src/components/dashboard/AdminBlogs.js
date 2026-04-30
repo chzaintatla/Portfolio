@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { supabase } from '../../config/supabase';
-import { FiPlus, FiEdit2, FiTrash2, FiCheckCircle, FiXCircle, FiCpu, FiSettings, FiGlobe } from 'react-icons/fi';
+import { FiPlus, FiEdit2, FiTrash2, FiCheckCircle, FiXCircle, FiCpu, FiGlobe, FiSettings } from 'react-icons/fi';
 import { generateAIResponse } from '../../utils/ai';
 
 const AdminBlogs = () => {

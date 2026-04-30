@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../config/supabase';
-import { FiCheck, FiX, FiCalendar, FiClock, FiVideo, FiUser, FiShield, FiExternalLink } from 'react-icons/fi';
-import { motion, AnimatePresence } from 'framer-motion';
+import { FiX, FiCalendar, FiClock, FiVideo, FiUser, FiShield, FiExternalLink } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 
 const AdminMeetings = () => {
   const [meetings, setMeetings] = useState([]);

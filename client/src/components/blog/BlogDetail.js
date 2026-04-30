@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { supabase } from '../../config/supabase';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const BlogDetail = () => {
   const { slug } = useParams();

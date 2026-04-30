@@ -93,7 +93,7 @@ const AdminStats = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
         <div>
           <h1 className="text-4xl font-black text-white tracking-tighter">Business Intelligence</h1>
-          <p className="text-gray-400 mt-2 font-medium">Platform performance and ROI tracking metrics.</p>
+          <p className="text-gray-400 mt-2 font-medium italic">Operational Metrics for SparkWave Digital Systems.</p>
         </div>
         <div className="flex gap-4">
            <button className="px-6 py-3 bg-[#112240] text-white rounded-xl border border-blue-500/10 font-bold hover:bg-blue-600 transition-all">Download Report</button>
@@ -189,8 +189,8 @@ const AdminStats = () => {
       <div className="bg-[#112240] p-10 rounded-[40px] border border-blue-500/10 shadow-2xl">
          <div className="flex justify-between items-center mb-10">
             <div>
-               <h3 className="text-2xl font-black text-white tracking-tight">Access Log & Network Traffic</h3>
-               <p className="text-gray-500 text-xs font-bold uppercase tracking-widest mt-1">Real-time identity verification events</p>
+               <h3 className="text-2xl font-black text-white tracking-tight uppercase italic leading-none">Access Log & Network Traffic</h3>
+               <p className="text-blue-500 text-[10px] font-black uppercase tracking-[0.4em] mt-3 opacity-80">Protected by SparkWave Digital Systems</p>
             </div>
             <span className="px-4 py-1.5 bg-green-500/10 text-green-400 text-[10px] font-black uppercase tracking-widest rounded-full border border-green-500/10">Active Monitoring</span>
          </div>
@@ -212,7 +212,7 @@ const AdminStats = () => {
                     { id: 2, email: 'system_core@sparkwave.com', action: 'DB_SYNC', node: 'Supabase / Server', time: '14 mins ago', status: 'SYSTEM' },
                     { id: 3, email: 'employee_01@sparkwave.com', action: 'BLOG_PUBLISH', node: 'Edge / MacOS', time: '1 hour ago', status: 'VERIFIED' },
                   ].map((log) => (
-                    <tr key={log.id} className="group hover:bg-blue-500/5 transition-colors">
+                    <tr key={log.id} className="group hover:bg-blue-600/5 transition-colors">
                        <td className="py-6 pl-2 font-bold text-white text-sm">{log.email}</td>
                        <td className="py-6">
                           <span className="px-3 py-1 bg-white/5 text-gray-400 text-[10px] font-black rounded-lg border border-white/5">{log.action}</span>
@@ -226,7 +226,7 @@ const AdminStats = () => {
                           </div>
                        </td>
                     </tr>
-                  ))}
+                   ))}
                </tbody>
             </table>
          </div>

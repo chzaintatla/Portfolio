@@ -9,6 +9,9 @@ const Contact = () => {
     email: '',
     phone: '',
     company: '',
+    serviceType: '',
+    budget: '',
+    timeline: '',
     message: '',
   });
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -22,7 +25,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitStatus({ type: 'loading', message: 'Sending your inquiry...' });
+    setSubmitStatus({ type: 'loading', message: 'Initialising growth Protocol...' });
     
     try {
       const { error } = await supabase.from('leads').insert([
@@ -31,8 +34,11 @@ const Contact = () => {
           email: formData.email,
           phone: formData.phone,
           company: formData.company,
+          service_type: formData.serviceType,
+          project_budget: formData.budget,
+          project_timeline: formData.timeline,
           message: formData.message,
-          source: 'SparkWave Website Contact Form',
+          source: 'System Service Request Form',
           status: 'new'
         }
       ]);
@@ -41,15 +47,24 @@ const Contact = () => {
 
       setSubmitStatus({
         type: 'success',
-        message: 'Your message has been sent successfully! Our team will contact you shortly.',
+        message: 'Request Authorized. Our specialists will reach out via secure channel shortly.',
       });
       
-      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+      setFormData({ 
+        name: '', 
+        email: '', 
+        phone: '', 
+        company: '', 
+        serviceType: '', 
+        budget: '', 
+        timeline: '', 
+        message: '' 
+      });
     } catch (error) {
       console.error('Error saving lead:', error.message);
       setSubmitStatus({
         type: 'error',
-        message: 'Failed to send message. Please check your connection and try again.',
+        message: 'Protocol Breach: Failed to transmit data. Please retry.',
       });
     }
   };
@@ -194,8 +209,60 @@ const Contact = () => {
               </div>
             </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Service Vertical</label>
+                <select
+                  name="serviceType"
+                  value={formData.serviceType}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all h-[58px]"
+                >
+                  <option value="">Select Service</option>
+                  <option value="IT Systems">Enterprise IT Systems</option>
+                  <option value="Mobile App">Mobile App (Flutter/Native)</option>
+                  <option value="Web App">Custom Web Application</option>
+                  <option value="Marketing">Growth Marketing / Meta Ads</option>
+                  <option value="Automation">AI & Workflow Automation</option>
+                  <option value="Security">Cyber Security / Scaling</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Project Magnitude (Budget)</label>
+                <select
+                  name="budget"
+                  value={formData.budget}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all h-[58px]"
+                >
+                  <option value="">Select Range</option>
+                  <option value="< $5k">Under $5k (MVP)</option>
+                  <option value="$5k - $20k">$5k - $20k (Scale)</option>
+                  <option value="$20k+">$20k+ (Enterprise)</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Deployment Timeline</label>
+              <div className="grid grid-cols-3 gap-4">
+                 {['Rapid (1-2m)', 'Standard (3-5m)', 'Strategic (6m+)'].map(time => (
+                   <button 
+                     key={time}
+                     type="button"
+                     onClick={() => setFormData({...formData, timeline: time})}
+                     className={`py-4 rounded-xl text-[10px] font-black uppercase tracking-widest border transition-all ${formData.timeline === time ? 'bg-blue-600 border-blue-500 text-white' : 'bg-[#0a192f] border-blue-500/10 text-gray-500 hover:border-blue-500/30'}`}
+                   >
+                     {time}
+                   </button>
+                 ))}
+              </div>
+            </div>
+
             <div className="mb-8">
-              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">How can we help?</label>
+              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">System briefing (Message)</label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -203,7 +270,7 @@ const Contact = () => {
                 required
                 rows="4"
                 className="w-full bg-[#0a192f] border border-blue-500/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
-                placeholder="Tell us about your project or growth goals..."
+                placeholder="Initialise briefing... describe your project or scaling goals."
               />
             </div>
 

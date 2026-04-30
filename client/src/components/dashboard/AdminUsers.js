@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../config/supabase';
-import { FiShield, FiUser, FiActivity, FiKey, FiMail } from 'react-icons/fi';
+import { FiUser, FiMail } from 'react-icons/fi';
 
 const AdminUsers = () => {
   const [users, setUsers] = useState([]);

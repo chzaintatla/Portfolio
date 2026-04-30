@@ -92,9 +92,10 @@ const Skills = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-20"
       >
-        <span className="text-blue-400 font-bold tracking-[0.3em] uppercase text-sm">Tech Stack</span>
-        <h2 className="text-6xl font-black text-white mt-4 tracking-tighter">Commanding Excellence</h2>
-        <div className="h-2 w-32 bg-gradient-to-r from-blue-600 to-indigo-700 mx-auto mt-8 rounded-full shadow-lg shadow-blue-500/20" />
+        <h2 className="text-7xl md:text-9xl font-black text-white mt-4 tracking-tighter leading-none italic uppercase">Tech Stack</h2>
+        <p className="text-blue-500 text-[10px] font-black uppercase tracking-[0.4em] mt-8 opacity-80">
+          SparkWave Digital Systems • Engineering Protocols
+        </p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

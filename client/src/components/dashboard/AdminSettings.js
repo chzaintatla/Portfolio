@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FiSettings, FiGlobe, FiDatabase, FiShield, FiCpu, FiLayout, FiMaximize2, FiKey } from 'react-icons/fi';
+import { useState } from 'react';
+import { FiGlobe, FiShield, FiCpu, FiLayout, FiKey } from 'react-icons/fi';
 import { supabase } from '../../config/supabase';
 
 const AdminSettings = () => {

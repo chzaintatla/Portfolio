@@ -63,9 +63,10 @@ const Services = () => {
         viewport={{ once: true }}
         className="text-center mb-20"
       >
-        <span className="text-blue-400 font-bold tracking-widest uppercase text-sm">Services</span>
-        <h2 className="text-5xl font-bold text-white mt-4">Premium Business Solutions</h2>
-        <div className="h-1.5 w-24 bg-blue-600 mx-auto mt-6 rounded-full" />
+          <h2 className="text-7xl md:text-9xl font-black text-white mt-4 tracking-tighter leading-none italic uppercase">Capabilities</h2>
+          <p className="text-blue-500 text-[10px] font-black uppercase tracking-[0.4em] mt-8 opacity-80">
+            SparkWave Digital Systems • Infrastructure & Growth Node
+          </p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -76,21 +77,23 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="group p-10 bg-[#112240] rounded-3xl border border-blue-500/10 hover:border-blue-500/30 transition-all relative overflow-hidden"
+            className="group p-10 bg-[#112240] rounded-[40px] border border-blue-500/10 hover:border-blue-500/50 hover:bg-[#1e2d4a] transition-all relative overflow-hidden flex flex-col h-full shadow-2xl"
           >
-            <div className={`text-4xl text-${service.color}-500 mb-6 group-hover:scale-110 transition-transform duration-500`}>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 rounded-full -mr-16 -mt-16 blur-3xl group-hover:bg-blue-600/15 transition-all" />
+            
+            <div className="text-5xl text-blue-500 mb-8 group-hover:scale-110 group-hover:text-blue-400 transition-all duration-500">
               {service.icon}
             </div>
             
-            <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-            <p className="text-gray-400 text-sm mb-8 leading-relaxed">
+            <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-blue-400 transition-all">{service.title}</h3>
+            <p className="text-gray-400 text-sm mb-8 leading-relaxed font-medium flex-grow">
               {service.description}
             </p>
             
-            <ul className="space-y-3">
+            <ul className="space-y-4 pt-8 border-t border-blue-500/10">
               {service.features.map((f, i) => (
-                <li key={i} className="flex items-center text-xs text-gray-500 group-hover:text-gray-300 transition-colors">
-                  <span className={`w-1.5 h-1.5 rounded-full bg-${service.color}-500 mr-2 opacity-50`} />
+                <li key={i} className="flex items-center text-[10px] sm:text-xs text-gray-500 group-hover:text-gray-300 transition-colors uppercase font-black tracking-widest">
+                  <span className="w-2 h-2 rounded-full bg-blue-600 mr-3 shadow-[0_0_10px_rgba(37,99,235,0.5)]" />
                   {f}
                 </li>
               ))}
