@@ -33,3 +33,15 @@ Thumbs.db
 # MongoDB
 data/
 
+
+# SparkWave
+frontend/.next/
+frontend/.env.local
+backend/.venv/
+backend/.env
+backend/*.db
+backend/uploads/
+__pycache__/
+.pytest_cache/
+
+backend/.pgdata/

@@ -1,0 +1,4307 @@
+{
+  "_note": "Development seed. Records with is_demo=true are placeholder copy and must be reviewed before launch. No statistics or client testimonials here are real.",
+  "settings": [
+    {
+      "key": "company_name",
+      "value": "SparkWave Digital Systems",
+      "group": "company"
+    },
+    {
+      "key": "company_tagline",
+      "value": "Digital Product, AI, Automation & Growth Partner",
+      "group": "company"
+    },
+    {
+      "key": "company_description",
+      "value": "SparkWave Digital Systems designs, develops, automates and grows digital products for businesses that want to operate smarter and scale faster.",
+      "group": "company"
+    },
+    {
+      "key": "contact_email",
+      "value": "connect@sparkwave.dev",
+      "group": "contact"
+    },
+    {
+      "key": "contact_phone",
+      "value": "+92 313 4750136",
+      "group": "contact"
+    },
+    {
+      "key": "contact_whatsapp",
+      "value": "https://wa.me/923134750136",
+      "group": "contact"
+    },
+    {
+      "key": "contact_location",
+      "value": "Pakistan — working with clients worldwide",
+      "group": "contact"
+    },
+    {
+      "key": "booking_url",
+      "value": "",
+      "group": "contact"
+    },
+    {
+      "key": "hero_eyebrow",
+      "value": "Digital Product · AI · Automation · Growth",
+      "group": "home"
+    },
+    {
+      "key": "hero_headline",
+      "value": "Building Digital Systems That Move Businesses Forward.",
+      "group": "home"
+    },
+    {
+      "key": "hero_subtext",
+      "value": "We design, develop, automate, and grow digital products for businesses ready to operate smarter and scale faster.",
+      "group": "home"
+    },
+    {
+      "key": "about_heading",
+      "value": "Technology should solve problems, not create them.",
+      "group": "home"
+    },
+    {
+      "key": "about_body",
+      "value": "SparkWave Digital Systems helps businesses transform ideas, improve operations, launch digital products, automate repetitive work, and build stronger digital experiences. We pair product thinking with engineering discipline, so what we build is useful on day one and still maintainable on day one thousand.",
+      "group": "home"
+    },
+    {
+      "key": "cta_headline",
+      "value": "Let's turn your next idea into reality.",
+      "group": "home"
+    },
+    {
+      "key": "cta_subtext",
+      "value": "Tell us what you're building. We'll help you figure out what comes next.",
+      "group": "home"
+    },
+    {
+      "key": "stats",
+      "value": [],
+      "group": "home"
+    },
+    {
+      "key": "budgets",
+      "value": [
+        "Under $5k",
+        "$5k – $15k",
+        "$15k – $40k",
+        "$40k – $100k",
+        "$100k+",
+        "Not sure yet"
+      ],
+      "group": "forms"
+    },
+    {
+      "key": "timelines",
+      "value": [
+        "ASAP",
+        "1 – 3 months",
+        "3 – 6 months",
+        "6+ months",
+        "Flexible"
+      ],
+      "group": "forms"
+    },
+    {
+      "key": "referral_options",
+      "value": [
+        "Google search",
+        "LinkedIn",
+        "Instagram",
+        "Referral",
+        "Returning client",
+        "Other"
+      ],
+      "group": "forms"
+    },
+    {
+      "key": "ga_measurement_id",
+      "value": "",
+      "group": "analytics"
+    },
+    {
+      "key": "meta_pixel_id",
+      "value": "",
+      "group": "analytics"
+    },
+    {
+      "key": "google_site_verification",
+      "value": "",
+      "group": "analytics"
+    },
+    {
+      "key": "values_heading",
+      "value": "Company values",
+      "group": "about"
+    },
+    {
+      "key": "values_intro",
+      "value": "Our values are the foundation of how we work. They shape our decisions, our culture and the way we treat every client and every line of code.",
+      "group": "about"
+    },
+    {
+      "key": "company_values",
+      "group": "about",
+      "value": [
+        {
+          "title": "Nurture Creativity",
+          "icon": "Lightbulb",
+          "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=70&auto=format&fit=crop",
+          "description": "We make room for curiosity and bold ideas. Fresh perspectives are what turn ordinary software into products people love."
+        },
+        {
+          "title": "Work Ethics & Integrity",
+          "icon": "HeartHandshake",
+          "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=70&auto=format&fit=crop",
+          "description": "Honest estimates, transparent progress and doing the right thing — even when no one is watching."
+        },
+        {
+          "title": "Teamwork & Ownership",
+          "icon": "Handshake",
+          "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=70&auto=format&fit=crop",
+          "description": "We win together. Every person owns their outcomes and supports the team to deliver on our promises."
+        },
+        {
+          "title": "Social Responsibility",
+          "icon": "HandHeart",
+          "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=900&q=70&auto=format&fit=crop",
+          "description": "We build technology that respects people and communities, and we give back through knowledge and mentorship."
+        }
+      ]
+    },
+    {
+      "key": "blog_topics",
+      "group": "blog",
+      "value": [
+        "Flutter performance tips",
+        "FastAPI best practices",
+        "AI agents in customer support",
+        "WhatsApp automation playbooks",
+        "Choosing a tech stack for an MVP",
+        "Mobile app monetization",
+        "PostgreSQL tips",
+        "Designing onboarding flows",
+        "Measuring marketing ROI",
+        "Cloud cost optimisation",
+        "RAG for internal knowledge",
+        "App store launch checklist",
+        "Automating invoices and reports",
+        "Security basics for startups"
+      ]
+    }
+  ],
+  "socials": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/sparkwave-digital-solutions/"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/sparkwave.digitals"
+    }
+  ],
+  "roles": [
+    {
+      "name": "Admin",
+      "description": "Full access to everything",
+      "permissions": [
+        "*"
+      ]
+    },
+    {
+      "name": "Editor",
+      "description": "Manages website content",
+      "permissions": [
+        "projects:*",
+        "services:*",
+        "industries:*",
+        "technologies:*",
+        "process:*",
+        "engagement-models:*",
+        "testimonials:*",
+        "blog:*",
+        "faqs:*",
+        "team:*",
+        "media:*",
+        "seo:*",
+        "analytics:read"
+      ]
+    },
+    {
+      "name": "Sales",
+      "description": "Works the lead pipeline",
+      "permissions": [
+        "leads:read",
+        "leads:write",
+        "analytics:read",
+        "projects:read",
+        "services:read"
+      ]
+    },
+    {
+      "name": "Viewer",
+      "description": "Read-only access",
+      "permissions": [
+        "projects:read",
+        "services:read",
+        "leads:read",
+        "blog:read",
+        "analytics:read"
+      ]
+    }
+  ],
+  "technology_categories": [
+    {
+      "name": "Frontend",
+      "slug": "frontend"
+    },
+    {
+      "name": "Backend",
+      "slug": "backend"
+    },
+    {
+      "name": "Mobile",
+      "slug": "mobile"
+    },
+    {
+      "name": "AI",
+      "slug": "ai"
+    },
+    {
+      "name": "Database",
+      "slug": "database"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "slug": "cloud-devops"
+    },
+    {
+      "name": "Marketing & Automation",
+      "slug": "marketing-automation"
+    },
+    {
+      "name": "Architecture & Tools",
+      "slug": "architecture"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "React",
+      "category": "frontend",
+      "featured": true,
+      "website": "https://react.dev",
+      "description": "Component-driven interfaces for complex web apps."
+    },
+    {
+      "name": "Next.js",
+      "category": "frontend",
+      "featured": true,
+      "website": "https://nextjs.org",
+      "description": "Server-rendered React for fast, SEO-friendly sites and platforms."
+    },
+    {
+      "name": "TypeScript",
+      "category": "frontend",
+      "featured": true,
+      "website": "https://www.typescriptlang.org",
+      "description": "Typed JavaScript that keeps large codebases safe to change."
+    },
+    {
+      "name": "JavaScript",
+      "category": "frontend",
+      "website": "https://developer.mozilla.org/docs/Web/JavaScript"
+    },
+    {
+      "name": "Python",
+      "category": "backend",
+      "featured": true,
+      "website": "https://www.python.org",
+      "description": "Our default for APIs, data processing and AI workloads."
+    },
+    {
+      "name": "FastAPI",
+      "category": "backend",
+      "featured": true,
+      "website": "https://fastapi.tiangolo.com",
+      "description": "High-performance typed Python APIs."
+    },
+    {
+      "name": "Node.js",
+      "category": "backend",
+      "featured": true,
+      "website": "https://nodejs.org"
+    },
+    {
+      "name": "Java",
+      "category": "backend",
+      "website": "https://www.java.com"
+    },
+    {
+      "name": "Spring Boot",
+      "category": "backend",
+      "website": "https://spring.io/projects/spring-boot"
+    },
+    {
+      "name": "Flutter",
+      "category": "mobile",
+      "featured": true,
+      "website": "https://flutter.dev",
+      "description": "One codebase for polished iOS and Android apps."
+    },
+    {
+      "name": "Kotlin",
+      "category": "mobile",
+      "featured": true,
+      "website": "https://kotlinlang.org",
+      "description": "Native Android development."
+    },
+    {
+      "name": "Swift",
+      "category": "mobile",
+      "website": "https://developer.apple.com/swift/",
+      "description": "Native iOS development."
+    },
+    {
+      "name": "OpenAI",
+      "category": "ai",
+      "featured": true,
+      "website": "https://platform.openai.com"
+    },
+    {
+      "name": "LLM APIs",
+      "category": "ai",
+      "description": "Provider-agnostic integration with leading language models."
+    },
+    {
+      "name": "RAG",
+      "category": "ai",
+      "featured": true,
+      "description": "Retrieval-augmented generation grounded in your own documents and data."
+    },
+    {
+      "name": "AI Agents",
+      "category": "ai",
+      "featured": true,
+      "description": "Tool-using assistants that complete multi-step business tasks."
+    },
+    {
+      "name": "LangChain",
+      "category": "ai",
+      "website": "https://www.langchain.com"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "database",
+      "featured": true,
+      "website": "https://www.postgresql.org"
+    },
+    {
+      "name": "MySQL",
+      "category": "database",
+      "website": "https://www.mysql.com"
+    },
+    {
+      "name": "MongoDB",
+      "category": "database",
+      "website": "https://www.mongodb.com"
+    },
+    {
+      "name": "Firebase",
+      "category": "database",
+      "website": "https://firebase.google.com"
+    },
+    {
+      "name": "Supabase",
+      "category": "database",
+      "website": "https://supabase.com"
+    },
+    {
+      "name": "Redis",
+      "category": "database",
+      "website": "https://redis.io"
+    },
+    {
+      "name": "AWS",
+      "category": "cloud-devops",
+      "featured": true,
+      "website": "https://aws.amazon.com"
+    },
+    {
+      "name": "Docker",
+      "category": "cloud-devops",
+      "featured": true,
+      "website": "https://www.docker.com"
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "cloud-devops",
+      "website": "https://github.com/features/actions"
+    },
+    {
+      "name": "Google Analytics",
+      "category": "marketing-automation",
+      "website": "https://analytics.google.com"
+    },
+    {
+      "name": "Meta Business",
+      "category": "marketing-automation",
+      "website": "https://business.facebook.com"
+    },
+    {
+      "name": "Google Ads",
+      "category": "marketing-automation",
+      "website": "https://ads.google.com"
+    },
+    {
+      "name": "WhatsApp Business",
+      "category": "marketing-automation",
+      "featured": true,
+      "website": "https://business.whatsapp.com"
+    },
+    {
+      "name": "Make",
+      "category": "marketing-automation",
+      "website": "https://www.make.com"
+    },
+    {
+      "name": "Zapier",
+      "category": "marketing-automation",
+      "website": "https://zapier.com"
+    },
+    {
+      "name": "Dart",
+      "category": "mobile"
+    },
+    {
+      "name": "MVVM + Clean Architecture",
+      "category": "architecture"
+    },
+    {
+      "name": "Provider",
+      "category": "mobile"
+    },
+    {
+      "name": "AdMob",
+      "category": "marketing-automation"
+    },
+    {
+      "name": "In-App Purchases (IAP)",
+      "category": "marketing-automation"
+    },
+    {
+      "name": "GetIt",
+      "category": "mobile"
+    },
+    {
+      "name": "Bluetooth & Wi-Fi Printing",
+      "category": "mobile"
+    },
+    {
+      "name": "Generative AI APIs",
+      "category": "ai"
+    },
+    {
+      "name": "REST API",
+      "category": "backend"
+    },
+    {
+      "name": "Dio",
+      "category": "mobile"
+    },
+    {
+      "name": "AI Voice & TTS APIs",
+      "category": "ai"
+    },
+    {
+      "name": "Voice Cloning",
+      "category": "ai"
+    },
+    {
+      "name": "Wi-Fi Direct / Local Network",
+      "category": "mobile"
+    },
+    {
+      "name": "HTTP Local Server",
+      "category": "backend"
+    },
+    {
+      "name": "Local Notifications",
+      "category": "mobile"
+    },
+    {
+      "name": "AI Integration",
+      "category": "ai"
+    },
+    {
+      "name": "WebSockets",
+      "category": "backend"
+    },
+    {
+      "name": "Playwright",
+      "category": "ai"
+    },
+    {
+      "name": "PyAutoGUI",
+      "category": "ai"
+    },
+    {
+      "name": "JavaFX",
+      "category": "backend"
+    },
+    {
+      "name": "JWT Auth",
+      "category": "backend"
+    },
+    {
+      "name": "HTML5",
+      "category": "frontend"
+    },
+    {
+      "name": "CSS3",
+      "category": "frontend"
+    },
+    {
+      "name": "Express.js",
+      "category": "backend"
+    },
+    {
+      "name": "Bcrypt",
+      "category": "backend"
+    },
+    {
+      "name": "Minimax AI",
+      "category": "ai"
+    },
+    {
+      "name": "Pinecone",
+      "category": "ai"
+    },
+    {
+      "name": "Hive",
+      "category": "database"
+    },
+    {
+      "name": "SQLite",
+      "category": "database"
+    },
+    {
+      "name": "Biometric Auth",
+      "category": "mobile"
+    },
+    {
+      "name": "Laravel",
+      "category": "backend"
+    },
+    {
+      "name": "PHP",
+      "category": "backend"
+    },
+    {
+      "name": "Socket.IO",
+      "category": "backend"
+    },
+    {
+      "name": "BLoC",
+      "category": "mobile"
+    },
+    {
+      "name": "WebRTC",
+      "category": "mobile"
+    },
+    {
+      "name": "RevenueCat",
+      "category": "marketing-automation"
+    },
+    {
+      "name": "Stripe",
+      "category": "marketing-automation"
+    },
+    {
+      "name": "Riverpod",
+      "category": "mobile"
+    },
+    {
+      "name": "Google Maps API",
+      "category": "marketing-automation"
+    },
+    {
+      "name": "Electron",
+      "category": "frontend"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "ai"
+    },
+    {
+      "name": "Cloud Functions",
+      "category": "backend"
+    }
+  ],
+  "services": [
+    {
+      "number": "01",
+      "slug": "custom-software-development",
+      "title": "Custom Software Development",
+      "group": "engineering",
+      "icon": "Boxes",
+      "tagline": "Software shaped around how your business actually works.",
+      "description": "Internal tools, SaaS platforms and business systems designed around your workflows, not the other way round.",
+      "benefits": [
+        "Replace spreadsheets and disconnected tools with one system",
+        "Own your IP and your roadmap",
+        "Architecture that scales with users, data and teams"
+      ],
+      "features": [
+        {
+          "title": "SaaS platforms",
+          "description": "Multi-tenant products with billing, roles and admin tooling."
+        },
+        {
+          "title": "ERP & operations systems",
+          "description": "Inventory, orders, staff and finance in one place."
+        },
+        {
+          "title": "Customer & partner portals",
+          "description": "Secure self-service for the people you work with."
+        },
+        {
+          "title": "Legacy modernization",
+          "description": "Incremental rewrites that keep the business running."
+        }
+      ],
+      "deliverables": [
+        "Architecture & data model",
+        "Production-ready codebase",
+        "Admin tooling",
+        "Documentation & handover"
+      ],
+      "technologies": [
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "Node.js",
+        "PostgreSQL",
+        "Docker",
+        "AWS"
+      ],
+      "seo_title": "Custom Software Development",
+      "seo_description": "Custom SaaS platforms, internal tools and business systems designed, engineered and maintained by SparkWave Digital Systems.",
+      "hero_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "02",
+      "slug": "web-development",
+      "title": "Web Development",
+      "group": "engineering",
+      "icon": "Globe",
+      "tagline": "Fast, search-friendly websites and web platforms.",
+      "description": "Marketing sites, web apps and dashboards built for speed, accessibility and conversion — with a CMS your team can actually use.",
+      "benefits": [
+        "Core Web Vitals and SEO built in",
+        "Content your team can update without a developer",
+        "Designs that convert visitors into enquiries"
+      ],
+      "features": [
+        {
+          "title": "Corporate & marketing websites",
+          "description": "Brand-led sites with CMS and analytics."
+        },
+        {
+          "title": "Web applications",
+          "description": "Dashboards, portals and booking systems."
+        },
+        {
+          "title": "E-commerce",
+          "description": "Custom storefronts and checkout flows."
+        },
+        {
+          "title": "Headless CMS",
+          "description": "Structured content delivered anywhere."
+        }
+      ],
+      "deliverables": [
+        "Responsive UI",
+        "CMS & admin",
+        "SEO setup",
+        "Analytics & tracking"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "seo_title": "Web Development",
+      "seo_description": "High-performance websites and web applications with CMS, SEO and analytics built in.",
+      "hero_image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "03",
+      "slug": "mobile-app-development",
+      "title": "Mobile App Development",
+      "group": "engineering",
+      "icon": "Smartphone",
+      "tagline": "Native-quality apps for iOS and Android.",
+      "description": "Cross-platform and native mobile apps — from customer-facing products to field and staff tools — with the backend to support them.",
+      "benefits": [
+        "One team for app, API and admin",
+        "Store submission and release management handled",
+        "Offline-ready, real-time where it matters"
+      ],
+      "features": [
+        {
+          "title": "Cross-platform apps",
+          "description": "Flutter apps for iOS and Android from one codebase."
+        },
+        {
+          "title": "Native Android & iOS",
+          "description": "Kotlin and Swift when the platform demands it."
+        },
+        {
+          "title": "Real-time features",
+          "description": "Tracking, chat, notifications and live updates."
+        },
+        {
+          "title": "App backends",
+          "description": "APIs, auth and admin panels to run the app."
+        }
+      ],
+      "deliverables": [
+        "iOS & Android builds",
+        "Store listings",
+        "Backend API",
+        "Admin panel"
+      ],
+      "technologies": [
+        "Flutter",
+        "Kotlin",
+        "Swift",
+        "Firebase",
+        "FastAPI"
+      ],
+      "seo_title": "Mobile App Development",
+      "seo_description": "Flutter, Android and iOS app development — from product design to store launch and beyond.",
+      "hero_image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "04",
+      "slug": "ai-solutions",
+      "title": "AI Solutions",
+      "group": "ai",
+      "icon": "BrainCircuit",
+      "tagline": "Practical AI that plugs into real workflows.",
+      "description": "AI agents, assistants and RAG systems grounded in your own data — designed to save time, not to demo well.",
+      "benefits": [
+        "Answers grounded in your documents, with sources",
+        "Human-in-the-loop controls for sensitive steps",
+        "Model-agnostic architecture you can evolve"
+      ],
+      "features": [
+        {
+          "title": "AI agents",
+          "description": "Assistants that use tools to complete multi-step tasks."
+        },
+        {
+          "title": "AI chatbots",
+          "description": "Support and sales assistants on web and WhatsApp."
+        },
+        {
+          "title": "RAG knowledge systems",
+          "description": "Search and Q&A over your internal knowledge."
+        },
+        {
+          "title": "Document intelligence",
+          "description": "Extract, classify and summarise documents at scale."
+        }
+      ],
+      "deliverables": [
+        "Use-case assessment",
+        "Evaluation set",
+        "Production integration",
+        "Monitoring & guardrails"
+      ],
+      "technologies": [
+        "Python",
+        "OpenAI",
+        "LLM APIs",
+        "RAG",
+        "AI Agents",
+        "LangChain",
+        "PostgreSQL"
+      ],
+      "seo_title": "AI Solutions & AI Agents",
+      "seo_description": "AI agents, chatbots and RAG systems built on your data and integrated into your business workflows.",
+      "hero_image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "05",
+      "slug": "business-automation",
+      "title": "Business Automation",
+      "group": "ai",
+      "icon": "Workflow",
+      "tagline": "Automate the work. Amplify the business.",
+      "description": "Connect your tools and remove repetitive work — from lead capture and CRM updates to invoices, reports and WhatsApp follow-ups.",
+      "benefits": [
+        "Fewer manual hand-offs and copy-paste errors",
+        "Faster response to every lead",
+        "Reports that build themselves"
+      ],
+      "features": [
+        {
+          "title": "Workflow automation",
+          "description": "Multi-step processes across your tools."
+        },
+        {
+          "title": "CRM automation",
+          "description": "Leads captured, enriched and routed automatically."
+        },
+        {
+          "title": "Lead management",
+          "description": "Scoring, assignment and follow-up sequences."
+        },
+        {
+          "title": "WhatsApp automation",
+          "description": "Notifications, replies and reminders on WhatsApp Business."
+        },
+        {
+          "title": "Email automation",
+          "description": "Transactional and nurture emails triggered by events."
+        },
+        {
+          "title": "Invoice automation",
+          "description": "Generate, send and reconcile invoices."
+        },
+        {
+          "title": "Reporting automation",
+          "description": "Scheduled dashboards and summaries."
+        },
+        {
+          "title": "Data synchronization",
+          "description": "Keep records consistent across systems."
+        },
+        {
+          "title": "API integrations",
+          "description": "Custom connectors where no-code tools stop."
+        },
+        {
+          "title": "AI automation",
+          "description": "Classification, extraction and drafting inside workflows."
+        },
+        {
+          "title": "Third-party integrations",
+          "description": "Payment, accounting, calendar and messaging tools."
+        }
+      ],
+      "deliverables": [
+        "Process map",
+        "Automated workflows",
+        "Monitoring & alerts",
+        "Runbook"
+      ],
+      "technologies": [
+        "Python",
+        "Node.js",
+        "Make",
+        "Zapier",
+        "WhatsApp Business",
+        "OpenAI"
+      ],
+      "seo_title": "Business Automation Services",
+      "seo_description": "Workflow, CRM, WhatsApp, email and invoice automation that removes repetitive work from your business.",
+      "hero_image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "06",
+      "slug": "ui-ux-design",
+      "title": "UI/UX Design",
+      "group": "engineering",
+      "icon": "PenTool",
+      "tagline": "Interfaces people understand at first glance.",
+      "description": "Research-led product design, design systems and prototypes that engineering can build without guesswork.",
+      "benefits": [
+        "Validated flows before code is written",
+        "Consistent design system across products",
+        "Accessible by default"
+      ],
+      "features": [
+        {
+          "title": "UX research & flows",
+          "description": "Map journeys and remove friction."
+        },
+        {
+          "title": "UI design",
+          "description": "High-fidelity screens for web and mobile."
+        },
+        {
+          "title": "Design systems",
+          "description": "Reusable components and tokens."
+        },
+        {
+          "title": "Interactive prototypes",
+          "description": "Test ideas with real users early."
+        }
+      ],
+      "deliverables": [
+        "User flows",
+        "Wireframes",
+        "UI kit",
+        "Clickable prototype"
+      ],
+      "technologies": [],
+      "seo_title": "UI/UX Design",
+      "seo_description": "Product design, design systems and prototypes for web and mobile products.",
+      "hero_image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "07",
+      "slug": "qa-testing",
+      "title": "QA & Testing",
+      "group": "engineering",
+      "icon": "ShieldCheck",
+      "tagline": "Ship with confidence, release after release.",
+      "description": "Manual and automated testing across web, mobile and APIs so releases are predictable and regressions are caught early.",
+      "benefits": [
+        "Fewer production incidents",
+        "Faster, safer releases",
+        "Clear quality reporting"
+      ],
+      "features": [
+        {
+          "title": "Test automation",
+          "description": "End-to-end, API and unit test suites in CI."
+        },
+        {
+          "title": "Manual & exploratory QA",
+          "description": "Structured test plans across devices."
+        },
+        {
+          "title": "Performance testing",
+          "description": "Load and stress tests before launch."
+        },
+        {
+          "title": "Security checks",
+          "description": "Common vulnerability and configuration reviews."
+        }
+      ],
+      "deliverables": [
+        "Test plan",
+        "Automated suite",
+        "Bug reports",
+        "Release sign-off"
+      ],
+      "technologies": [
+        "GitHub Actions",
+        "Docker"
+      ],
+      "seo_title": "QA & Software Testing",
+      "seo_description": "Manual and automated QA for web, mobile and APIs.",
+      "hero_image": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "08",
+      "slug": "digital-marketing",
+      "title": "Digital Marketing & Social Media",
+      "group": "growth",
+      "icon": "Megaphone",
+      "tagline": "Build your product. Build your presence.",
+      "description": "SEO, paid advertising, content and social media management that turns attention into qualified leads.",
+      "benefits": [
+        "One team from product to promotion",
+        "Campaigns measured against leads, not likes",
+        "Monthly reporting you can act on"
+      ],
+      "features": [
+        {
+          "title": "SEO",
+          "description": "Technical, on-page and content SEO."
+        },
+        {
+          "title": "Google Ads",
+          "description": "Search and performance campaigns."
+        },
+        {
+          "title": "Meta Ads",
+          "description": "Facebook and Instagram advertising."
+        },
+        {
+          "title": "Content creation",
+          "description": "Graphics, reels and copy for every channel."
+        },
+        {
+          "title": "Brand strategy",
+          "description": "Positioning and messaging that sets you apart."
+        },
+        {
+          "title": "Lead generation",
+          "description": "Funnels and landing pages that convert."
+        },
+        {
+          "title": "Analytics",
+          "description": "Tracking and reporting across channels."
+        }
+      ],
+      "deliverables": [
+        "Channel strategy",
+        "Content calendar",
+        "Campaigns",
+        "Monthly report"
+      ],
+      "technologies": [
+        "Google Analytics",
+        "Google Ads",
+        "Meta Business"
+      ],
+      "seo_title": "Digital Marketing, SEO & Paid Ads",
+      "seo_description": "SEO, Google Ads, Meta Ads and content marketing focused on qualified leads.",
+      "hero_image": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "09",
+      "slug": "cloud-devops",
+      "title": "Cloud & DevOps",
+      "group": "engineering",
+      "icon": "Cloud",
+      "tagline": "Infrastructure that stays up and scales quietly.",
+      "description": "Cloud architecture, CI/CD, containerisation and monitoring so your product is reliable, secure and cost-aware.",
+      "benefits": [
+        "Automated, repeatable deployments",
+        "Monitoring and alerts before customers notice",
+        "Right-sized cloud costs"
+      ],
+      "features": [
+        {
+          "title": "Cloud architecture",
+          "description": "AWS and managed platforms, designed for your load."
+        },
+        {
+          "title": "CI/CD pipelines",
+          "description": "Tested, automated releases."
+        },
+        {
+          "title": "Containers",
+          "description": "Docker-based environments from dev to prod."
+        },
+        {
+          "title": "Monitoring",
+          "description": "Logs, metrics, uptime and alerting."
+        }
+      ],
+      "deliverables": [
+        "Infrastructure as code",
+        "CI/CD pipeline",
+        "Monitoring dashboards",
+        "Runbooks"
+      ],
+      "technologies": [
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "seo_title": "Cloud & DevOps",
+      "seo_description": "Cloud architecture, CI/CD and monitoring for reliable, scalable products.",
+      "hero_image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "10",
+      "slug": "maintenance-support",
+      "title": "Maintenance & Support",
+      "group": "engineering",
+      "icon": "LifeBuoy",
+      "tagline": "Keep what you've built healthy and improving.",
+      "description": "Ongoing updates, security patches, performance tuning and feature work under a clear support agreement.",
+      "benefits": [
+        "Predictable monthly cost",
+        "Dependencies and security kept current",
+        "A team that already knows your system"
+      ],
+      "features": [
+        {
+          "title": "Bug fixes & patches",
+          "description": "Prioritised by business impact."
+        },
+        {
+          "title": "Dependency updates",
+          "description": "Frameworks and libraries kept current."
+        },
+        {
+          "title": "Performance tuning",
+          "description": "Faster pages, queries and apps."
+        },
+        {
+          "title": "Continuous improvement",
+          "description": "Small features shipped every month."
+        }
+      ],
+      "deliverables": [
+        "Support agreement",
+        "Monthly health report",
+        "Release notes"
+      ],
+      "technologies": [],
+      "seo_title": "Software Maintenance & Support",
+      "seo_description": "Ongoing maintenance, security updates and improvements for web and mobile products.",
+      "hero_image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "number": "11",
+      "slug": "social-media-management",
+      "title": "Social Media Management",
+      "group": "growth",
+      "icon": "Share2",
+      "show_on_home": false,
+      "tagline": "Consistent, on-brand presence — managed end to end.",
+      "description": "Strategy, content, posting, community management and monthly reporting across the platforms your customers use.",
+      "benefits": [
+        "A steady publishing rhythm without the in-house overhead",
+        "Content designed around your brand and goals",
+        "Clear monthly reporting on what's working"
+      ],
+      "features": [
+        {
+          "title": "Content strategy",
+          "description": "Pillars, audience and goals for each platform."
+        },
+        {
+          "title": "Content calendar",
+          "description": "Planned a month ahead, approved by you."
+        },
+        {
+          "title": "Graphic design",
+          "description": "On-brand posts, carousels and stories."
+        },
+        {
+          "title": "Reels & short video",
+          "description": "Scripted, edited short-form video."
+        },
+        {
+          "title": "Video content",
+          "description": "Longer-form video for YouTube and LinkedIn."
+        },
+        {
+          "title": "Community management",
+          "description": "Replies to comments and messages."
+        },
+        {
+          "title": "Social media posting",
+          "description": "Scheduling and publishing across platforms."
+        },
+        {
+          "title": "Engagement",
+          "description": "Proactive engagement with your audience."
+        },
+        {
+          "title": "Analytics",
+          "description": "Reach, engagement and follower tracking."
+        },
+        {
+          "title": "Monthly reporting",
+          "description": "What happened, what worked, what's next."
+        }
+      ],
+      "platforms": [
+        "Instagram",
+        "Facebook",
+        "LinkedIn",
+        "TikTok",
+        "YouTube",
+        "X"
+      ],
+      "deliverables": [
+        "Strategy document",
+        "Monthly calendar",
+        "Designed posts & reels",
+        "Monthly report"
+      ],
+      "technologies": [
+        "Meta Business",
+        "Google Analytics"
+      ],
+      "seo_title": "Social Media Management",
+      "seo_description": "Social media strategy, content creation, posting, community management and reporting.",
+      "hero_image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1400&q=75&auto=format&fit=crop"
+    }
+  ],
+  "process": [
+    {
+      "number": "01",
+      "stage": "DISCOVER",
+      "title": "Understand the business before the build.",
+      "icon": "Search",
+      "duration": "1 – 2 weeks",
+      "description": "We learn how your business works, who the users are and what success looks like, then turn that into a clear scope.",
+      "activities": [
+        "Business analysis",
+        "Requirement gathering",
+        "User research",
+        "Technical audit"
+      ],
+      "deliverables": [
+        "Project roadmap",
+        "Requirements",
+        "Technical direction"
+      ],
+      "team": [
+        "Product strategist",
+        "Solution architect"
+      ],
+      "technologies": [
+        "Miro",
+        "Notion"
+      ]
+    },
+    {
+      "number": "02",
+      "stage": "STRATEGIZE",
+      "title": "Plan the smallest version that proves value.",
+      "icon": "Compass",
+      "duration": "1 week",
+      "description": "We prioritise features, choose the architecture and agree milestones, budget and success metrics.",
+      "activities": [
+        "Feature prioritisation",
+        "Architecture planning",
+        "Milestone planning",
+        "Risk assessment"
+      ],
+      "deliverables": [
+        "Release plan",
+        "Architecture outline",
+        "Estimate & timeline"
+      ],
+      "team": [
+        "Project manager",
+        "Solution architect"
+      ],
+      "technologies": [
+        "Jira",
+        "Linear"
+      ]
+    },
+    {
+      "number": "03",
+      "stage": "DESIGN",
+      "title": "Design flows people understand instantly.",
+      "icon": "PenTool",
+      "duration": "2 – 4 weeks",
+      "description": "User flows, wireframes and high-fidelity UI, validated with clickable prototypes before development starts.",
+      "activities": [
+        "User flows",
+        "Wireframing",
+        "UI design",
+        "Prototype testing"
+      ],
+      "deliverables": [
+        "Design system",
+        "High-fidelity screens",
+        "Clickable prototype"
+      ],
+      "team": [
+        "UI/UX designer",
+        "Product strategist"
+      ],
+      "technologies": [
+        "Figma"
+      ]
+    },
+    {
+      "number": "04",
+      "stage": "BUILD",
+      "title": "Engineer in short, visible iterations.",
+      "icon": "Code2",
+      "duration": "4 – 16 weeks",
+      "description": "Two-week sprints with working demos, code review and automated tests, so you see progress every iteration.",
+      "activities": [
+        "Sprint development",
+        "Code review",
+        "Automated testing",
+        "Weekly demos"
+      ],
+      "deliverables": [
+        "Working software",
+        "API documentation",
+        "Test suite"
+      ],
+      "team": [
+        "Engineers",
+        "QA engineer",
+        "Project manager"
+      ],
+      "technologies": [
+        "Next.js",
+        "FastAPI",
+        "Flutter",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "number": "05",
+      "stage": "LAUNCH",
+      "title": "Release carefully, monitor closely.",
+      "icon": "Rocket",
+      "duration": "1 – 2 weeks",
+      "description": "Production hardening, deployment, store submissions and monitoring, with a rollback plan ready.",
+      "activities": [
+        "Performance & security checks",
+        "Deployment",
+        "App store submission",
+        "Monitoring setup"
+      ],
+      "deliverables": [
+        "Production release",
+        "Monitoring dashboards",
+        "Handover documentation"
+      ],
+      "team": [
+        "DevOps engineer",
+        "QA engineer"
+      ],
+      "technologies": [
+        "AWS",
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "number": "06",
+      "stage": "GROW",
+      "title": "Improve with real data after launch.",
+      "icon": "TrendingUp",
+      "duration": "Ongoing",
+      "description": "Analytics, marketing, automation and new features driven by how people actually use the product.",
+      "activities": [
+        "Analytics review",
+        "Feature iterations",
+        "Marketing & SEO",
+        "Automation"
+      ],
+      "deliverables": [
+        "Monthly report",
+        "Improvement backlog",
+        "Growth campaigns"
+      ],
+      "team": [
+        "Growth marketer",
+        "Engineers"
+      ],
+      "technologies": [
+        "Google Analytics",
+        "Meta Business"
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "name": "Healthcare",
+      "icon": "HeartPulse",
+      "description": "Patient-facing apps and clinic operations that respect privacy and save staff time.",
+      "solutions": [
+        "Appointment booking",
+        "Patient portals",
+        "Clinic management",
+        "Telehealth"
+      ],
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Education",
+      "icon": "GraduationCap",
+      "description": "Learning platforms and school systems that keep students, teachers and parents connected.",
+      "solutions": [
+        "LMS platforms",
+        "Student portals",
+        "Online assessments",
+        "Admissions automation"
+      ],
+      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "E-Commerce",
+      "icon": "ShoppingBag",
+      "description": "Storefronts, order management and marketing automation built to convert.",
+      "solutions": [
+        "Custom storefronts",
+        "Order & inventory",
+        "Abandoned-cart automation",
+        "Performance marketing"
+      ],
+      "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Real Estate",
+      "icon": "Building2",
+      "description": "Listings, lead capture and follow-up systems for agencies and developers.",
+      "solutions": [
+        "Listing portals",
+        "Lead CRM",
+        "WhatsApp follow-ups",
+        "Virtual tours"
+      ],
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Finance",
+      "icon": "Landmark",
+      "description": "Secure dashboards, onboarding and document workflows for financial services.",
+      "solutions": [
+        "Client onboarding",
+        "Reporting dashboards",
+        "Document automation",
+        "Compliance workflows"
+      ],
+      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Restaurants",
+      "icon": "UtensilsCrossed",
+      "description": "Ordering, delivery and kitchen tools that keep service moving.",
+      "solutions": [
+        "Online ordering",
+        "Rider & delivery apps",
+        "Kitchen displays",
+        "Loyalty programs"
+      ],
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Beauty & Salons",
+      "icon": "Sparkles",
+      "description": "Bookings, reminders and social presence for service businesses.",
+      "solutions": [
+        "Online booking",
+        "Reminder automation",
+        "Social media management",
+        "Client CRM"
+      ],
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Logistics",
+      "icon": "Truck",
+      "description": "Tracking, dispatch and fleet visibility from warehouse to doorstep.",
+      "solutions": [
+        "Shipment tracking",
+        "Driver apps",
+        "Route planning",
+        "Operations dashboards"
+      ],
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Retail",
+      "icon": "Store",
+      "description": "Connected point-of-sale, inventory and customer engagement.",
+      "solutions": [
+        "Inventory systems",
+        "Loyalty apps",
+        "Omnichannel sales",
+        "Sales analytics"
+      ],
+      "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Professional Services",
+      "icon": "Briefcase",
+      "description": "Client portals and automation for agencies, consultancies and firms.",
+      "solutions": [
+        "Client portals",
+        "Proposal automation",
+        "Time & billing",
+        "Knowledge assistants"
+      ],
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Startups",
+      "icon": "Rocket",
+      "description": "MVPs built quickly, on foundations that won't need a rewrite at scale.",
+      "solutions": [
+        "MVP development",
+        "Product design",
+        "Investor demos",
+        "Growth marketing"
+      ],
+      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400&q=75&auto=format&fit=crop"
+    },
+    {
+      "name": "Corporate",
+      "icon": "Building",
+      "description": "Modernising internal systems and automating cross-team workflows.",
+      "solutions": [
+        "Legacy modernisation",
+        "Internal tools",
+        "AI assistants",
+        "Process automation"
+      ],
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=75&auto=format&fit=crop"
+    }
+  ],
+  "projects": [
+    {
+      "title": "BiteSwift Pro",
+      "slug": "biteswift-pro",
+      "category": "Mobile App",
+      "industry": "Restaurants",
+      "featured": true,
+      "accent": "#F97316",
+      "thumbnail": "/images/projects/customer-home.webp",
+      "hero_image": "/images/projects/customer-home.webp",
+      "short_description": "A complete food-delivery ecosystem: customer app, restaurant order console, rider navigation and an admin dashboard.",
+      "challenge": "<p>Restaurants were juggling phone orders, third-party apps and WhatsApp messages, with no single view of orders, riders or revenue.</p>",
+      "solution": "<p>Four connected apps on one real-time backend — customers order and track, kitchens manage the queue, riders get turn-by-turn delivery, and owners see everything on one dashboard.</p>",
+      "features": [
+        "Customer ordering & checkout",
+        "Live order tracking",
+        "Restaurant order console",
+        "Rider navigation & proof of delivery",
+        "Staff task management",
+        "Admin analytics dashboard"
+      ],
+      "images": [
+        {
+          "url": "/images/projects/welcome-auth.webp",
+          "alt": "BiteSwift Pro — Onboarding & sign-in",
+          "caption": "Onboarding & sign-in",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/customer-detail.webp",
+          "alt": "BiteSwift Pro — Dish details",
+          "caption": "Dish details",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/customer-checkout.webp",
+          "alt": "BiteSwift Pro — Checkout",
+          "caption": "Checkout",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/customer-tracking.webp",
+          "alt": "BiteSwift Pro — Live order tracking",
+          "caption": "Live order tracking",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/restaurant-orders.webp",
+          "alt": "BiteSwift Pro — Restaurant order console",
+          "caption": "Restaurant order console",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/rider-navigation.webp",
+          "alt": "BiteSwift Pro — Rider navigation",
+          "caption": "Rider navigation",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/staff-tasks.webp",
+          "alt": "BiteSwift Pro — Staff tasks",
+          "caption": "Staff tasks",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/user-profile.webp",
+          "alt": "BiteSwift Pro — Customer profile",
+          "caption": "Customer profile",
+          "kind": "screenshot"
+        },
+        {
+          "url": "/images/projects/admin-dashboard.webp",
+          "alt": "BiteSwift Pro — Admin dashboard",
+          "caption": "Admin dashboard",
+          "kind": "screenshot"
+        }
+      ],
+      "technologies": [
+        "Flutter",
+        "Node.js",
+        "PostgreSQL",
+        "React",
+        "Firebase"
+      ],
+      "services": [
+        "mobile-app-development",
+        "web-development",
+        "ui-ux-design"
+      ],
+      "platforms": [
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "role": "Product design & development",
+      "is_demo": false
+    },
+    {
+      "title": "NeuroDesk AI – AI Desktop Automation Platform",
+      "slug": "neurodesk-ai",
+      "category": "AI Platform",
+      "industry": "AI Automation & Systems",
+      "role": "Flutter Developer & System Architect",
+      "platforms": [
+        "Android",
+        "iOS",
+        "Desktop"
+      ],
+      "short_description": "Control computer via natural language using Flutter Mobile App, FastAPI & Python Desktop Agent.",
+      "long_description": "<p>Developed NeuroDesk AI, an AI-powered desktop automation platform that enables users to control their computer using natural language from a Flutter mobile application. Comprises a Flutter Mobile App, FastAPI Backend, LLM AI Agent, and Python Desktop Agent executing tasks securely on target computers. Features automated browser control (Playwright), file management, desktop app interaction (PyAutoGUI, OpenCV), email workflows, and system operations. Built following MVVM Architecture, Clean Architecture, and SOLID Principles with WebSockets, PostgreSQL, Redis, LangChain, AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Knowledge workers spend hours daily manually performing repetitive desktop operations, browser tasks, file management, and app workflows.</p>",
+      "solution": "<p>Engineered NeuroDesk AI combining a responsive Flutter mobile controller, FastAPI orchestration backend, and Python desktop automation agent powered by LangChain LLM reasoning for instant natural-language computer automation.</p>",
+      "architecture": "<p>MVVM + Clean Architecture on Flutter mobile app communicating via low-latency WebSockets with FastAPI backend microservices, PostgreSQL/Redis data layers, and an event-driven Python desktop agent using OS automation hooks.</p>",
+      "development_notes": "<p>Implementing bidirectional WebSocket heartbeats with local proxy buffering ensured zero command drops during long multi-step browser automation flows.</p>",
+      "features": [
+        "AI Desktop & Mobile Control: Natural language computer control, multi-step workflow planning, context memory & persistent AI reasoning.",
+        "Desktop & File Automation: Open/close apps, copy/move/rename files, execute background commands & system process control.",
+        "Browser & Web Automation: Automated web navigation, form filling, login automation, web scraping & Playwright browser control.",
+        "Real-Time Remote Control & WebSockets: Live task status monitoring, remote command execution & low-latency WebSocket sync.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and Subscription In-App Purchases (IAP).",
+        "Firebase Remote Config for dynamic AI model selection, task limits, subscription offers, feature flags & remote updates."
+      ],
+      "thumbnail": "/images/projects/neurodesk-ai.webp",
+      "hero_image": "/images/projects/neurodesk-ai.webp",
+      "external_url": null,
+      "accent": "#EC4899",
+      "featured": true,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "LLM APIs",
+        "WebSockets",
+        "PostgreSQL",
+        "Redis",
+        "Playwright",
+        "PyAutoGUI",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "Ameen+ – AI Islamic Lifestyle & Community",
+      "slug": "ameen-plus",
+      "category": "Mobile App",
+      "industry": "Islamic Lifestyle & Social Platform",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "All-in-one Islamic companion with AI Assistant, Prayer Times, Qibla, Quran & Social Feed.",
+      "long_description": "<p>Developed Ameen+, an AI-powered Islamic lifestyle and social platform using Flutter for Android and iOS. Combines Prayer Times, Qibla Compass, Digital Tasbih, Hijri Calendar, Quran &amp; Hadith resources, Habit Tracking, Nafs Wellness, Community Feed, and AI-powered Islamic guidance into a unified platform. Features gamification (streaks, XP, badges, leaderboards) and a social feed for sharing Islamic content. Built following MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Firebase (Auth, Firestore, Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Muslims globally faced fragmented app experiences—requiring separate apps for prayer times, Quran reading, habit tracking, Qibla direction, and community interaction.</p>",
+      "solution": "<p>Architected a comprehensive Flutter Islamic platform unifying offline core tools, AI-powered guidance, spiritual habit tracking, and social community networking on MVVM + Clean Architecture.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, Firebase Auth &amp; Firestore, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": "<p>Integrating sensor smoothing filters for Qibla direction alongside real-time Firestore stream transformers ensured instant community feed updates and zero compass needle jitter.</p>",
+      "features": [
+        "AI Islamic Assistant: AI chatbot for Islamic questions, mood-based guidance, daily recommendations & spiritual motivation.",
+        "Complete Islamic Utility Suite: Accurate Prayer Times, Salah alarms, Qibla Compass, Digital Tasbih, Hijri Calendar & Audio Quran.",
+        "Habit & Nafs Wellness Tracking: Daily Salah tracker, good deeds tracker, spiritual progress, daily streaks, XP & badges.",
+        "Global Community Social Feed: Share posts, like, comment, participate in discussions, community chat & profile management.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for premium features.",
+        "Firebase Remote Config for dynamic feature flags, ad controls, subscription offers, Halal marketplace & remote app updates."
+      ],
+      "thumbnail": "/images/projects/ameen-plus.webp",
+      "hero_image": "/images/projects/ameen-plus.webp",
+      "external_url": null,
+      "accent": "#F5B942",
+      "featured": true,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "AI Integration",
+        "Firebase",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "REST API",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "ParkSphere Pro – Smart Parking Management System",
+      "slug": "parksphere-pro",
+      "category": "Mobile App",
+      "industry": "Smart Parking & Enterprise Systems",
+      "role": "Flutter Developer & Systems Engineer",
+      "platforms": [
+        "Android",
+        "iOS",
+        "Desktop"
+      ],
+      "short_description": "Complete parking management system with Flutter mobile app, Java Spring Boot & JavaFX desktop.",
+      "long_description": "<p>Developed ParkSphere Pro, a smart parking management platform consisting of a Flutter mobile application, Java Spring Boot REST backend, and JavaFX desktop administration system. Enables users to search, reserve parking slots, manage vehicle profiles, and track bookings, while administrators monitor real-time parking slot occupancy, manage users &amp; staff, calculate parking fees, generate daily revenue reports, and oversee operations through a centralized dashboard. Built following MVVM Architecture, Clean Architecture, and SOLID Principles with MySQL database, JWT authentication, and Provider state management.</p>",
+      "challenge": "<p>Urban drivers, university campuses, and commercial parking operators suffered from manual entry logs, congestion, and lack of real-time slot visibility.</p>",
+      "solution": "<p>Engineered an integrated multi-platform platform connecting a Flutter mobile app for driver reservations, a Java Spring Boot REST API server, and a JavaFX desktop admin suite for real-time slot monitoring.</p>",
+      "architecture": "<p>MVVM + Clean Architecture on Flutter mobile app communicating via secure JWT-authenticated REST APIs with a Java Spring Boot backend and MySQL relational database, coupled with a JavaFX desktop admin console.</p>",
+      "development_notes": "<p>Optimizing relational MySQL database queries and indexing vehicle entry/exit logs ensured sub-50ms real-time slot availability updates across mobile and desktop clients.</p>",
+      "features": [
+        "Smart Parking & Slot Reservations: Find available parking spaces, real-time slot occupancy, check-in/check-out & digital tickets.",
+        "Flutter Mobile App: User registration, vehicle profile management, parking reservations, booking history & notifications.",
+        "JavaFX Admin Desktop System: Manage parking areas, monitor occupied/available slots, staff management & revenue analytics.",
+        "Java Spring Boot REST Backend: Secure JWT authentication, role-based access control (RBAC), fee calculation & report generation.",
+        "Payment & Revenue Management: Parking fee calculation, digital receipts, payment history & daily transaction management.",
+        "Reports & Analytics: Daily parking reports, revenue statistics, parking occupancy analytics, and vehicle entry/exit logs."
+      ],
+      "thumbnail": "/images/projects/parksphere-pro.webp",
+      "hero_image": "/images/projects/parksphere-pro.webp",
+      "external_url": null,
+      "accent": "#34D399",
+      "featured": true,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Spring Boot",
+        "Java",
+        "JavaFX",
+        "REST API",
+        "MySQL",
+        "JWT Auth",
+        "MVVM + Clean Architecture",
+        "Provider"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "SpeakSay – AI Text-to-Speech & Podcast Studio",
+      "slug": "speaksay",
+      "category": "AI Platform",
+      "industry": "AI Communication & Audio",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Convert text to natural AI speech, clone custom voices & generate multi-speaker podcasts.",
+      "long_description": "<p>Developed SpeakSay, an AI-powered Text-to-Speech (TTS) and Podcast Studio application using Flutter for Android and iOS. Converts written text into natural human-like speech using 100+ AI voices across multiple languages. Features AI voice cloning, multi-speaker podcast studio (up to 2 speakers with dialogue generation), emotion &amp; pitch controls, MP3 exports, and speech management. Built using MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Dio REST client, Firebase services (Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Content creators, educators, and podcasters spent thousands hiring voice actors or struggling with robotic text-to-speech tools for audio production.</p>",
+      "solution": "<p>Architected a native Flutter mobile audio studio connecting directly to neural TTS and voice cloning APIs, enabling multi-speaker podcast generation and custom voice synthesis in seconds.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, Dio HTTP client, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": "<p>Caching synthesized audio chunks locally and streaming response buffers cut API latency by 60% and prevented redundant credit consumption.</p>",
+      "features": [
+        "AI Text-to-Speech Engine: 100+ natural human-like voices, male/female profiles, multiple accents & auto language detection.",
+        "AI Podcast Studio: Multi-speaker dialogue generation with up to 2 AI speakers, custom voice assignments & script previews.",
+        "AI Voice Cloning: Clone personal custom voices, manage voice libraries, and synthesize speech from cloned voice profiles.",
+        "Emotion & Speech Control: Adjust pitch, speaking speed, emotional tone (narration, conversational, storytelling) & MP3 export.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for credits & subscriptions.",
+        "Firebase Remote Config for dynamic AI model selection, credit packages, generation limits, ad controls & remote updates."
+      ],
+      "thumbnail": "/images/projects/speaksay.webp",
+      "hero_image": "/images/projects/speaksay.webp",
+      "external_url": null,
+      "accent": "#3B82F6",
+      "featured": true,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "AI Voice & TTS APIs",
+        "Voice Cloning",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "REST API",
+        "Dio",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "Home Decor AI",
+      "slug": "home-decor-ai",
+      "category": "AI Platform",
+      "industry": "Artificial Intelligence",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Transform interior & exterior spaces using Generative AI image models from a single photo.",
+      "long_description": "<p>Developed an AI-powered Home Decor application using Flutter for Android and iOS that helps users redesign and visualize living spaces using Generative AI Image Models. Users upload room photos, choose design styles (Modern, Minimalist, Luxury, Scandinavian, etc.) or custom prompts, and generate photorealistic interior/exterior transformations in seconds while preserving room architecture. Built following MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Dio REST client, Firebase services (Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Homeowners and interior designers faced high costs and complex 3D software when attempting to visualize room renovations, wallpaper changes, or furniture replacements.</p>",
+      "solution": "<p>Architected a cloud-integrated Flutter application connecting to Generative AI Image APIs with prompt parameterization, delivering photorealistic room transformations in seconds while maintaining structural integrity.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, Dio HTTP client, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": "<p>Implementing intelligent client-side image compression and caching prior to cloud AI inference cut bandwidth consumption by 65% and reduced end-to-end rendering times.</p>",
+      "features": [
+        "AI Room & Garden Transformation: Interior/exterior design, floor restyling, garden redesign, wall paint & wallpaper generation.",
+        "Smart AI Editing: Object removal/replacement, furniture replacement, wall color customization, and landscape redesign.",
+        "12+ Architectural Styles: Modern, Minimalist, Luxury, Scandinavian, Contemporary, Industrial, Japanese, Farmhouse, etc.",
+        "Generative AI Pipeline: Image preprocessing, prompt optimization, perspective preservation, segmentation, and HD rendering.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for unlimited AI generation.",
+        "Firebase Remote Config for dynamic AI model switching, generation limits, subscription offers, feature flags, and updates."
+      ],
+      "thumbnail": "/images/projects/home-decor-ai.webp",
+      "hero_image": "/images/projects/home-decor-ai.webp",
+      "external_url": null,
+      "accent": "#EC4899",
+      "featured": true,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Generative AI APIs",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "REST API",
+        "Dio",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "PDF Maker",
+      "slug": "pdf-maker",
+      "category": "Mobile App",
+      "industry": "Productivity & Utilities",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Convert Word, Excel, PowerPoint & images to PDF, scan, merge, compress, lock & monetize.",
+      "long_description": "<p>Developed a cross-platform PDF Maker application using Flutter for Android and iOS that enables users to create, convert, edit, and manage PDF documents with a modern, user-friendly interface. Built following MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management and Firebase services (Remote Config, Analytics, Crashlytics). Features Google AdMob ads and In-App Purchases (IAP) for premium subscriptions.</p>",
+      "challenge": "<p>Users needed a reliable cross-platform mobile utility to convert office files (Word, Excel, PowerPoint), scan physical documents, merge, compress, and password-protect PDFs with high performance.</p>",
+      "solution": "<p>Architected a high-performance Flutter app leveraging MVVM + Clean Architecture, Provider state management, and Firebase services (Remote Config, Analytics, Crashlytics). Integrated AdMob ads and In-App Purchases (IAP) with dynamic remote configuration.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": null,
+      "features": [
+        "Convert Word, Excel, PowerPoint, and Images into high-quality PDFs with camera document scanning.",
+        "Advanced PDF tools: merge multiple files, password-protect (lock), compress file size, search, print, and share.",
+        "Integrated Google AdMob (App Open, Banner, Interstitial, Native, Rewarded) & In-App Purchases (IAP) for premium tools.",
+        "Configured Firebase Remote Config for dynamic offers, feature flags, ad controls, and force updates without app releases.",
+        "Built with MVVM + Clean Architecture, Provider, Repository Pattern, and GetIt Dependency Injection for maximum scalability."
+      ],
+      "thumbnail": "/images/projects/pdf-maker.webp",
+      "hero_image": "/images/projects/pdf-maker.webp",
+      "external_url": "https://play.google.com/store/apps/details?id=com.codepuzzle.pdfmaker.converter",
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "Smart Printer",
+      "slug": "smart-printer",
+      "category": "Mobile App",
+      "industry": "Utilities & Productivity",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Print documents, photos, labels, calendars, notes & templates via Bluetooth or Wi-Fi.",
+      "long_description": "<p>Developed a cross-platform Smart Printer application using Flutter for Android and iOS that allows users to print documents, photos, PDFs, labels, calendars, notes, whiteboards, and custom templates directly from their mobile devices. Features Bluetooth and Wi-Fi network printing, built-in scanner, label designer, calendar generator, and custom templates. Built with MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Firebase services (Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Mobile users faced fragmented printing options requiring separate apps for document printing, photo adjustments, label design, and camera scanning.</p>",
+      "solution": "<p>Architected an all-in-one Flutter mobile printing platform supporting dual Bluetooth/Wi-Fi connectivity, camera scanning, label creation, and template rendering built on MVVM + Clean Architecture.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": "<p>Integrating standardized Bluetooth socket and Wi-Fi print protocols within Clean Architecture repositories provided seamless printer discovery and eliminated print spooling latency.</p>",
+      "features": [
+        "Dual Connectivity: Automatic printer discovery and high-quality printing via Bluetooth and Wi-Fi local network protocols.",
+        "Document & Photo Printing: Print PDFs, Office docs, text, web pages, photos with crop/rotate/resize and quality controls.",
+        "Productivity Suite: Built-in document scanner, label maker (barcodes/tags), calendar generator, custom note creator & whiteboard.",
+        "Creative Templates: Rich library of printable productivity templates, educational worksheets, planner pages, and stickers.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for premium features.",
+        "Firebase Remote Config for dynamic offers, feature flags, maintenance mode, ad controls, and remote app updates."
+      ],
+      "thumbnail": "/images/projects/smart-printer.webp",
+      "hero_image": "/images/projects/smart-printer.webp",
+      "external_url": null,
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Bluetooth & Wi-Fi Printing",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "Todo App – Daily Planner",
+      "slug": "todo-app-daily-planner",
+      "category": "Mobile App",
+      "industry": "Productivity",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Organize daily tasks, track productivity analytics & build habits with a streak system.",
+      "long_description": "<p>Developed a cross-platform Daily Planner &amp; Todo application using Flutter for Android and iOS that helps users organize daily tasks, improve productivity, and build consistent habits. Features task categories (Work, Personal, Study, Health, Shopping), priority levels (High, Medium, Low), daily streak tracking, analytics, and calendar planning. Built using MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Firebase services (Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Users needed an intuitive, motivating cross-platform daily planner to organize tasks by category and priority while staying focused through habit streak incentives.</p>",
+      "solution": "<p>Architected a high-performance Flutter app leveraging MVVM + Clean Architecture, Provider state management, and Firebase services (Remote Config, Analytics, Crashlytics). Integrated AdMob ads and In-App Purchases (IAP) with dynamic remote configuration.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": null,
+      "features": [
+        "Task organization by categories (Work, Personal, Study, Health, Shopping) and priority levels (High, Medium, Low).",
+        "Daily Productivity Streak System: Completing at least 3 tasks per day increases the daily productivity streak to boost habit building.",
+        "Productivity Analytics & Calendar View: Monitor daily, weekly, and monthly completion rates with interactive analytics.",
+        "Monetization with Google AdMob (App Open, Banner, Interstitial, Native, Rewarded) and In-App Purchases (IAP) for premium features.",
+        "Firebase Remote Config for dynamic offers, feature flags, maintenance mode, ad controls, and app updates without releasing a new version.",
+        "Engineered using MVVM + Clean Architecture, Provider, Repository Pattern, GetIt Dependency Injection, and SharedPreferences."
+      ],
+      "thumbnail": "/images/projects/todo-app-daily-planner.webp",
+      "hero_image": "/images/projects/todo-app-daily-planner.webp",
+      "external_url": "https://play.google.com/store/apps/details?id=com.codepuzzle.todolist.dailyplanner",
+      "accent": "#F5B942",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "AI Invitation Maker",
+      "slug": "invitation-maker",
+      "category": "AI Platform",
+      "industry": "Design & AI Creativity",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Generate personalized invitation cards using Generative AI image models & AI writing assistant.",
+      "long_description": "<p>Developed an AI-powered Invitation Maker application using Flutter for Android and iOS that enables users to create beautiful, personalized invitation cards for weddings, birthdays, engagements, graduations, holidays, and corporate events. Features Generative AI Image APIs for custom prompt-based card designs, AI chat assistant for event messaging &amp; RSVP wording, background remover, and high-resolution exports. Built using MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Dio HTTP client, Firebase services (Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Event hosts spent excessive time and money hiring graphic designers or struggling with rigid mobile editing tools to create event invitation cards.</p>",
+      "solution": "<p>Architected a cloud-integrated Flutter app combining Generative AI Image APIs for card design rendering and an AI writing assistant for personalized event messaging, built on MVVM + Clean Architecture.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, Dio HTTP client, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": "<p>Offloading heavy background removal and high-resolution image compositing to cloud AI services ensured smooth 60fps canvas performance on mobile devices.</p>",
+      "features": [
+        "AI Invitation Generation: Prompt-based card creation, style reference support, background remover, and HD exports.",
+        "AI Chat Assistant: Generates invitation wording, event titles, RSVP phrasing, design style recommendations & messages.",
+        "12+ Event Categories: Wedding, Birthday, Engagement, Anniversary, Graduation, Baby Shower, Corporate, Holidays, etc.",
+        "Design Customization: Background removal, custom color themes, font selection, layout editing, and reference image guidance.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for premium features.",
+        "Firebase Remote Config for dynamic AI generation limits, subscription offers, feature flags, and updates without app releases."
+      ],
+      "thumbnail": "/images/projects/invitation-maker.webp",
+      "hero_image": "/images/projects/invitation-maker.webp",
+      "external_url": null,
+      "accent": "#34D399",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Generative AI APIs",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "REST API",
+        "Dio",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "TV Cast – Screen Mirroring & Smart Cast",
+      "slug": "tv-cast",
+      "category": "AI Platform",
+      "industry": "Entertainment & Utilities",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Cast mobile screen, photos, videos, music & web content to Smart TVs over Wi-Fi.",
+      "long_description": "<p>Developed a cross-platform TV Cast &amp; Screen Mirroring application using Flutter for Android and iOS that enables users to cast their phone screen, photos, videos, music, and web browser content to Smart TVs and streaming devices over the same Wi-Fi network. Features fast device discovery, real-time screen mirroring, local HTTP web server casting, HD (720p), Full HD (1080p), and 4K streaming quality controls. Built using MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Firebase services (Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Mobile users struggled with fragmented casting tools that suffered from high latency, complex setup, or dropped connections when streaming media to Smart TVs.</p>",
+      "solution": "<p>Architected a high-performance Flutter mobile casting application combining automatic local network device discovery with a lightweight local HTTP server for low-latency web &amp; media streaming on MVVM + Clean Architecture.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, local HTTP server sockets, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": "<p>Implementing local HTTP proxy buffering alongside clean socket repository layers eliminated video stuttering during high-bitrate Full HD and 4K streaming.</p>",
+      "features": [
+        "Real-Time Screen Mirroring: Low-latency one-tap mobile screen mirroring to Smart TVs over local Wi-Fi network.",
+        "Media & Web Browser Casting: Stream local photos, videos, music, and web browser content via local HTTP web server.",
+        "Smart Device Discovery: Automatic local network device detection, signal strength indicators, and quick reconnect history.",
+        "Streaming Quality Controls: Auto quality, HD (720p), Full HD (1080p), and 4K streaming options with orientation controls.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for 4K & unlimited casting.",
+        "Firebase Remote Config for dynamic quality limits, feature flags, subscription offers, ad controls & remote updates."
+      ],
+      "thumbnail": "/images/projects/tv-cast.webp",
+      "hero_image": "/images/projects/tv-cast.webp",
+      "external_url": null,
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Wi-Fi Direct / Local Network",
+        "HTTP Local Server",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "Water Reminder – Hydration Tracker",
+      "slug": "water-reminder",
+      "category": "Mobile App",
+      "industry": "Health & Fitness",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Track daily water intake, set smart reminders & build hydration habits with streaks.",
+      "long_description": "<p>Developed a cross-platform Water Reminder &amp; Hydration Tracker application using Flutter for Android and iOS that helps users build healthy hydration habits through smart reminders, daily water intake tracking, personalized goals based on BMI, progress analytics, streaks, and unlockable achievement badges. Features daily/weekly/monthly reports, unit customization (ml/L), and smart notification schedules. Built using MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Local Notifications, Firebase services (Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Users needed an engaging, lightweight hydration tracker that provides flexible reminder schedules, health profile customization, and habit streak incentives.</p>",
+      "solution": "<p>Architected a battery-efficient Flutter mobile app combining custom Local Notification schedules with a streak motivation engine built on MVVM + Clean Architecture.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, Local Notifications, GetIt Dependency Injection, SharedPreferences, and Firebase Services (Remote Config, Crashlytics, Analytics, FCM).</p>",
+      "development_notes": "<p>Fine-tuning native Android alarm manager and iOS notification channels ensured zero notification delivery delays while maintaining low battery consumption.</p>",
+      "features": [
+        "Daily Water Logging & Progress: Real-time progress circle, custom intake entry, remaining water calculation & unit controls (ml/L).",
+        "Smart Hydration Reminders: Custom reminder schedules, battery-optimized local notifications & frequency adjustments.",
+        "Streak & Achievement System: Daily hydration streak tracking, best streak record, milestone achievements & unlockable badges.",
+        "Health Profile & BMI Calculator: Personal profile tracking age, height, weight, BMI calculation & personalized goal setting.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for premium badges & reports.",
+        "Firebase Remote Config for dynamic feature flags, ad controls, subscription offers, and remote app updates."
+      ],
+      "thumbnail": "/images/projects/water-reminder.webp",
+      "hero_image": "/images/projects/water-reminder.webp",
+      "external_url": null,
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Local Notifications",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)",
+        "GetIt"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "Learning Management System (LMS)",
+      "slug": "lms-portal",
+      "category": "Web Platform",
+      "industry": "Education & Web Engineering",
+      "role": "Full-Stack Web Architect",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "W3Schools-inspired online programming learning platform with interactive quizzes & progress tracking.",
+      "long_description": "<p>Developed a full-stack Learning Management System (LMS) that enables students to learn programming languages (HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Python, Java, C++, SQL, PHP) through structured text-based tutorials, interactive quizzes, progress tracking, and certificates. Features interactive step-by-step tutorials, code snippets, syntax highlighting, chapter-wise quizzes with instant scoring, student dashboard with completion percentages &amp; streaks, and a comprehensive admin panel for content management and student analytics. Built using React.js, Node.js, Express.js, MongoDB (Mongoose), RESTful APIs, and JWT Authentication.</p>",
+      "challenge": "<p>Programming students needed an intuitive, W3Schools-like text tutorial platform with built-in chapter quizzes and progress tracking without bloated video streams.</p>",
+      "solution": "<p>Architected a modular full-stack MERN platform delivering instant code snippets, step-by-step reading modules, auto-graded quizzes, and printable course completion certificates.</p>",
+      "architecture": "<p>Modular React.js single-page frontend communicating via RESTful Express.js microservices with Mongoose ODM database schemas, protected by JWT authentication and Bcrypt hashing.</p>",
+      "development_notes": "<p>Optimizing MongoDB index strategies for student lesson progress queries cut server response latency by 55% during high concurrency.</p>",
+      "features": [
+        "12+ Programming Courses: HTML, CSS, JS, React, Node.js, Express, MongoDB, SQL, Python, Java, C++, PHP text tutorials & roadmaps.",
+        "Interactive Quiz Engine: Chapter-wise quizzes, multiple-choice questions (MCQs), instant scoring & explanation breakdowns.",
+        "Progress & Certification: Student progress dashboard, learning streaks, course completion certificates & achievement badges.",
+        "Comprehensive Admin Panel: Course & tutorial editor, quiz creator, student user management, and performance analytics.",
+        "Security & Authentication: JWT authentication, Bcrypt password hashing, role-based access (Admin & Student) & protected APIs."
+      ],
+      "thumbnail": "/images/projects/lms-portal.webp",
+      "hero_image": "/images/projects/lms-portal.webp",
+      "external_url": null,
+      "accent": "#3B82F6",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "REST API",
+        "JWT Auth",
+        "Bcrypt"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "Job Portal – Online Recruitment & Career Platform",
+      "slug": "job-portal",
+      "category": "Web Platform",
+      "industry": "Recruitment & Web Engineering",
+      "role": "Full-Stack Web Engineer",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Indeed & Rozee.pk inspired recruitment platform with candidate ATS, resume manager & employer dashboards.",
+      "long_description": "<p>Developed a full-stack Job Portal inspired by leading recruitment websites (Indeed, Rozee.pk). Connects job seekers with employers through job searching, resume uploads (PDF/DOC), 1-click job applications, applicant tracking system (ATS), interview scheduling, and email notifications. Features separate dashboards for Job Seekers (applied jobs, saved jobs, interview status), Employers (job listing creation, candidate shortlisting, resume downloads, interview scheduling), and Administrators (job moderation, user management, platform analytics). Built using React.js, Node.js, Express.js, MongoDB (Mongoose), RESTful APIs, and JWT Authentication.</p>",
+      "challenge": "<p>Employers and job seekers faced fragmented recruitment tools with cluttered UI, complex resume upload steps, and slow candidate status feedback.</p>",
+      "solution": "<p>Architected a responsive MERN web platform providing 1-click job applications, automated candidate tracking pipelines (ATS), interview scheduling, and instant faceted search filtering.</p>",
+      "architecture": "<p>Modular React.js single-page frontend communicating via RESTful Express.js microservices with MongoDB database collections, secured with JWT tokens and Bcrypt password hashing.</p>",
+      "development_notes": "<p>Debouncing multi-faceted search inputs and indexing MongoDB candidate fields reduced backend search API query latency by 60%.</p>",
+      "features": [
+        "Job Seeker Portal: Build professional profile, upload resume (PDF/DOC), search & filter jobs, 1-click apply & application tracking.",
+        "Employer ATS Portal: Company profile, post & edit job listings, candidate shortlisting, resume download & interview scheduling.",
+        "Smart Job Search & Filtering: Filter by keyword, category, location, salary range, experience level, remote/on-site & employment type.",
+        "Three-Tier Dashboards: Tailored dashboards for Job Seekers (application status), Employers (applicant pipelines), and Admins (analytics & moderation).",
+        "Security & Notifications: JWT authentication, Bcrypt password encryption, role-based access control (RBAC), and automated email alerts."
+      ],
+      "thumbnail": "/images/projects/job-portal.webp",
+      "hero_image": "/images/projects/job-portal.webp",
+      "external_url": null,
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "REST API",
+        "JWT Auth",
+        "Bcrypt"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "Tic Tac Toe – Multiplayer Strategy Game",
+      "slug": "tic-tac-toe-game",
+      "category": "Game",
+      "industry": "Mobile Gaming & AI Engine",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Cross-platform Tic Tac Toe game with Single Player AI, Online Multiplayer & Tournament Mode.",
+      "long_description": "<p>Developed a modern Tic Tac Toe game using Flutter for Android and iOS, featuring Single Player (AI), Local Two-Player, Real-Time Online Multiplayer (Private Rooms/Quick Match), and Tournament Mode. Includes intelligent AI opponents (Easy, Medium, Hard), knockout tournament brackets, global leaderboards, achievement progress, customizable board themes, and haptic feedback. Built using MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Firebase (Auth, Firestore, FCM, Remote Config, Analytics, Crashlytics), Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Casual puzzle game players required a clean, responsive mobile strategy game supporting competitive online tournaments, intelligent AI, and customizable board themes.</p>",
+      "solution": "<p>Architected a 60fps Flutter game engine pairing an isolated Minimax AI decision tree with real-time Firebase Firestore multiplayer sync on MVVM + Clean Architecture.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, Firebase Auth &amp; Firestore streams, GetIt Dependency Injection, SharedPreferences, and Firebase Services.</p>",
+      "development_notes": "<p>Running Minimax decision tree calculations inside dedicated Flutter background Isolates guaranteed 60fps UI responsiveness during hard AI turns.</p>",
+      "features": [
+        "4 Gameplay Modes: Single Player vs Intelligent AI (Easy, Medium, Hard), Local 2-Player, Online Multiplayer & Tournament Brackets.",
+        "Real-Time Online Matches: Create private match rooms, join with room code, friend invitations & live gameplay sync via Firebase.",
+        "Tournament System: Daily & weekly knockout tournaments, rankings, tournament passes, and rewards.",
+        "Customization & Profiles: Custom board themes, custom game pieces, dark/light themes, animated particle effects & haptic feedback.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for themes & passes.",
+        "Firebase Remote Config for dynamic tournament management, event promotions, ad controls & remote app updates."
+      ],
+      "thumbnail": "/images/projects/tic-tac-toe-game.webp",
+      "hero_image": "/images/projects/tic-tac-toe-game.webp",
+      "external_url": null,
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Minimax AI",
+        "AdMob",
+        "In-App Purchases (IAP)"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "AI Resume Builder – Intelligent CV Generator",
+      "slug": "ai-resume-builder",
+      "category": "AI Platform",
+      "industry": "AI Productivity & Mobile",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Generate ATS-friendly resumes & cover letters using LLMs and Retrieval-Augmented Generation (RAG).",
+      "long_description": "<p>Developed an AI-powered Resume Builder application using Flutter for Android and iOS that enables users to create professional, ATS-friendly resumes in minutes. Integrates Large Language Model (LLM) APIs with a Retrieval-Augmented Generation (RAG) pipeline (Pinecone/ChromaDB vector search) to retrieve industry knowledge, ATS keywords, and professional patterns before generating tailored resume sections, job-specific cover letters, and high-resolution PDF exports. Built following MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, FastAPI microservices, Firebase services, Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Job seekers spent hours manually tailoring resumes to pass strict automated Applicant Tracking Systems (ATS) without knowing missing keywords.</p>",
+      "solution": "<p>Architected a mobile RAG-powered resume platform that extracts ATS keywords from target job posts and generates tailored resumes and cover letters in seconds.</p>",
+      "architecture": "<p>MVVM + Clean Architecture on Flutter mobile client communicating via REST APIs with a FastAPI RAG backend (Pinecone vector DB + LLMs) and Firebase Firestore storage.</p>",
+      "development_notes": "<p>Caching vector embedding retrievals locally reduced RAG latency by 50% and lowered AI API inference token billing.</p>",
+      "features": [
+        "RAG Knowledge Engine: Retrieves industry-specific keywords, ATS best practices & job parameters prior to AI generation.",
+        "Job-Specific ATS Optimization: Match resume against uploaded job descriptions, score ATS compatibility & receive skill gap fixes.",
+        "AI Cover Letter Generator: Tailored job-specific cover letters with customizable writing styles & instant editing.",
+        "Professional PDF Export Engine: High-resolution print-ready PDF generation with custom fonts, colors & multi-version history.",
+        "Monetization with Google AdMob (App Open, Banner, Native, Interstitial, Rewarded) and In-App Purchases (IAP) for premium templates.",
+        "Firebase Remote Config for dynamic AI model switching, generation quotas, subscription offers, feature flags & remote updates."
+      ],
+      "thumbnail": "/images/projects/ai-resume-builder.webp",
+      "hero_image": "/images/projects/ai-resume-builder.webp",
+      "external_url": null,
+      "accent": "#F5B942",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "LLM APIs",
+        "RAG",
+        "Pinecone",
+        "FastAPI",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "Expense Tracker – Personal Finance Management",
+      "slug": "expense-tracker",
+      "category": "Mobile App",
+      "industry": "Finance & Productivity",
+      "role": "Flutter Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Track income, expenses, budgets & savings goals with interactive analytics & biometric lock.",
+      "long_description": "<p>Developed a cross-platform Expense Tracker application using Flutter for Android and iOS that helps users efficiently manage personal finances by tracking income, expenses, budgets, savings goals, and spending habits. Features interactive financial charts (daily/weekly/monthly), category breakdown, wallet &amp; bank account tracking, bill &amp; EMI recurring payment reminders, financial calendar, CSV/PDF report exports, and local biometric security (PIN/Fingerprint). Built following MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management, Hive/SQLite offline database, Firebase services, Google AdMob, and In-App Purchases (IAP).</p>",
+      "challenge": "<p>Users struggled with bloated finance tools that required cloud registration or suffered from slow load times for daily transaction logging.</p>",
+      "solution": "<p>Architected a secure offline-first Flutter financial application leveraging Hive key-value storage and Provider state management for instant sub-10ms expense entry.</p>",
+      "architecture": "<p>MVVM + Clean Architecture with Provider state management, Repository Pattern, local Hive / SQLite encryption, GetIt Dependency Injection, SharedPreferences, and Firebase Services.</p>",
+      "development_notes": "<p>Using Hive local key-value storage over traditional ORM models eliminated database locks and cut transaction entry rendering latency to under 10ms.</p>",
+      "features": [
+        "Income & Expense Management: Multiple income sources, category breakdown, custom categories, recurring transactions & filtering.",
+        "Interactive Financial Analytics: Cash flow monitoring, spending trend charts, category-wise breakdowns & monthly summaries.",
+        "Category Budget Planning: Monthly budget limits, overspending alerts, remaining budget calculation & savings goals.",
+        "Multi-Wallet & Bank Accounts: Cash wallet, credit/debit card tracking, account balance monitoring & transfer history.",
+        "Biometric Security & Offline Hive DB: PIN lock, fingerprint/face biometric authentication & encrypted offline-first Hive storage.",
+        "Monetization with Google AdMob & In-App Purchases (IAP) for PDF/CSV exports, unlimited wallets & ad-free experience."
+      ],
+      "thumbnail": "/images/projects/expense-tracker.webp",
+      "hero_image": "/images/projects/expense-tracker.webp",
+      "external_url": null,
+      "accent": "#EC4899",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Hive",
+        "SQLite",
+        "MVVM + Clean Architecture",
+        "Provider",
+        "Biometric Auth",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "Seven Diamond Pro – Online Multiplayer Card Game",
+      "slug": "seven-diamond-pro",
+      "category": "Game",
+      "industry": "Mobile Gaming & Real-Time Systems",
+      "role": "Flutter & Real-Time Systems Developer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Real-time online multiplayer card game with Socket.IO live sync, game rooms & leaderboards.",
+      "long_description": "<p>Developed Seven Diamond Pro, a real-time multiplayer card game for Android and iOS that enables players to create or join private/public game tables and compete with friends or online users. Features low-latency Socket.IO event synchronization for instant move updates, card distribution, turn management, winner calculations, player profiles, match history, and leaderboards. Built with a Flutter frontend, Laravel (PHP) backend, MySQL database, and admin dashboard for game room monitoring. Built following MVVM Architecture, Clean Architecture, and SOLID Principles with Provider state management.</p>",
+      "challenge": "<p>Card game enthusiasts required a reliable, low-latency cross-platform mobile game supporting private multiplayer rooms without turn lag or connection drops.</p>",
+      "solution": "<p>Architected a high-performance Flutter mobile client paired with an event-driven Socket.IO real-time engine and Laravel REST API server for instant multiplayer synchronization.</p>",
+      "architecture": "<p>MVVM + Clean Architecture on Flutter mobile app communicating via WebSocket streams (Socket.IO) with a Laravel backend microservice and MySQL database.</p>",
+      "development_notes": "<p>Implementing automatic Socket.IO reconnection hooks with local game state recovery ensured seamless match resumption after spotty mobile network interruptions.</p>",
+      "features": [
+        "Real-Time Multiplayer Engine: Socket.IO integration for sub-50ms action sync, turn updates, automatic card distribution & scores.",
+        "Private & Public Game Rooms: Room creation, friend invitations via room code sharing, player ready status & automated matchmaking.",
+        "Game Management & Rules: Turn-based logic, round progression, automatic winner determination, score calculation & match replays.",
+        "Rankings, Stats & Leaderboards: Global leaderboards, win/loss ratio tracking, total games played & player profile management.",
+        "Laravel & MySQL Backend: Secure JWT authentication, RESTful APIs, MySQL database schemas, and admin match monitoring console."
+      ],
+      "thumbnail": "/images/projects/seven-diamond-pro.webp",
+      "hero_image": "/images/projects/seven-diamond-pro.webp",
+      "external_url": null,
+      "accent": "#34D399",
+      "featured": false,
+      "is_demo": false,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Laravel",
+        "PHP",
+        "Socket.IO",
+        "REST API",
+        "MySQL",
+        "JWT Auth",
+        "MVVM + Clean Architecture",
+        "Provider"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "VoxTalk",
+      "slug": "voxtalk",
+      "category": "Mobile App",
+      "industry": "Startups",
+      "accent": "#22D3EE",
+      "thumbnail": "/images/projects/vox-talk.webp",
+      "hero_image": "/images/projects/vox-talk.webp",
+      "short_description": "A voice-calling app with crystal-clear audio, live waveform visualisation and a clean contacts experience.",
+      "challenge": "<p>The client wanted a calling experience that felt modern and trustworthy, on both iOS and Android, from a single codebase.</p>",
+      "solution": "<p>A Flutter app with real-time voice, a polished in-call interface, contacts and call history, built on a scalable signalling backend.</p>",
+      "features": [
+        "HD voice calls",
+        "Live audio visualisation",
+        "Contacts & history",
+        "Mute & speaker controls"
+      ],
+      "technologies": [
+        "Flutter",
+        "Node.js",
+        "Firebase"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ],
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "role": "Product design & development",
+      "is_demo": false,
+      "featured": false
+    },
+    {
+      "title": "ClinicFlow",
+      "slug": "clinicflow",
+      "category": "Mobile App",
+      "industry": "Healthcare",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "short_description": "Appointment booking, e-prescriptions and patient records for multi-doctor clinics.",
+      "long_description": "<p>Appointment booking, e-prescriptions and patient records for multi-doctor clinics.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach healthcare products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Healthcare teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering doctor schedules & online booking, digital prescriptions, patient history & reports and more, built on Flutter, Dart, FastAPI.</p>",
+      "architecture": "<p>Flutter · Dart · FastAPI · PostgreSQL · Firebase · BLoC</p>",
+      "features": [
+        "Doctor schedules & online booking",
+        "Digital prescriptions",
+        "Patient history & reports",
+        "WhatsApp reminders",
+        "Admin revenue dashboard"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "FastAPI",
+        "PostgreSQL",
+        "Firebase",
+        "BLoC"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "MediTrack Telehealth",
+      "slug": "meditrack-telehealth",
+      "category": "Mobile App",
+      "industry": "Healthcare",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Video consultations with secure chat, payments and follow-up scheduling.",
+      "long_description": "<p>Video consultations with secure chat, payments and follow-up scheduling.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach healthcare products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Healthcare teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering hd video consultations, encrypted chat, stripe payments and more, built on Flutter, Dart, Node.js.</p>",
+      "architecture": "<p>Flutter · Dart · Node.js · WebRTC · MongoDB · Socket.IO</p>",
+      "features": [
+        "HD video consultations",
+        "Encrypted chat",
+        "Stripe payments",
+        "Follow-up reminders",
+        "Doctor availability calendar"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#34D399",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Node.js",
+        "WebRTC",
+        "MongoDB",
+        "Socket.IO"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "PharmaStock ERP",
+      "slug": "pharmastock-erp",
+      "category": "Web Platform",
+      "industry": "Healthcare",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Inventory, batch expiry and billing system for pharmacies and distributors.",
+      "long_description": "<p>Inventory, batch expiry and billing system for pharmacies and distributors.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach healthcare products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Healthcare teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering batch & expiry tracking, barcode billing, supplier purchase orders and more, built on React, TypeScript, Spring Boot.</p>",
+      "architecture": "<p>React · TypeScript · Spring Boot · Java · MySQL · Docker</p>",
+      "features": [
+        "Batch & expiry tracking",
+        "Barcode billing",
+        "Supplier purchase orders",
+        "Low-stock alerts",
+        "Sales & profit reports"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F5B942",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Spring Boot",
+        "Java",
+        "MySQL",
+        "Docker"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "SchoolSphere",
+      "slug": "schoolsphere",
+      "category": "Web Platform",
+      "industry": "Education",
+      "role": "Concept build",
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "short_description": "School management with attendance, fees, exams and a parent app.",
+      "long_description": "<p>School management with attendance, fees, exams and a parent app.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach education products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Education teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering attendance with sms alerts, fee vouchers & online payment, exam results & report cards and more, built on Next.js, TypeScript, FastAPI.</p>",
+      "architecture": "<p>Next.js · TypeScript · FastAPI · PostgreSQL · Flutter · AWS</p>",
+      "features": [
+        "Attendance with SMS alerts",
+        "Fee vouchers & online payment",
+        "Exam results & report cards",
+        "Timetables",
+        "Parent mobile app"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#3B82F6",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "FastAPI",
+        "PostgreSQL",
+        "Flutter",
+        "AWS"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "QuizPro Exam Engine",
+      "slug": "quizpro-exam-engine",
+      "category": "Web Platform",
+      "industry": "Education",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Timed online exams with question banks, proctoring flags and analytics.",
+      "long_description": "<p>Timed online exams with question banks, proctoring flags and analytics.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach education products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Education teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering randomised question banks, timed attempts & auto-grading, tab-switch proctoring flags and more, built on React, Node.js, MongoDB.</p>",
+      "architecture": "<p>React · Node.js · MongoDB · Redis · Docker</p>",
+      "features": [
+        "Randomised question banks",
+        "Timed attempts & auto-grading",
+        "Tab-switch proctoring flags",
+        "Result analytics",
+        "Certificate generation"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#A78BFA",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Redis",
+        "Docker"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "TutorMatch",
+      "slug": "tutormatch",
+      "category": "Mobile App",
+      "industry": "Education",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Marketplace connecting students with verified tutors for live sessions.",
+      "long_description": "<p>Marketplace connecting students with verified tutors for live sessions.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach education products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Education teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering tutor search & reviews, live session booking, in-app wallet and more, built on Flutter, Dart, Firebase.</p>",
+      "architecture": "<p>Flutter · Dart · Firebase · Supabase · RevenueCat</p>",
+      "features": [
+        "Tutor search & reviews",
+        "Live session booking",
+        "In-app wallet",
+        "Session recordings",
+        "Rating system"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Supabase",
+        "RevenueCat"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "ShopNest Commerce",
+      "slug": "shopnest-commerce",
+      "category": "Web Platform",
+      "industry": "E-Commerce",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Headless storefront with fast search, checkout and an order admin.",
+      "long_description": "<p>Headless storefront with fast search, checkout and an order admin.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach e-commerce products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>E-Commerce teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering instant product search, cart & multi-step checkout, coupon engine and more, built on Next.js, TypeScript, Node.js.</p>",
+      "architecture": "<p>Next.js · TypeScript · Node.js · PostgreSQL · Redis · Stripe</p>",
+      "features": [
+        "Instant product search",
+        "Cart & multi-step checkout",
+        "Coupon engine",
+        "Order & inventory admin",
+        "Abandoned-cart emails"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F97316",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "Stripe"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "ShopNest Mobile",
+      "slug": "shopnest-mobile",
+      "category": "Mobile App",
+      "industry": "E-Commerce",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Companion shopping app with wishlists, push offers and order tracking.",
+      "long_description": "<p>Companion shopping app with wishlists, push offers and order tracking.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach e-commerce products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>E-Commerce teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering personalised home feed, wishlists, push offers and more, built on Flutter, Dart, Riverpod.</p>",
+      "architecture": "<p>Flutter · Dart · Riverpod · Firebase · Stripe</p>",
+      "features": [
+        "Personalised home feed",
+        "Wishlists",
+        "Push offers",
+        "Order tracking",
+        "Reviews & ratings"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#EC4899",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "Firebase",
+        "Stripe"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "PropertyPulse",
+      "slug": "propertypulse",
+      "category": "Web Platform",
+      "industry": "Real Estate",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Property listing portal with map search, lead capture and agent CRM.",
+      "long_description": "<p>Property listing portal with map search, lead capture and agent CRM.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach real estate products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Real Estate teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering map-based search, virtual tour embeds, lead capture forms and more, built on Next.js, FastAPI, PostgreSQL.</p>",
+      "architecture": "<p>Next.js · FastAPI · PostgreSQL · Google Maps API · WhatsApp Business</p>",
+      "features": [
+        "Map-based search",
+        "Virtual tour embeds",
+        "Lead capture forms",
+        "Agent CRM pipeline",
+        "WhatsApp follow-ups"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "Google Maps API",
+        "WhatsApp Business"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development",
+        "business-automation"
+      ]
+    },
+    {
+      "title": "RentEase",
+      "slug": "rentease",
+      "category": "Mobile App",
+      "industry": "Real Estate",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Rental management for landlords: tenants, rent collection and maintenance.",
+      "long_description": "<p>Rental management for landlords: tenants, rent collection and maintenance.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach real estate products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Real Estate teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering tenant profiles & leases, rent reminders, maintenance tickets and more, built on Flutter, Dart, Supabase.</p>",
+      "architecture": "<p>Flutter · Dart · Supabase · PostgreSQL</p>",
+      "features": [
+        "Tenant profiles & leases",
+        "Rent reminders",
+        "Maintenance tickets",
+        "Expense tracking",
+        "Monthly statements"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#34D399",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Supabase",
+        "PostgreSQL"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "LedgerLite",
+      "slug": "ledgerlite",
+      "category": "Web Platform",
+      "industry": "Finance",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Invoicing and bookkeeping for freelancers and small businesses.",
+      "long_description": "<p>Invoicing and bookkeeping for freelancers and small businesses.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach finance products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Finance teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering branded invoices, recurring billing, expense receipts and more, built on React, TypeScript, FastAPI.</p>",
+      "architecture": "<p>React · TypeScript · FastAPI · PostgreSQL · Docker</p>",
+      "features": [
+        "Branded invoices",
+        "Recurring billing",
+        "Expense receipts",
+        "Profit & loss reports",
+        "Tax summaries"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F5B942",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "PayWave Wallet",
+      "slug": "paywave-wallet",
+      "category": "Mobile App",
+      "industry": "Finance",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Digital wallet with QR payments, bill pay and spending insights.",
+      "long_description": "<p>Digital wallet with QR payments, bill pay and spending insights.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach finance products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Finance teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering qr send & receive, utility bill payments, biometric lock and more, built on Kotlin, Swift, Spring Boot.</p>",
+      "architecture": "<p>Kotlin · Swift · Spring Boot · PostgreSQL · Redis</p>",
+      "features": [
+        "QR send & receive",
+        "Utility bill payments",
+        "Biometric lock",
+        "Spending insights",
+        "Transaction history"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Kotlin",
+        "Swift",
+        "Spring Boot",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "LoanDesk",
+      "slug": "loandesk",
+      "category": "Web Platform",
+      "industry": "Finance",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Loan origination workflow with document checks and approval stages.",
+      "long_description": "<p>Loan origination workflow with document checks and approval stages.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach finance products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Finance teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering online applications, document upload & ocr, credit-score checks and more, built on Next.js, Python, FastAPI.</p>",
+      "architecture": "<p>Next.js · Python · FastAPI · PostgreSQL · OpenAI</p>",
+      "features": [
+        "Online applications",
+        "Document upload & OCR",
+        "Credit-score checks",
+        "Multi-stage approvals",
+        "Repayment schedules"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#3B82F6",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "OpenAI"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "DineFlow POS",
+      "slug": "dineflow-pos",
+      "category": "Web Platform",
+      "industry": "Restaurants",
+      "role": "Concept build",
+      "platforms": [
+        "Web",
+        "Desktop"
+      ],
+      "short_description": "Restaurant POS with table management, kitchen display and inventory.",
+      "long_description": "<p>Restaurant POS with table management, kitchen display and inventory.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach restaurants products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Restaurants teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering table & order management, kitchen display system, split bills and more, built on React, Electron, Node.js.</p>",
+      "architecture": "<p>React · Electron · Node.js · MySQL · Socket.IO</p>",
+      "features": [
+        "Table & order management",
+        "Kitchen display system",
+        "Split bills",
+        "Inventory deduction",
+        "Daily sales reports"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F97316",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "React",
+        "Electron",
+        "Node.js",
+        "MySQL",
+        "Socket.IO"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "TableTap QR Menu",
+      "slug": "tabletap-qr-menu",
+      "category": "Web Platform",
+      "industry": "Restaurants",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Contactless QR menus with ordering and payment from the table.",
+      "long_description": "<p>Contactless QR menus with ordering and payment from the table.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach restaurants products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Restaurants teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering qr menu per table, order to kitchen, online payment and more, built on Next.js, Supabase, Stripe.</p>",
+      "architecture": "<p>Next.js · Supabase · Stripe · Tailwind CSS</p>",
+      "features": [
+        "QR menu per table",
+        "Order to kitchen",
+        "Online payment",
+        "Menu editor",
+        "Peak-hour analytics"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F5B942",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "Supabase",
+        "Stripe",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "GlowBook Salon",
+      "slug": "glowbook-salon",
+      "category": "Mobile App",
+      "industry": "Beauty & Salons",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Salon booking app with stylist calendars, packages and loyalty points.",
+      "long_description": "<p>Salon booking app with stylist calendars, packages and loyalty points.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach beauty & salons products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Beauty & Salons teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering stylist calendars, service packages, loyalty points and more, built on Flutter, Dart, Firebase.</p>",
+      "architecture": "<p>Flutter · Dart · Firebase · Cloud Functions</p>",
+      "features": [
+        "Stylist calendars",
+        "Service packages",
+        "Loyalty points",
+        "Reminder notifications",
+        "Staff commissions"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#EC4899",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Cloud Functions"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "FleetTrack",
+      "slug": "fleettrack",
+      "category": "Web Platform",
+      "industry": "Logistics",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Live fleet tracking with route history, fuel logs and driver scoring.",
+      "long_description": "<p>Live fleet tracking with route history, fuel logs and driver scoring.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach logistics products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Logistics teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering live gps map, route playback, fuel & maintenance logs and more, built on React, Node.js, MongoDB.</p>",
+      "architecture": "<p>React · Node.js · MongoDB · Socket.IO · Google Maps API</p>",
+      "features": [
+        "Live GPS map",
+        "Route playback",
+        "Fuel & maintenance logs",
+        "Driver behaviour scores",
+        "Geofence alerts"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Socket.IO",
+        "Google Maps API"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "ParcelGo Courier",
+      "slug": "parcelgo-courier",
+      "category": "Mobile App",
+      "industry": "Logistics",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Courier app for pickups, proof-of-delivery and COD reconciliation.",
+      "long_description": "<p>Courier app for pickups, proof-of-delivery and COD reconciliation.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach logistics products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Logistics teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering pickup requests, barcode scanning, photo & signature proof and more, built on Flutter, Dart, Laravel.</p>",
+      "architecture": "<p>Flutter · Dart · Laravel · MySQL · Firebase</p>",
+      "features": [
+        "Pickup requests",
+        "Barcode scanning",
+        "Photo & signature proof",
+        "COD reconciliation",
+        "Rider earnings"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#34D399",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Laravel",
+        "MySQL",
+        "Firebase"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "WarehouseIQ",
+      "slug": "warehouseiq",
+      "category": "Web Platform",
+      "industry": "Logistics",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Warehouse management with bin locations, picking lists and stock counts.",
+      "long_description": "<p>Warehouse management with bin locations, picking lists and stock counts.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach logistics products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Logistics teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering bin-location mapping, pick & pack lists, cycle counts and more, built on Spring Boot, Java, PostgreSQL.</p>",
+      "architecture": "<p>Spring Boot · Java · PostgreSQL · React · Docker</p>",
+      "features": [
+        "Bin-location mapping",
+        "Pick & pack lists",
+        "Cycle counts",
+        "Inbound receiving",
+        "Stock valuation"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#3B82F6",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Spring Boot",
+        "Java",
+        "PostgreSQL",
+        "React",
+        "Docker"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "RetailHub Loyalty",
+      "slug": "retailhub-loyalty",
+      "category": "Mobile App",
+      "industry": "Retail",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Loyalty and rewards app with digital cards, offers and referrals.",
+      "long_description": "<p>Loyalty and rewards app with digital cards, offers and referrals.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach retail products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Retail teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering digital loyalty card, points & tiers, targeted offers and more, built on Flutter, Dart, Firebase.</p>",
+      "architecture": "<p>Flutter · Dart · Firebase · Google Maps API</p>",
+      "features": [
+        "Digital loyalty card",
+        "Points & tiers",
+        "Targeted offers",
+        "Referral rewards",
+        "Store locator"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F97316",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Google Maps API"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "ClientPortal Pro",
+      "slug": "clientportal-pro",
+      "category": "Web Platform",
+      "industry": "Professional Services",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Secure client portal for agencies: files, approvals, invoices and chat.",
+      "long_description": "<p>Secure client portal for agencies: files, approvals, invoices and chat.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach professional services products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Professional Services teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering project workspaces, file approvals, invoices & payments and more, built on Next.js, TypeScript, Supabase.</p>",
+      "architecture": "<p>Next.js · TypeScript · Supabase · PostgreSQL · Stripe</p>",
+      "features": [
+        "Project workspaces",
+        "File approvals",
+        "Invoices & payments",
+        "Client chat",
+        "Activity timeline"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "PostgreSQL",
+        "Stripe"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "HR Pulse",
+      "slug": "hr-pulse",
+      "category": "Web Platform",
+      "industry": "Corporate",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "HR system for attendance, leave, payroll and performance reviews.",
+      "long_description": "<p>HR system for attendance, leave, payroll and performance reviews.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach corporate products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Corporate teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering biometric attendance import, leave workflows, payroll runs and more, built on React, Spring Boot, Java.</p>",
+      "architecture": "<p>React · Spring Boot · Java · MySQL · AWS</p>",
+      "features": [
+        "Biometric attendance import",
+        "Leave workflows",
+        "Payroll runs",
+        "Performance reviews",
+        "Employee self-service"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#3B82F6",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "React",
+        "Spring Boot",
+        "Java",
+        "MySQL",
+        "AWS"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    },
+    {
+      "title": "DocuMind RAG Assistant",
+      "slug": "documind-rag-assistant",
+      "category": "AI Platform",
+      "industry": "Corporate",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Internal knowledge assistant answering from company documents with citations.",
+      "long_description": "<p>Internal knowledge assistant answering from company documents with citations.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach corporate products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Corporate teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused ai platform covering document ingestion, semantic search, cited answers and more, built on Python, FastAPI, LangChain.</p>",
+      "architecture": "<p>Python · FastAPI · LangChain · OpenAI · PostgreSQL · Next.js</p>",
+      "features": [
+        "Document ingestion",
+        "Semantic search",
+        "Cited answers",
+        "Role-based access",
+        "Usage analytics"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#A78BFA",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "OpenAI",
+        "PostgreSQL",
+        "Next.js"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "LeadBot WhatsApp Agent",
+      "slug": "leadbot-whatsapp-agent",
+      "category": "AI Platform",
+      "industry": "Real Estate",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "AI WhatsApp agent that qualifies leads and books viewings automatically.",
+      "long_description": "<p>AI WhatsApp agent that qualifies leads and books viewings automatically.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach real estate products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Real Estate teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused ai platform covering 24/7 whatsapp replies, lead qualification, calendar booking and more, built on Python, FastAPI, OpenAI.</p>",
+      "architecture": "<p>Python · FastAPI · OpenAI · WhatsApp Business · PostgreSQL</p>",
+      "features": [
+        "24/7 WhatsApp replies",
+        "Lead qualification",
+        "Calendar booking",
+        "CRM sync",
+        "Human handover"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#34D399",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "OpenAI",
+        "WhatsApp Business",
+        "PostgreSQL"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development",
+        "business-automation"
+      ]
+    },
+    {
+      "title": "SupportGenie",
+      "slug": "supportgenie",
+      "category": "AI Platform",
+      "industry": "E-Commerce",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "AI customer-support chatbot trained on help-centre content and order data.",
+      "long_description": "<p>AI customer-support chatbot trained on help-centre content and order data.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach e-commerce products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>E-Commerce teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused ai platform covering help-centre grounding, order status lookup, ticket escalation and more, built on Python, LangChain, OpenAI.</p>",
+      "architecture": "<p>Python · LangChain · OpenAI · Redis · Next.js</p>",
+      "features": [
+        "Help-centre grounding",
+        "Order status lookup",
+        "Ticket escalation",
+        "Multilingual replies",
+        "CSAT tracking"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Python",
+        "LangChain",
+        "OpenAI",
+        "Redis",
+        "Next.js"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "InvoiceOCR Automation",
+      "slug": "invoiceocr-automation",
+      "category": "AI Platform",
+      "industry": "Finance",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Extracts invoice data with AI and posts it straight into accounting tools.",
+      "long_description": "<p>Extracts invoice data with AI and posts it straight into accounting tools.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach finance products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Finance teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused ai platform covering pdf & image ocr, line-item extraction, validation rules and more, built on Python, FastAPI, OpenAI.</p>",
+      "architecture": "<p>Python · FastAPI · OpenAI · Make · PostgreSQL</p>",
+      "features": [
+        "PDF & image OCR",
+        "Line-item extraction",
+        "Validation rules",
+        "Accounting sync",
+        "Exception queue"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F5B942",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "OpenAI",
+        "Make",
+        "PostgreSQL"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development",
+        "business-automation"
+      ]
+    },
+    {
+      "title": "CRM Autopilot",
+      "slug": "crm-autopilot",
+      "category": "AI Platform",
+      "industry": "Professional Services",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Workflow automation that routes leads, sends follow-ups and builds reports.",
+      "long_description": "<p>Workflow automation that routes leads, sends follow-ups and builds reports.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach professional services products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Professional Services teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused ai platform covering lead routing rules, email & whatsapp sequences, deal-stage automation and more, built on Node.js, Zapier, Make.</p>",
+      "architecture": "<p>Node.js · Zapier · Make · WhatsApp Business · Google Analytics</p>",
+      "features": [
+        "Lead routing rules",
+        "Email & WhatsApp sequences",
+        "Deal-stage automation",
+        "Weekly auto-reports",
+        "Zapier integrations"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Node.js",
+        "Zapier",
+        "Make",
+        "WhatsApp Business",
+        "Google Analytics"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development",
+        "business-automation",
+        "digital-marketing"
+      ]
+    },
+    {
+      "title": "SocialPilot Scheduler",
+      "slug": "socialpilot-scheduler",
+      "category": "Web Platform",
+      "industry": "Startups",
+      "role": "Concept build",
+      "platforms": [
+        "Web"
+      ],
+      "short_description": "Social media planner with AI captions, scheduling and analytics.",
+      "long_description": "<p>Social media planner with AI captions, scheduling and analytics.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach startups products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Startups teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering content calendar, ai caption drafts, multi-platform scheduling and more, built on Next.js, FastAPI, OpenAI.</p>",
+      "architecture": "<p>Next.js · FastAPI · OpenAI · Meta Business · PostgreSQL</p>",
+      "features": [
+        "Content calendar",
+        "AI caption drafts",
+        "Multi-platform scheduling",
+        "Engagement analytics",
+        "Client approval links"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#EC4899",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "FastAPI",
+        "OpenAI",
+        "Meta Business",
+        "PostgreSQL"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development",
+        "digital-marketing"
+      ]
+    },
+    {
+      "title": "GymFit Coach",
+      "slug": "gymfit-coach",
+      "category": "Mobile App",
+      "industry": "Startups",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Fitness app with workout plans, progress photos and coach chat.",
+      "long_description": "<p>Fitness app with workout plans, progress photos and coach chat.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach startups products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Startups teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering workout programs, exercise video library, progress photos and more, built on Flutter, Dart, Firebase.</p>",
+      "architecture": "<p>Flutter · Dart · Firebase · RevenueCat · AdMob</p>",
+      "features": [
+        "Workout programs",
+        "Exercise video library",
+        "Progress photos",
+        "Coach chat",
+        "Subscription plans"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#34D399",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "RevenueCat",
+        "AdMob"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "QR Scanner & Generator",
+      "slug": "qr-scanner-generator",
+      "category": "Mobile App",
+      "industry": "Productivity & Utilities",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Fast QR and barcode scanner with generator, history and batch mode.",
+      "long_description": "<p>Fast QR and barcode scanner with generator, history and batch mode.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach productivity & utilities products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Productivity & Utilities teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused mobile app covering instant scan, qr generator, scan history and more, built on Flutter, Dart, Hive.</p>",
+      "architecture": "<p>Flutter · Dart · Hive · AdMob · In-App Purchases (IAP)</p>",
+      "features": [
+        "Instant scan",
+        "QR generator",
+        "Scan history",
+        "Batch scanning",
+        "Wi-Fi QR join"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#22D3EE",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Hive",
+        "AdMob",
+        "In-App Purchases (IAP)"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "VoiceNotes AI",
+      "slug": "voicenotes-ai",
+      "category": "AI Platform",
+      "industry": "Productivity & Utilities",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Record meetings and get AI transcripts, summaries and action items.",
+      "long_description": "<p>Record meetings and get AI transcripts, summaries and action items.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach productivity & utilities products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Productivity & Utilities teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused ai platform covering speech-to-text, ai summaries, action-item extraction and more, built on Flutter, Dart, FastAPI.</p>",
+      "architecture": "<p>Flutter · Dart · FastAPI · OpenAI · Supabase</p>",
+      "features": [
+        "Speech-to-text",
+        "AI summaries",
+        "Action-item extraction",
+        "Search across notes",
+        "Export to PDF"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#A78BFA",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "FastAPI",
+        "OpenAI",
+        "Supabase"
+      ],
+      "services": [
+        "ai-solutions",
+        "mobile-app-development"
+      ]
+    },
+    {
+      "title": "Ludo Royale",
+      "slug": "ludo-royale",
+      "category": "Game",
+      "industry": "Mobile Gaming",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Online multiplayer Ludo with private rooms, chat and daily rewards.",
+      "long_description": "<p>Online multiplayer Ludo with private rooms, chat and daily rewards.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach mobile gaming products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Mobile Gaming teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused game covering online & offline modes, private rooms, in-game chat and more, built on Flutter, Dart, Node.js.</p>",
+      "architecture": "<p>Flutter · Dart · Node.js · Socket.IO · Firebase · AdMob</p>",
+      "features": [
+        "Online & offline modes",
+        "Private rooms",
+        "In-game chat",
+        "Daily rewards",
+        "Leaderboards"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#F5B942",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Node.js",
+        "Socket.IO",
+        "Firebase",
+        "AdMob"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "WordBlitz Puzzle",
+      "slug": "wordblitz-puzzle",
+      "category": "Game",
+      "industry": "Mobile Gaming",
+      "role": "Concept build",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Casual word-puzzle game with daily challenges and hint economy.",
+      "long_description": "<p>Casual word-puzzle game with daily challenges and hint economy.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach mobile gaming products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Mobile Gaming teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused game covering daily challenges, hint economy, level progression and more, built on Flutter, Dart, Firebase.</p>",
+      "architecture": "<p>Flutter · Dart · Firebase · AdMob · In-App Purchases (IAP)</p>",
+      "features": [
+        "Daily challenges",
+        "Hint economy",
+        "Level progression",
+        "Rewarded ads",
+        "Cloud save"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#7C3AED",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "AdMob",
+        "In-App Purchases (IAP)"
+      ],
+      "services": [
+        "mobile-app-development",
+        "ui-ux-design"
+      ]
+    },
+    {
+      "title": "EventHive Tickets",
+      "slug": "eventhive-tickets",
+      "category": "Web Platform",
+      "industry": "Startups",
+      "role": "Concept build",
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "short_description": "Event ticketing with seat maps, QR check-in and organiser payouts.",
+      "long_description": "<p>Event ticketing with seat maps, QR check-in and organiser payouts.</p><p><strong>Concept build.</strong> A reference solution our team designed to show how we approach startups products — scope, architecture and technology choices. It is not a delivered client project.</p>",
+      "challenge": "<p>Startups teams often rely on spreadsheets, disconnected tools and manual follow-up, which slows service and hides the numbers that matter.</p>",
+      "solution": "<p>A focused web platform covering seat-map selection, qr tickets, door check-in app and more, built on Next.js, Node.js, PostgreSQL.</p>",
+      "architecture": "<p>Next.js · Node.js · PostgreSQL · Stripe · Flutter</p>",
+      "features": [
+        "Seat-map selection",
+        "QR tickets",
+        "Door check-in app",
+        "Promo codes",
+        "Organiser payouts"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=75&auto=format&fit=crop",
+      "hero_image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=75&auto=format&fit=crop",
+      "accent": "#EC4899",
+      "featured": false,
+      "is_demo": true,
+      "technologies": [
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe",
+        "Flutter"
+      ],
+      "services": [
+        "web-development",
+        "custom-software-development"
+      ]
+    }
+  ],
+  "engagement_models": [
+    {
+      "title": "Fixed Project",
+      "slug": "fixed-project",
+      "summary": "A defined scope delivered for a fixed price and timeline.",
+      "best_for": [
+        "MVPs and well-defined products",
+        "Websites and redesigns",
+        "Clear, stable requirements"
+      ],
+      "included": [
+        "Discovery & scope",
+        "Design & development",
+        "QA & launch",
+        "30 days post-launch support"
+      ],
+      "model": "Milestone-based payments against agreed deliverables",
+      "cta_label": "Scope a project"
+    },
+    {
+      "title": "Dedicated Team",
+      "slug": "dedicated-team",
+      "summary": "A team of engineers and designers working as an extension of yours.",
+      "highlighted": true,
+      "best_for": [
+        "Long-running products",
+        "Scaling an existing team",
+        "Evolving requirements"
+      ],
+      "included": [
+        "Hand-picked engineers",
+        "Project management",
+        "Weekly reporting",
+        "Flexible team size"
+      ],
+      "model": "Monthly fee per team member",
+      "cta_label": "Build a team"
+    },
+    {
+      "title": "Monthly Partnership",
+      "slug": "monthly-partnership",
+      "summary": "Ongoing development, maintenance and improvements on a retainer.",
+      "best_for": [
+        "Live products needing steady improvement",
+        "Maintenance and support",
+        "Small feature releases"
+      ],
+      "included": [
+        "Reserved monthly hours",
+        "Priority support",
+        "Monthly health report",
+        "Roadmap planning"
+      ],
+      "model": "Monthly retainer with reserved capacity",
+      "cta_label": "Start a partnership"
+    },
+    {
+      "title": "Digital Growth Partnership",
+      "slug": "digital-growth-partnership",
+      "summary": "Marketing, social media and automation to grow what you've built.",
+      "best_for": [
+        "Businesses ready to grow online",
+        "Lead generation",
+        "Brand building"
+      ],
+      "included": [
+        "Social media management",
+        "SEO & paid ads",
+        "Marketing automation",
+        "Monthly reporting"
+      ],
+      "model": "Monthly retainer, scoped by channels",
+      "cta_label": "Plan growth"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much does a custom software project cost?",
+      "answer": "It depends on scope, complexity and integrations. Small websites and automations can start at a few thousand dollars, while larger platforms are scoped in phases. After a short discovery call we provide a clear, itemised estimate.",
+      "category": "Pricing"
+    },
+    {
+      "question": "How long does a project take?",
+      "answer": "A marketing website typically takes 3–6 weeks, an MVP 8–14 weeks, and larger platforms are delivered in phases. You'll get a milestone plan before development starts.",
+      "category": "Delivery"
+    },
+    {
+      "question": "Do you provide post-launch support?",
+      "answer": "Yes. Every project includes a post-launch support window, and we offer monthly maintenance and improvement plans after that.",
+      "category": "Support"
+    },
+    {
+      "question": "Can you modernize existing software?",
+      "answer": "Yes. We audit the current system, then modernise incrementally — replacing parts step by step so the business keeps running.",
+      "category": "Services"
+    },
+    {
+      "question": "Do you develop AI applications?",
+      "answer": "Yes — AI agents, chatbots, RAG knowledge systems and document automation, integrated with your existing tools and data.",
+      "category": "Services"
+    },
+    {
+      "question": "Can you automate business workflows?",
+      "answer": "Yes. We automate lead handling, CRM updates, WhatsApp and email follow-ups, invoicing, reporting and data sync between tools.",
+      "category": "Services"
+    },
+    {
+      "question": "Do you provide social media management?",
+      "answer": "Yes. We handle strategy, content creation, posting, community management and monthly reporting.",
+      "category": "Services"
+    },
+    {
+      "question": "Can you provide dedicated developers?",
+      "answer": "Yes. Our dedicated team model gives you engineers and designers who work as an extension of your team.",
+      "category": "Engagement"
+    },
+    {
+      "question": "What technologies do you use?",
+      "answer": "We choose per project. Common choices include Next.js, React, Flutter, Python, FastAPI, Node.js, PostgreSQL, AWS and leading AI model APIs.",
+      "category": "Technology"
+    },
+    {
+      "question": "Do you work with international clients?",
+      "answer": "Yes. We work remotely with clients across time zones, with overlapping hours for calls and clear async communication.",
+      "category": "Engagement"
+    }
+  ],
+  "testimonials": [
+    {
+      "client_name": "Demo Client A",
+      "designation": "Founder",
+      "company": "Demo Company",
+      "quote": "Placeholder testimonial for layout testing only. Replace with a real, approved client quote before publishing."
+    },
+    {
+      "client_name": "Demo Client B",
+      "designation": "Operations Lead",
+      "company": "Demo Company",
+      "quote": "Placeholder testimonial for layout testing only. Replace with a real, approved client quote before publishing."
+    },
+    {
+      "client_name": "Demo Client C",
+      "designation": "CTO",
+      "company": "Demo Company",
+      "quote": "Placeholder testimonial for layout testing only. Replace with a real, approved client quote before publishing."
+    },
+    {
+      "client_name": "Demo Client D",
+      "designation": "Marketing Manager",
+      "company": "Demo Company",
+      "quote": "Placeholder testimonial for layout testing only. Replace with a real, approved client quote before publishing."
+    },
+    {
+      "client_name": "Demo Client E",
+      "designation": "Product Owner",
+      "company": "Demo Company",
+      "quote": "Placeholder testimonial for layout testing only. Replace with a real, approved client quote before publishing."
+    }
+  ],
+  "blog_categories": [
+    {
+      "name": "AI",
+      "slug": "ai"
+    },
+    {
+      "name": "Software Development",
+      "slug": "software-development"
+    },
+    {
+      "name": "Mobile Apps",
+      "slug": "mobile-apps"
+    },
+    {
+      "name": "Web Development",
+      "slug": "web-development"
+    },
+    {
+      "name": "Automation",
+      "slug": "automation"
+    },
+    {
+      "name": "UI/UX",
+      "slug": "ui-ux"
+    },
+    {
+      "name": "Digital Marketing",
+      "slug": "digital-marketing"
+    },
+    {
+      "name": "Business Technology",
+      "slug": "business-technology"
+    }
+  ],
+  "blog_posts": [
+    {
+      "title": "Riverpod vs BLoC: Choosing State Management for Your Flutter App",
+      "category": "mobile-apps",
+      "tags": [
+        "Flutter",
+        "State Management"
+      ],
+      "excerpt": "Both scale well. The right choice depends on your team, testing style and how much ceremony you want.",
+      "content": "<p>State management is the decision that shapes every screen of a Flutter app. BLoC and Riverpod are the two options we reach for most, and both are production-proven.</p><h2>When BLoC fits</h2><p>BLoC makes every state change an explicit event, which suits large teams, strict code review and complex flows such as checkout or onboarding. The trade-off is more boilerplate.</p><h2>When Riverpod fits</h2><p>Riverpod is lighter, compile-safe and excellent for apps with many independent data sources. It is quicker to write and easy to test with provider overrides.</p><h2>Our rule of thumb</h2><ul><li>Many developers, regulated flows: BLoC.</li><li>Small team, fast iteration: Riverpod.</li><li>Either way: keep business logic out of widgets.</li></ul>",
+      "featured_image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Designing PostgreSQL Schemas That Survive Growth",
+      "category": "software-development",
+      "tags": [
+        "PostgreSQL",
+        "Databases"
+      ],
+      "excerpt": "A few early choices — keys, constraints and indexes — decide whether your database ages gracefully.",
+      "content": "<p>Most performance problems we are asked to fix trace back to the first week of a project, when the schema was designed in a hurry.</p><h2>Constraints are documentation that runs</h2><p>Foreign keys, NOT NULL and unique constraints stop bad data at the door. They are cheaper than any cleanup script you will write later.</p><h2>Index for your queries, not your tables</h2><p>Look at the queries your screens actually run. A composite index on (status, created_at) often beats three single-column indexes.</p><h2>Use JSONB deliberately</h2><p>JSONB is perfect for flexible attributes, but core fields you filter and join on belong in real columns.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "App Store Optimization: Getting Your App Found",
+      "category": "digital-marketing",
+      "tags": [
+        "ASO",
+        "Mobile Apps"
+      ],
+      "excerpt": "Great apps still need to be discovered. Titles, screenshots and ratings do most of the work.",
+      "content": "<p>Publishing an app is the start of the marketing work, not the end. Most installs still come from store search.</p><h2>Title and subtitle</h2><p>Put your most important keyword in the title and a clear benefit in the subtitle. Avoid keyword stuffing — stores penalise it.</p><h2>Screenshots sell</h2><p>The first two screenshots decide most installs. Show outcomes, not settings screens, and add short captions.</p><h2>Ask for ratings at the right moment</h2><p>Prompt after a success — a finished export, a completed workout — never on first launch.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Monetizing Mobile Apps: Ads, Subscriptions or Both?",
+      "category": "mobile-apps",
+      "tags": [
+        "AdMob",
+        "RevenueCat",
+        "Monetization"
+      ],
+      "excerpt": "How to combine AdMob and in-app subscriptions without hurting retention.",
+      "content": "<p>We have shipped utility apps that earn through ads, subscriptions and hybrids. The best model depends on how often people open the app.</p><h2>Ads work for frequent, short sessions</h2><p>Utilities used daily can earn well from rewarded and native ads. Keep interstitials rare and never block the core task.</p><h2>Subscriptions work for ongoing value</h2><p>If users get new value every week — AI credits, cloud sync, premium templates — a subscription is fair and predictable.</p><h2>Control it remotely</h2><p>Remote Config lets you tune ad frequency, paywall copy and offers without shipping a new release.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "CI/CD for Flutter with Codemagic and GitHub Actions",
+      "category": "software-development",
+      "tags": [
+        "CI/CD",
+        "Flutter",
+        "DevOps"
+      ],
+      "excerpt": "Automated builds and store uploads save hours per release and remove human error.",
+      "content": "<p>Manual release builds are slow and error-prone. A pipeline makes every release boring — which is exactly what you want.</p><h2>What to automate first</h2><ol><li>Run tests and analysis on every pull request.</li><li>Build signed Android and iOS artifacts on tags.</li><li>Upload to internal testing tracks automatically.</li></ol><h2>Keep secrets out of the repo</h2><p>Signing keys and API tokens belong in the CI secret store, injected at build time.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Clean Architecture in Practice: Less Theory, More Shipping",
+      "category": "software-development",
+      "tags": [
+        "Architecture",
+        "Clean Code"
+      ],
+      "excerpt": "Layers help when they solve a real problem. Here is the pragmatic version we use.",
+      "content": "<p>Clean Architecture is often presented as a strict diagram. In practice we apply it where it pays for itself.</p><h2>Separate what changes for different reasons</h2><p>UI changes weekly, business rules change monthly, data sources change rarely. Keeping them apart makes each change safer.</p><h2>Repositories as the boundary</h2><p>Screens ask repositories for data and never know whether it came from an API, a cache or a local database.</p><h2>Do not over-abstract</h2><p>If a use case only forwards a call, you do not need it yet. Add layers when complexity arrives.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "A Practical Security Checklist for Web Apps",
+      "category": "business-technology",
+      "tags": [
+        "Security",
+        "OWASP"
+      ],
+      "excerpt": "The handful of controls that prevent most real-world breaches in small and mid-size products.",
+      "content": "<p>Most breaches are not sophisticated. They exploit missing basics that take hours, not weeks, to put in place.</p><h2>The essentials</h2><ul><li>Hash passwords with bcrypt or Argon2.</li><li>Use HttpOnly, Secure cookies and CSRF protection.</li><li>Validate every input on the server.</li><li>Rate-limit login and form endpoints.</li><li>Keep dependencies updated.</li></ul><h2>Log what matters</h2><p>An audit log of logins and data changes turns incidents from mysteries into timelines.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Prompt Engineering for Business Workflows",
+      "category": "ai",
+      "tags": [
+        "AI",
+        "LLMs",
+        "Prompting"
+      ],
+      "excerpt": "Reliable AI features come from structured prompts, examples and guardrails — not clever wording.",
+      "content": "<p>The difference between a demo and a dependable AI feature is usually the prompt design and the checks around it.</p><h2>Give the model a job description</h2><p>State the role, the audience, the output format and what to do when information is missing.</p><h2>Show, do not just tell</h2><p>Two or three worked examples improve consistency more than long instructions.</p><h2>Validate the output</h2><p>Parse structured output, reject anything that does not match, and route uncertain cases to a person.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Measuring the ROI of Business Automation",
+      "category": "automation",
+      "tags": [
+        "Automation",
+        "ROI"
+      ],
+      "excerpt": "How to decide which workflow to automate first — and prove it was worth it.",
+      "content": "<p>Automation projects win approval faster when the return is measured before and after.</p><h2>Pick by volume times pain</h2><p>Count how often a task happens and how long it takes. Multiply. The biggest number is usually your first project.</p><h2>Measure three things</h2><ul><li>Hours saved per week.</li><li>Error rate before and after.</li><li>Response time to customers.</li></ul>",
+      "featured_image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Accessibility Is a Feature, Not a Checkbox",
+      "category": "ui-ux",
+      "tags": [
+        "Accessibility",
+        "UX"
+      ],
+      "excerpt": "Accessible products reach more people and are easier for everyone to use.",
+      "content": "<p>Around one in six people lives with a disability. Designing for them improves the experience for everyone.</p><h2>Quick wins</h2><ul><li>Colour contrast of at least 4.5:1 for text.</li><li>Visible focus states.</li><li>Labels on every form field.</li><li>Respect reduced-motion preferences.</li></ul><h2>Test with a keyboard</h2><p>If you cannot complete a task using only Tab and Enter, neither can many of your users.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Offline-First Mobile Apps with Hive and SQLite",
+      "category": "mobile-apps",
+      "tags": [
+        "Offline",
+        "Hive",
+        "SQLite"
+      ],
+      "excerpt": "Apps that work without a signal feel faster and earn better reviews.",
+      "content": "<p>Connectivity is never guaranteed. Offline-first apps read from local storage first and sync in the background.</p><h2>Choose the right store</h2><p>Hive is fast for key-value data and simple objects. SQLite shines when you need queries, joins and migrations.</p><h2>Design the sync</h2><p>Queue changes locally, retry with backoff and resolve conflicts with clear rules — usually last-write-wins per field.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "SEO for SaaS: Technical Foundations That Compound",
+      "category": "digital-marketing",
+      "tags": [
+        "SEO",
+        "SaaS"
+      ],
+      "excerpt": "Speed, structure and structured data make every piece of content work harder.",
+      "content": "<p>Content gets the attention, but technical SEO decides how much of it gets found.</p><h2>The foundations</h2><ul><li>Server-rendered pages with clean URLs.</li><li>An XML sitemap and sensible robots rules.</li><li>Canonical tags and unique titles.</li><li>Structured data for articles and products.</li></ul><h2>Then publish consistently</h2><p>A steady cadence of useful articles builds topical authority faster than occasional long posts.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Where AI Agents Actually Save Time in a Small Business",
+      "category": "ai",
+      "tags": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "excerpt": "AI agents are most useful on narrow, repetitive tasks with clear inputs. Here's how to find them in your own operations.",
+      "content": "<p>AI agents get a lot of attention, but the wins in a small business are usually unglamorous: triaging inbound messages, drafting routine replies, pulling data out of documents and updating records.</p><h2>Start with the boring work</h2><p>List the tasks your team repeats every day. The best candidates have clear inputs, a predictable output and a person who can review the result.</p><h2>Keep a human in the loop</h2><p>Let the agent prepare and the human approve. As confidence grows, automate the approvals that never change.</p><h2>Measure before and after</h2><p>Track time spent per task before you start. Without a baseline, it's impossible to tell whether the agent is helping.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "RAG Explained: Giving AI Access to Your Company Knowledge",
+      "category": "ai",
+      "tags": [
+        "RAG",
+        "LLMs"
+      ],
+      "excerpt": "Retrieval-augmented generation lets AI answer from your own documents — with sources. A plain-language guide.",
+      "content": "<p>Language models know a lot about the world but nothing about your company. Retrieval-augmented generation (RAG) fixes that by searching your documents first and handing the relevant passages to the model.</p><h2>How it works</h2><p>Documents are split into passages and indexed. When someone asks a question, the most relevant passages are retrieved and the model answers using only that context.</p><h2>Why sources matter</h2><p>Showing where an answer came from builds trust and makes mistakes easy to spot.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Choosing Between Flutter and Native for Your Next App",
+      "category": "mobile-apps",
+      "tags": [
+        "Flutter",
+        "Android",
+        "iOS"
+      ],
+      "excerpt": "Cross-platform or native? The right choice depends on your features, team and timeline.",
+      "content": "<p>Flutter lets one team ship iOS and Android from a single codebase. Native development gives you the deepest platform access.</p><h2>When Flutter fits</h2><p>Most business apps — booking, commerce, dashboards, content — are a great fit.</p><h2>When native fits</h2><p>Heavy use of platform-specific hardware or cutting-edge OS features can justify native.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Seven Workflows Every Growing Business Should Automate",
+      "category": "automation",
+      "tags": [
+        "Automation",
+        "CRM",
+        "WhatsApp"
+      ],
+      "excerpt": "From lead capture to invoicing, these automations remove hours of manual work each week.",
+      "content": "<p>Automation isn't about replacing people — it's about removing the copy-paste work between tools.</p><ol><li>Lead capture into your CRM</li><li>Instant WhatsApp or email acknowledgement</li><li>Lead assignment and follow-up reminders</li><li>Invoice generation</li><li>Payment reminders</li><li>Weekly reporting</li><li>Data sync between tools</li></ol><p>Start with the workflow that causes the most delays and build from there.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Planning an MVP That Doesn't Need a Rewrite",
+      "category": "software-development",
+      "tags": [
+        "MVP",
+        "Architecture"
+      ],
+      "excerpt": "Move fast without painting yourself into a corner: the decisions that matter most early on.",
+      "content": "<p>An MVP should be small in scope, not small in quality. A few early decisions determine whether you can build on it.</p><h2>Get the data model right</h2><p>Features change; data sticks around. Spend time on your core entities.</p><h2>Use boring, proven technology</h2><p>Your MVP is not the place for experiments in infrastructure.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Core Web Vitals for Business Owners",
+      "category": "web-development",
+      "tags": [
+        "Performance",
+        "SEO"
+      ],
+      "excerpt": "What LCP, INP and CLS mean — and why they affect your rankings and conversions.",
+      "content": "<p>Core Web Vitals measure how fast your page loads, how quickly it responds and how stable it is while loading.</p><h2>Why it matters</h2><p>Slow, jumpy pages lose visitors and can rank lower in search.</p><h2>Quick wins</h2><p>Optimise images, reduce unused JavaScript and reserve space for media.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Design Systems: Why Consistency Speeds Up Delivery",
+      "category": "ui-ux",
+      "tags": [
+        "Design Systems",
+        "UI"
+      ],
+      "excerpt": "A shared set of components and rules helps teams design and build faster, with fewer bugs.",
+      "content": "<p>A design system is a shared library of components, tokens and guidelines used by both designers and developers.</p><h2>The payoff</h2><p>New screens are assembled rather than invented, so they're faster to build and more consistent.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Social Media for B2B: What to Post and Why",
+      "category": "digital-marketing",
+      "tags": [
+        "Social Media",
+        "B2B"
+      ],
+      "excerpt": "B2B audiences respond to expertise and proof. A simple framework for planning content.",
+      "content": "<p>Business buyers follow companies that help them think clearly. Useful content beats promotional content.</p><h2>A simple mix</h2><p>Teach, show your work, share perspective — and only occasionally sell.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "Build vs Buy: When Custom Software Makes Sense",
+      "category": "business-technology",
+      "tags": [
+        "Strategy",
+        "SaaS"
+      ],
+      "excerpt": "Off-the-shelf tools are great until they aren't. Signs it's time to build your own.",
+      "content": "<p>Most businesses should start with off-the-shelf tools. Custom software makes sense when your process is your advantage, or when stitching tools together costs more than building.</p><h2>Warning signs</h2><p>Heavy manual workarounds, rising per-seat costs and data trapped in silos.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=75&auto=format&fit=crop"
+    },
+    {
+      "title": "WhatsApp Automation: Faster Replies Without Losing the Personal Touch",
+      "category": "automation",
+      "tags": [
+        "WhatsApp",
+        "Customer Experience"
+      ],
+      "excerpt": "Use WhatsApp Business automation for confirmations, reminders and lead follow-ups — thoughtfully.",
+      "content": "<p>Customers expect quick replies on WhatsApp. Automation handles the predictable messages so your team can focus on real conversations.</p><h2>Good candidates</h2><p>Booking confirmations, reminders, order updates and first-response messages for new leads.</p><h2>Stay compliant</h2><p>Use approved templates and respect opt-ins.</p>",
+      "featured_image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=75&auto=format&fit=crop"
+    }
+  ],
+  "seo": [
+    {
+      "path": "/",
+      "title": "SparkWave Digital Systems — Digital Product, AI, Automation & Growth Partner",
+      "description": "We design, develop, automate and grow digital products — custom software, web and mobile apps, AI solutions, business automation and digital marketing."
+    },
+    {
+      "path": "/about",
+      "title": "About SparkWave Digital Systems",
+      "description": "A digital product, AI, automation and growth partner for modern businesses."
+    },
+    {
+      "path": "/services",
+      "title": "Services",
+      "description": "Custom software, web and mobile development, AI, automation, design, QA, cloud and digital marketing."
+    },
+    {
+      "path": "/work",
+      "title": "Our Work",
+      "description": "Products and platforms designed and engineered by SparkWave Digital Systems."
+    },
+    {
+      "path": "/process",
+      "title": "Our Delivery Process",
+      "description": "From first spark to full scale: discover, strategize, design, build, launch and grow."
+    },
+    {
+      "path": "/technologies",
+      "title": "Technologies",
+      "description": "The frameworks, platforms and AI tools we use to build reliable digital systems."
+    },
+    {
+      "path": "/industries",
+      "title": "Industries",
+      "description": "Digital systems designed around the real problems of different industries."
+    },
+    {
+      "path": "/blog",
+      "title": "Insights — Ideas, Technology & Growth",
+      "description": "Articles on AI, software development, automation, design and digital growth."
+    },
+    {
+      "path": "/contact",
+      "title": "Contact — Start a Project",
+      "description": "Tell us what you're building and we'll help you figure out what comes next."
+    }
+  ],
+  "image_pool": {
+    "blog": [
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&q=75&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=75&auto=format&fit=crop"
+    ]
+  }
+}

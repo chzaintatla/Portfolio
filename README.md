@@ -1,279 +1,72 @@
-# Personal Portfolio Website
+# SparkWave Digital Systems
 
-A modern, fully responsive portfolio website for **Digital Optimistic** - Full-Stack Development & Digital Solutions Company with 6+ years of experience.
+Marketing site, CMS and lead management for SparkWave Digital Systems.
 
-## 🚀 Features
+| Part | Stack | Folder |
+| --- | --- | --- |
+| Public site + admin portal | Next.js 16, TypeScript, Tailwind v4, Framer Motion, GSAP, Lenis | `frontend/` |
+| API | FastAPI, SQLAlchemy 2, Alembic, JWT (HttpOnly cookie + CSRF), RBAC | `backend/` |
+| Database | PostgreSQL 16 (SQLite also supported for quick tests) | — |
+| Media | Local disk (dev), Cloudinary or S3 (prod) | — |
 
-- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop
-- **Modern UI/UX**: Beautiful animations and professional design
-- **Contact Form**: Direct email integration via Nodemailer
-- **Meeting Scheduler**: Book 30-minute consultation meetings
-- **Project Showcase**: Display featured Android projects
-- **Experience Timeline**: Professional work history
-- **Skills Section**: Comprehensive technical expertise
-- **SEO Optimized**: Meta tags and semantic HTML
+All site content — services, projects, industries, technologies, process, engagement models, FAQs,
+testimonials, blog, team, SEO, settings — comes from the API and is editable at `/admin`.
 
-## 🛠️ Tech Stack
-
-### Frontend
-- React.js 18
-- Tailwind CSS
-- Framer Motion (animations)
-- React Icons
-- React DatePicker
-- Axios
-
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- Nodemailer
-- Express Validator
-
-## 📋 Prerequisites
-
-Before you begin, ensure you have the following installed:
-- Node.js (v14 or higher)
-- npm or yarn
-- MongoDB (local or MongoDB Atlas account)
-
-## 🔧 Installation & Setup
-
-### 1. Clone the Repository
+## Run locally
 
 ```bash
-git clone <your-repo-url>
-cd portfolio
-```
+# Backend (Python 3.12)
+cd backend
+python -m venv .venv && .venv\Scripts\activate      # or: source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env                                   # set DATABASE_URL, JWT_SECRET, ADMIN_*
 
-### 2. Install Backend Dependencies
+# PostgreSQL: use your own server, or run one locally with no system install
+pip install pgserver && python scripts/local_pg.py init   # next time: python scripts/local_pg.py start
 
-```bash
+alembic upgrade head
+python -m app.seed.seed                                # --reset reloads content, keeps users & leads
+uvicorn app.main:app --port 8000
+
+# Frontend
+cd frontend
 npm install
-```
-
-### 3. Install Frontend Dependencies
-
-```bash
-cd client
-npm install
-cd ..
-```
-
-### 4. Environment Variables
-
-Create a `.env` file in the root directory:
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and add your configuration:
-
-```env
-PORT=5000
-NODE_ENV=development
-
-# MongoDB Configuration
-MONGODB_URI=mongodb://localhost:27017/portfolio
-# OR use MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/portfolio
-
-# Email Configuration (Gmail)
-EMAIL_SERVICE=gmail
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASS=your-app-password
-```
-
-### 5. Gmail App Password Setup
-
-For Gmail, you need to:
-
-1. Enable **2-Factor Authentication** on your Google account
-2. Go to [Google App Passwords](https://myaccount.google.com/apppasswords)
-3. Generate a new app password for "Mail"
-4. Use this app password in `EMAIL_PASS` (not your regular Gmail password)
-
-### 6. Start MongoDB
-
-**Local MongoDB:**
-```bash
-# Make sure MongoDB is running
-mongod
-```
-
-**MongoDB Atlas:**
-- Create a free account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- Create a cluster and get your connection string
-- Update `MONGODB_URI` in `.env`
-
-## 🚀 Running the Application
-
-### Development Mode (Both Frontend & Backend)
-
-```bash
+cp .env.example .env.local                             # API_URL=http://localhost:8000
 npm run dev
 ```
 
-This will start:
-- Backend server on `http://localhost:5000`
-- React app on `http://localhost:3000`
+Site: http://localhost:3000 · Admin: http://localhost:3000/admin · API docs: http://localhost:8000/api/docs
 
-### Run Separately
+Tests: `cd backend && pytest` (SQLite) or `TEST_DATABASE_URL=postgresql+psycopg://… pytest` (PostgreSQL).
 
-**Backend only:**
-```bash
-npm run server
-```
+## How it fits together
 
-**Frontend only:**
-```bash
-npm run client
-```
+- The browser only talks to the Next.js origin; `/api/*` and `/uploads/*` are rewritten to FastAPI, so the
+  admin session cookie is first-party (HttpOnly, SameSite=Lax) and mutations carry a double-submit CSRF token.
+- Public pages are statically generated and revalidate every 5 minutes; after any CMS edit the API calls
+  `POST /revalidate` (shared `REVALIDATE_SECRET`) so changes appear immediately.
+- Contact submissions become leads (status, priority, notes, follow-ups, assignment, CSV export) and send an
+  admin notification + client confirmation email (logged instead of sent when `SMTP_HOST` is empty).
+- Roles: Admin (all), Editor (content), Sales (leads), Viewer — editable per resource in Admin → Roles.
 
-## 📁 Project Structure
+## Deploy
 
-```
-portfolio/
-├── client/                 # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   │   ├── Navbar.js
-│   │   │   ├── Hero.js
-│   │   │   ├── About.js
-│   │   │   ├── Skills.js
-│   │   │   ├── Experience.js
-│   │   │   ├── Projects.js
-│   │   │   ├── MeetingScheduler.js
-│   │   │   ├── Contact.js
-│   │   │   └── Footer.js
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── index.css
-│   ├── package.json
-│   └── tailwind.config.js
-├── server/                 # Node.js backend
-│   ├── models/            # MongoDB models
-│   │   ├── Contact.js
-│   │   └── Meeting.js
-│   ├── routes/            # API routes
-│   │   ├── contact.js
-│   │   └── meeting.js
-│   ├── utils/             # Utility functions
-│   │   └── emailService.js
-│   └── index.js          # Server entry point
-├── .env                   # Environment variables (create this)
-├── .env.example          # Example env file
-├── package.json
-└── README.md
-```
+- **Frontend:** Vercel (root `frontend/`), env `API_URL`, `NEXT_PUBLIC_SITE_URL`, `REVALIDATE_SECRET`.
+- **Backend:** `backend/Dockerfile` on Railway/Render/AWS/VPS. It runs `alembic upgrade head` on start.
+  Set `ENVIRONMENT=production`, a long `JWT_SECRET`, `COOKIE_SECURE=true`, `DATABASE_URL`, `FRONTEND_URL`,
+  `REVALIDATE_SECRET`, SMTP and storage variables (see `backend/.env.example`).
+- Add GA4 / Meta Pixel / Search Console IDs in Admin → Settings → Analytics.
 
-## 🌐 API Endpoints
+## Daily blog
 
-### Contact Form
-- **POST** `/api/contact`
-  - Body: `{ name, email, message }`
-  - Sends email notification
+Admin → Blog opens with a **daily publishing planner**: last week and next two weeks, a publishing streak,
+one-click "Write today's post", and rotating topic ideas (edit them in Settings → Blog topics). Posts dated in
+the future are saved as *scheduled* and go live on their date automatically. The public `/blog` page leads with
+today's article and a 14-day daily feed.
 
-### Meeting Booking
-- **POST** `/api/meeting/book`
-  - Body: `{ name, email, date, time, message? }`
-  - Sends confirmation emails to both client and owner
+## Content notes
 
-### Health Check
-- **GET** `/api/health`
-  - Returns server status
-
-## 🎨 Customization
-
-### Colors
-Edit `client/tailwind.config.js` to change the color scheme:
-
-```javascript
-colors: {
-  primary: { ... },
-  accent: { ... },
-}
-```
-
-### Content
-Update component files in `client/src/components/` to modify:
-- Personal information
-- Skills
-- Experience
-- Projects
-- Contact details
-
-### Email Templates
-Customize email templates in `server/utils/emailService.js`
-
-## 📱 Responsive Breakpoints
-
-- **Mobile**: < 640px
-- **Tablet**: 640px - 1024px
-- **Desktop**: > 1024px
-
-## 🚀 Deployment
-
-### Frontend (Vercel/Netlify)
-
-1. Build the React app:
-```bash
-cd client
-npm run build
-```
-
-2. Deploy the `client/build` folder to Vercel or Netlify
-
-### Backend (Heroku/Railway/Render)
-
-1. Set environment variables in your hosting platform
-2. Update API URLs in frontend components (replace `localhost:5000` with your backend URL)
-3. Deploy the `server` folder
-
-### MongoDB Atlas
-
-Use MongoDB Atlas for cloud database:
-1. Create a free cluster
-2. Get connection string
-3. Update `MONGODB_URI` in `.env`
-
-## 🐛 Troubleshooting
-
-### Email Not Sending
-- Verify Gmail app password is correct
-- Check `EMAIL_USER` and `EMAIL_PASS` in `.env`
-- Ensure 2FA is enabled on Gmail account
-
-### MongoDB Connection Error
-- Verify MongoDB is running (local) or connection string is correct (Atlas)
-- Check `MONGODB_URI` in `.env`
-
-### Port Already in Use
-- Change `PORT` in `.env` to a different port
-- Or kill the process using the port
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 👤 Author
-
-**Digital Optimistic**
-- Email: contact@digitaloptimistic.com
-- Phone: +1 (307) 310-4711
-- LinkedIn: [Digital Optimistic LLC](https://www.linkedin.com/company/digital-optimistic/)
-- Facebook: [Digital Optimistic LLC](https://www.facebook.com/people/Digital-Optimistic-LLC/61584332251308/)
-- Instagram: [@digitaloptimisticllc](https://www.instagram.com/digitaloptimisticllc?utm_source=qr&igsh=MWxtMzloZWEwZThlYw==)
-
-## 🙏 Acknowledgments
-
-- React.js community
-- Tailwind CSS team
-- All open-source contributors
-
----
-
-**Built with ❤️ by Digital Optimistic**
-
+- Projects: 19 shipped products with real screenshots, plus 34 **concept builds** (`is_demo`, shown with a
+  "Concept" badge and labelled as reference solutions). Unpublish or convert them in Admin → Projects.
+- Stock photos come from Unsplash (free licence) and are hotlinked from `images.unsplash.com`.
+- Demo testimonials are seeded **unpublished**. Company statistics stay hidden until real numbers are entered.
